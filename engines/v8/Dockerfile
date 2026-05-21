@@ -9,10 +9,7 @@
 # SPDX-License-Identifier: MIT
 
 # Toolchain image *must* set CC CXX AR NM for V8's //build/toolchain/linux/unbundle
-# Build LLVM from source until apt.llvm.org is fixed -
-# 14.9.1xx needs a more recent clang than Mar 2026 snapshot.
-# https://apt.llvm.org/trixie/pool/main/l/llvm-toolchain-snapshot/
-ARG BASE=jsz-clang-git
+ARG BASE=jsz-clang
 FROM $BASE
 
 WORKDIR /src
@@ -44,7 +41,7 @@ COPY engines/v8/args.sh ./
 RUN mkdir -p out/release && JITLESS="$JITLESS" FULL="$FULL" ./args.sh >out/release/args.gn
 
 # Build
-RUN gn gen out/release/
+RUN BUILD_AR="${AR:-ar}" BUILD_CC="${CC:-cc}" BUILD_CXX="${CXX:-c++}" BUILD_NM="${NM:-nm}" gn gen out/release/
 RUN autoninja -C out/release/ d8
 
 # Find N.N.N tag just ahead of HEAD (stamping commit), with fallback to version()
