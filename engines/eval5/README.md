@@ -110,13 +110,13 @@ standard library - passes through most of it from the host environment.
 <details><summary>test262: 32.7%, main 39.4%, staging 23.5%, annexB 35.3%, Next 3.4%, Intl 0.5%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/bplok20010/eval5/commit/64f9f7ffc97b6eb0ada78078b13897d1d52aea12">2024-10-25</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/eval5.json">json</a>)</li>
-<li>Overall: 32.7% (17372/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 39.4% (16358/41549)</li>
+<li>Overall: 32.7% (17397/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 39.4% (16380/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 82.6% (6774/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
-<li>ES6: 24.8% (2745/11054)<pre>
+<li>ES6: 24.9% (2748/11054)<pre>
 __proto__: 55.6% (10/18)
 Array.prototype.values: 0% (0/4)
 ArrayBuffer: 0% (0/268)
@@ -139,14 +139,14 @@ Object.is: 50% (1/2)
 Promise: 50% (2/4)
 Proxy: 66.5% (311/468)
 Reflect: 31.2% (146/468)
-Reflect.construct: 6.2% (43/696)
+Reflect.construct: 6.3% (44/696)
 Reflect.set: 50% (23/46)
 Reflect.setPrototypeOf: 78.3% (18/23)
 Set: 55.3% (21/38)
 String.fromCodePoint: 31.8% (7/22)
 String.prototype.endsWith: 85.2% (23/27)
 String.prototype.includes: 88.5% (23/26)
-Symbol: 23.8% (355/1494)
+Symbol: 24.6% (367/1494)
 Symbol.hasInstance: 52.9% (9/17)
 Symbol.isConcatSpreadable: 82.4% (28/34)
 Symbol.iterator: 5.5% (103/1865)
@@ -154,7 +154,7 @@ Symbol.match: 54.5% (48/88)
 Symbol.replace: 64.3% (63/98)
 Symbol.search: 56.8% (21/37)
 Symbol.species: 30.1% (83/276)
-Symbol.split: 69% (40/58)
+Symbol.split: 74.1% (43/58)
 Symbol.toPrimitive: 27% (63/233)
 Symbol.toStringTag: 11.5% (15/131)
 Symbol.unscopables: 11.4% (5/44)
@@ -163,7 +163,7 @@ Uint16Array: 0% (0/6)
 Uint32Array: 0% (0/2)
 Uint8Array: 0% (0/11)
 Uint8ClampedArray: 0% (0/6)
-WeakMap: 45.6% (36/79)
+WeakMap: 59.5% (47/79)
 WeakSet: 70.6% (24/34)
 arrow-function: 6.8% (65/949)
 class: 15.7% (750/4768)
@@ -281,7 +281,7 @@ Intl.NumberFormat-v3: 0% (0/102)
 array-find-from-last: 25.7% (28/109)
 change-array-by-copy: 28% (37/132)
 hashbang: 65.5% (19/29)
-symbols-as-weakmap-keys: 55.2% (16/29)
+symbols-as-weakmap-keys: 69% (20/29)
 </pre></li>
 <li>ES2024: 7.7% (65/840)<pre>
 Atomics.waitAsync: 0% (0/101)
@@ -304,7 +304,7 @@ promise-try: 33.3% (4/12)
 regexp-modifiers: 68.7% (158/230)
 set-methods: 0% (0/192)
 </pre></li>
-<li>ES2026: 5% (18/361)<pre>
+<li>ES2026: 10.2% (37/361)<pre>
 Array.fromAsync: 0% (0/95)
 Error.isError: 46.2% (6/13)
 Intl.Era-monthcode: 0% (0/1543)
@@ -313,12 +313,12 @@ Math.sumPrecise: 0% (0/10)
 iterator-sequencing: 0% (0/32)
 json-parse-with-source: 9.1% (2/22)
 uint8array-base64: 0% (0/69)
-upsert: 13.9% (10/72)
+upsert: 40.3% (29/72)
 </pre></li>
-<li>Next: 3.4% (268/7895)<pre>
+<li>Next: 3.4% (271/7895)<pre>
 Atomics.pause: 0% (0/6)
 ShadowRealm: 0% (0/64)
-Temporal: 0% (0/6671)
+Temporal: 0% (3/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 0% (0/19)
 decorators: 0% (0/27)

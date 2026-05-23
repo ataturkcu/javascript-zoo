@@ -105,11 +105,11 @@ which started out by forking otto's parser.
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 28.9%, main 34.9%, staging 17.3%, annexB 29.2%, Next 3.4%, Intl 0.3%</summary>
+<details><summary>test262: 28.8%, main 34.9%, staging 16.8%, annexB 29.2%, Next 3.4%, Intl 0.3%</summary>
 <ul>
 <li>Tested version: 0.5.1-2-g3ca7298 (<a href="https://github.com/robertkrimen/otto/commit/3ca729876b8973d2faeb6f25d1c8e7dd6580063a">2025-06-13</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/otto.json">json</a>)</li>
-<li>Overall: 28.9% (15341/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 34.9% (14490/41549)</li>
+<li>Overall: 28.8% (15332/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 34.9% (14488/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 89.5% (7336/8197)<pre>
 caller: 100% (23/23)
@@ -332,6 +332,6 @@ regexp-duplicate-named-groups: 15.8% (3/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 51% (4443/8718)</li>
+<li>N/A: 50.9% (4434/8718)</li>
 </ul>
 </details>

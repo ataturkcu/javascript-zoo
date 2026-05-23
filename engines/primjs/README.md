@@ -27,14 +27,14 @@ Other features: WebAssembly support (via wasm3), inspector/debugger, N-API compa
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/lynx-family/primjs/commit/bd6fe44e38eee521df22432b3dd4ced440f7dd15">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/primjs_262.json">json</a>)</li>
+<li>Tested version: weak-node-api-v0.0.4 (<a href="https://github.com/lynx-family/primjs/commit/092ecc1e1cc300850b773996a35a6aae0fd7f5a6">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/primjs_262.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 68%, Next 3%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/lynx-family/primjs/commit/bd6fe44e38eee521df22432b3dd4ced440f7dd15">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/primjs_262.json">json</a>)</li>
+<li>Tested version: weak-node-api-v0.0.4 (<a href="https://github.com/lynx-family/primjs/commit/092ecc1e1cc300850b773996a35a6aae0fd7f5a6">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/primjs_262.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 97.7%<pre>
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.lowercase.js">annex-b.String.prototype.html.lowercase.js</a>: TypeError: null or undefined are forbidden
@@ -114,7 +114,7 @@ Other features: WebAssembly support (via wasm3), inspector/debugger, N-API compa
 
 <details><summary>test262: 75.5%, main 91%, staging 68.8%, annexB 94.1%, Next 3.5%, Intl 0.7%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/lynx-family/primjs/commit/bd6fe44e38eee521df22432b3dd4ced440f7dd15">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/primjs_262.json">json</a>)</li>
+<li>Tested version: weak-node-api-v0.0.4 (<a href="https://github.com/lynx-family/primjs/commit/092ecc1e1cc300850b773996a35a6aae0fd7f5a6">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/primjs_262.json">json</a>)</li>
 <li>Overall: 75.5% (40161/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 91% (37821/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

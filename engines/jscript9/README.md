@@ -66,10 +66,10 @@ classic [JScript](../jscript/README.md) with a Chakra-based engine.
 
 <details><summary>test262: 31.8%, main 38.1%, staging 23.2%, annexB 40.8%, Next 3.3%, Intl 0.5%</summary>
 <ul>
-<li>Overall: 31.8% (16900/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 38.1% (15832/41549)</li>
+<li>Overall: 31.8% (16901/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 38.1% (15833/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 96.2% (7889/8197)<pre>
+<li>ES5: 96.3% (7890/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
 <li>ES6: 13.4% (1483/11054)<pre>

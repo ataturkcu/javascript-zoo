@@ -166,10 +166,10 @@ JavaScript interpreter for JVM written in Kotlin.
 <details><summary>test262: 36.7%, main 45.2%, staging 20.4%, annexB 11.6%, Next 3.4%, Intl 0.2%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/ReevaJS/reeva/commit/f715163354ea06e37a97bd4e5e0bddc9c195c886">2024-01-18</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/reeva.json">json</a>)</li>
-<li>Overall: 36.7% (19502/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 45.2% (18797/41549)</li>
+<li>Overall: 36.7% (19503/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 45.2% (18798/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 76.4% (6262/8197)<pre>
+<li>ES5: 76.4% (6263/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
 <li>ES6: 44.5% (4921/11054)<pre>

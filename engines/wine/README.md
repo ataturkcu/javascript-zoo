@@ -17,10 +17,11 @@ Wine's open-source reimplementation of Microsoft's classic [JScript](../jscript/
 
 ## Conformance
 
-<details><summary>ES1-ES5: 76%</summary><ul>
-<li>Tested version: <a href="https://github.com/wine-mirror/wine/commit/9f4295cec027d260c39fcf167b063acd939e5fc6">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/wine.json">json</a>)</li>
-<li>ES1: 94.4% (187/198)<pre>
-<a href="../../conformance/es1/Array.length.js">Array.length.js</a>: TIMEOUT: &gt;60s
+<details><summary>ES1-ES5: 75%</summary><ul>
+<li>Tested version: <a href="https://github.com/wine-mirror/wine/commit/202b45dd9aa6c241d1f341639fc4a04c91cb59a4">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/wine.json">json</a>)</li>
+<li>ES1: 93.9% (186/198)<pre>
+<a href="../../conformance/es1/Array.js">Array.js</a>: TIMEOUT: &gt;60s
+<a href="../../conformance/es1/Array.length.assignment.js">Array.length.assignment.js</a>: TIMEOUT: &gt;60s
 <a href="../../conformance/es1/Number.MAX_VALUE.js">Number.MAX_VALUE.js</a>: FAIL
 <a href="../../conformance/es1/Number.MIN_VALUE.js">Number.MIN_VALUE.js</a>: FAIL
 <a href="../../conformance/es1/Number.NEGATIVE_INFINITY.js">Number.NEGATIVE_INFINITY.js</a>: FAIL
@@ -59,7 +60,7 @@ Wine's open-source reimplementation of Microsoft's classic [JScript](../jscript/
 </ul></details>
 
 <details><summary>compat-table: ES6 1%, ES2016+ 3%, Next 3%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/wine-mirror/wine/commit/9f4295cec027d260c39fcf167b063acd939e5fc6">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/wine.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/wine-mirror/wine/commit/202b45dd9aa6c241d1f341639fc4a04c91cb59a4">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/wine.json">json</a>)</li>
 <li>ES5: 7.8%</li>
 <li>ES6: 0.8%</li>
 <li>ES2016: 0%</li>
@@ -78,11 +79,11 @@ Wine's open-source reimplementation of Microsoft's classic [JScript](../jscript/
 
 <details><summary>test262: 15.5%, main 18.4%, staging 7.8%, annexB 26%, Next 2.1%, Intl 0.1%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/wine-mirror/wine/commit/9f4295cec027d260c39fcf167b063acd939e5fc6">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/wine.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/wine-mirror/wine/commit/202b45dd9aa6c241d1f341639fc4a04c91cb59a4">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/wine.json">json</a>)</li>
 <li>Overall: 15.5% (8225/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 18.4% (7655/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 43.3% (3547/8197)<pre>
+<li>ES5: 43.3% (3546/8197)<pre>
 caller: 78.3% (18/23)
 </pre></li>
 <li>ES6: 8.4% (932/11054)<pre>
@@ -303,6 +304,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 27.2% (62/228)
 source-phase-imports-module-source: 31% (26/84)
 </pre></li>
-<li>N/A: 21.8% (1898/8718)</li>
+<li>N/A: 21.8% (1899/8718)</li>
 </ul>
 </details>

@@ -24,9 +24,11 @@ JavaScript engine from Mozilla for the Java platform, bundled with JDK 6-7.
 
 ## Conformance
 
-<details><summary>ES1-ES5: 98%</summary><ul>
-<li>Tested version: 2.0.0-SNAPSHOT (<a href="https://github.com/mozilla/rhino/commit/ade3da64abe5c7f4bb88d5ea8f4a61825fc3b2c0">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/rhino.json">json</a>)</li>
-<li>ES1: 100% (198/198)</li>
+<details><summary>ES1-ES5: 97%</summary><ul>
+<li>Tested version: 2.0.0-SNAPSHOT (<a href="https://github.com/mozilla/rhino/commit/ec8c04debbf0f0a504227cb2f7b1e042b39681cf">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/rhino.json">json</a>)</li>
+<li>ES1: 99.5% (197/198)<pre>
+<a href="../../conformance/es1/annex-b.global.escape.js">annex-b.global.escape.js</a>: FAIL
+</pre></li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 86.5% (64/74)<pre>
 <a href="../../conformance/es5/Object.property-shadowing.js">Object.property-shadowing.js</a>: FAIL: non-enumerable did not shadow enumerable
@@ -43,7 +45,7 @@ JavaScript engine from Mozilla for the Java platform, bundled with JDK 6-7.
 </ul></details>
 
 <details><summary>compat-table: ES6 73%, ES2016+ 59%, Next 6%, Intl 25%</summary><ul>
-<li>Tested version: 2.0.0-SNAPSHOT (<a href="https://github.com/mozilla/rhino/commit/ade3da64abe5c7f4bb88d5ea8f4a61825fc3b2c0">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/rhino.json">json</a>)</li>
+<li>Tested version: 2.0.0-SNAPSHOT (<a href="https://github.com/mozilla/rhino/commit/ec8c04debbf0f0a504227cb2f7b1e042b39681cf">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/rhino.json">json</a>)</li>
 <li>ES5: 91.6%<pre>
 <a href="../../conformance/compat-table/es5/misc.enumerable-shadow.js">misc.enumerable-shadow.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.assignment-eval-arguments-error.js">strict.assignment-eval-arguments-error.js</a>: FAIL
@@ -55,7 +57,7 @@ JavaScript engine from Mozilla for the Java platform, bundled with JDK 6-7.
 <a href="../../conformance/compat-table/es5/strict.this-not-coerced-accessors.js">strict.this-not-coerced-accessors.js</a>: TypeError: Cannot set property "test" of  to "42"
 <a href="../../conformance/compat-table/es5/strict.this-not-coerced-methods.js">strict.this-not-coerced-methods.js</a>: FAIL
 </pre></li>
-<li>ES6: 73.2%<pre>
+<li>ES6: 73.3%<pre>
 <a href="../../conformance/compat-table/es6/Array.iterator-prototype-chain.js">Array.iterator-prototype-chain.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Function.name.class-expression.js">Function.name.class-expression.js</a>: SyntaxError: identifier is a reserved word: class
 <a href="../../conformance/compat-table/es6/Function.name.class-object-method.js">Function.name.class-object-method.js</a>: SyntaxError: identifier is a reserved word: class

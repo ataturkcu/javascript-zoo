@@ -23,7 +23,7 @@ Originally developed by [Kinoma](https://en.wikipedia.org/wiki/Kinoma). First op
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: 17.9.1 (<a href="https://github.com/Moddable-OpenSource/moddable/commit/5516726818906190d3a042d8be90219ce9d51b45">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/xs.json">json</a>)</li>
+<li>Tested version: 17.9.1 (<a href="https://github.com/Moddable-OpenSource/moddable/commit/fdd139210b9828e4a76ea6e477bbcbe6b635d8a5">2026-05-11</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/xs.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 99.3% (147/148)<pre>
 <a href="../../conformance/es3/Number.prototype.toFixed.js">Number.prototype.toFixed.js</a>: FAIL: rounding failed
@@ -34,7 +34,7 @@ Originally developed by [Kinoma](https://en.wikipedia.org/wiki/Kinoma). First op
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 98%, Next 30%, Intl 25%</summary><ul>
-<li>Tested version: 17.9.1 (<a href="https://github.com/Moddable-OpenSource/moddable/commit/5516726818906190d3a042d8be90219ce9d51b45">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/xs.json">json</a>)</li>
+<li>Tested version: 17.9.1 (<a href="https://github.com/Moddable-OpenSource/moddable/commit/fdd139210b9828e4a76ea6e477bbcbe6b635d8a5">2026-05-11</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/xs.json">json</a>)</li>
 <li>ES5: 99.1%<pre>
 <a href="../../conformance/compat-table/es5/strict.this-not-coerced-accessors.js">strict.this-not-coerced-accessors.js</a>: FAIL
 </pre></li>
@@ -79,7 +79,7 @@ Originally developed by [Kinoma](https://en.wikipedia.org/wiki/Kinoma). First op
 
 <details><summary>test262: 82.1%, main 99.6%, staging 87.1%, annexB 23.4%, Next 9.1%, Intl 0.8%</summary>
 <ul>
-<li>Tested version: 17.9.1 (<a href="https://github.com/Moddable-OpenSource/moddable/commit/5516726818906190d3a042d8be90219ce9d51b45">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/xs.json">json</a>)</li>
+<li>Tested version: 17.9.1 (<a href="https://github.com/Moddable-OpenSource/moddable/commit/fdd139210b9828e4a76ea6e477bbcbe6b635d8a5">2026-05-11</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/xs.json">json</a>)</li>
 <li>Overall: 82.1% (43635/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 99.6% (41398/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

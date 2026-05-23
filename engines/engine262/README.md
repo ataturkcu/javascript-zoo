@@ -25,7 +25,7 @@ But, very slow.
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: <a href="https://github.com/engine262/engine262/commit/e23ee39900d3dee972182c98455752d1f578219f">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/engine262.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/engine262/engine262/commit/48fe86658456ac50849dd4caae64a2ee8d2a329c">2026-05-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/engine262.json">json</a>)</li>
 <li>ES1: 97.5% (193/198)<pre>
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: TypeError: d.getYear is not a function. (In "d.getYear()", it is undefined)
 <a href="../../conformance/es1/annex-b.Date.prototype.setYear.js">annex-b.Date.prototype.setYear.js</a>: TypeError: d.setYear is not a function. (In "d.setYear(99)", it is undefined)
@@ -39,13 +39,19 @@ But, very slow.
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
-<details><summary>compat-table: ES6 96%, ES2016+ 95%, Next 9%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/engine262/engine262/commit/e23ee39900d3dee972182c98455752d1f578219f">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/engine262.json">json</a>)</li>
+<details><summary>compat-table: ES6 93%, ES2016+ 84%, Next 9%, Intl 25%</summary><ul>
+<li>Tested version: <a href="https://github.com/engine262/engine262/commit/48fe86658456ac50849dd4caae64a2ee8d2a329c">2026-05-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/engine262.json">json</a>)</li>
 <li>ES5: 98.9%<pre>
 <a href="../../conformance/compat-table/es5/annex-b.String.prototype.substr.js">annex-b.String.prototype.substr.js</a>: TypeError: '0b'.substr is not a function. (In "'0b'.substr(-1)", it is undefined)
 </pre></li>
-<li>ES6: 95.6%<pre>
+<li>ES6: 92.5%<pre>
+<a href="../../conformance/compat-table/es6/Promise.all.iterable.js">Promise.all.iterable.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es6/Promise.all.js">Promise.all.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es6/Promise.js">Promise.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es6/Promise.race.iterable.js">Promise.race.iterable.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es6/Promise.race.js">Promise.race.js</a>: TypeError: "setTimeout" is already declared
 <a href="../../conformance/compat-table/es6/Proxy.handler.getOwnPropertyDescriptor.js">Proxy.handler.getOwnPropertyDescriptor.js</a>: FAIL
+<a href="../../conformance/compat-table/es6/Reflect.construct.Promise-subclassing.js">Reflect.construct.Promise-subclassing.js</a>: TypeError: "setTimeout" is already declared
 <a href="../../conformance/compat-table/es6/Set.zero-key.js">Set.zero-key.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/annex-b.RegExp.prototype.compile.js">annex-b.RegExp.prototype.compile.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/annex-b.RegExp.prototype.compile.returns-this.js">annex-b.RegExp.prototype.compile.returns-this.js</a>: TypeError: rx.compile is not a function. (In "rx.compile('b')", it is undefined)
@@ -59,14 +65,10 @@ But, very slow.
 <a href="../../conformance/compat-table/es6/annex-b.regex.backreferences-octal.js">annex-b.regex.backreferences-octal.js</a>: SyntaxError: There is no 41 capture groups
 <a href="../../conformance/compat-table/es6/annex-b.regex.hyphens.js">annex-b.regex.hyphens.js</a>: SyntaxError: Invalid class range
 <a href="../../conformance/compat-table/es6/annex-b.regex.incomplete-patterns.js">annex-b.regex.incomplete-patterns.js</a>: SyntaxError: Expected } but got
-<a href="../../conformance/compat-table/es6/annex-b.regex.invalid-char-escapes.js">annex-b.regex.invalid-char-escapes.js</a>: SyntaxError: Invalid identity escape
-<a href="../../conformance/compat-table/es6/annex-b.regex.invalid-control-escapes.js">annex-b.regex.invalid-control-escapes.js</a>: FAIL
-<a href="../../conformance/compat-table/es6/annex-b.regex.octal-escapes.js">annex-b.regex.octal-escapes.js</a>: SyntaxError: Invalid identity escape
-<a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: RangeError: Maximum call stack size exceeded
-<a href="../../conformance/compat-table/es6/tail-calls.mutual.js">tail-calls.mutual.js</a>: RangeError: Maximum call stack size exceeded
+...
 </pre></li>
 <li>ES2016: 100%</li>
-<li>ES2017: 80%<pre>
+<li>ES2017: 60%<pre>
 <a href="../../conformance/compat-table/es2017/Atomics.add.js">Atomics.add.js</a>: ReferenceError: "Atomics" is not defined
 <a href="../../conformance/compat-table/es2017/Atomics.and.js">Atomics.and.js</a>: ReferenceError: "Atomics" is not defined
 <a href="../../conformance/compat-table/es2017/Atomics.compareExchange.js">Atomics.compareExchange.js</a>: ReferenceError: "Atomics" is not defined
@@ -85,40 +87,53 @@ But, very slow.
 <a href="../../conformance/compat-table/es2017/SharedArrayBuffer.prototype.byteLength.js">SharedArrayBuffer.prototype.byteLength.js</a>: ReferenceError: "SharedArrayBuffer" is not defined
 <a href="../../conformance/compat-table/es2017/SharedArrayBuffer.prototype.slice.js">SharedArrayBuffer.prototype.slice.js</a>: ReferenceError: "SharedArrayBuffer" is not defined
 <a href="../../conformance/compat-table/es2017/annex-b.for-in-assignment-non-strict.js">annex-b.for-in-assignment-non-strict.js</a>: SyntaxError: Unexpected token
+<a href="../../conformance/compat-table/es2017/async.arrow-in-class.js">async.arrow-in-class.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es2017/async.arrow.js">async.arrow.js</a>: TypeError: "setTimeout" is already declared
+...
 </pre></li>
-<li>ES2018: 100%</li>
-<li>ES2019: 93.8%<pre>
+<li>ES2018: 57.9%<pre>
+<a href="../../conformance/compat-table/es2018/Promise.prototype.finally.change-rejection.js">Promise.prototype.finally.change-rejection.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es2018/Promise.prototype.finally.js">Promise.prototype.finally.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es2018/Promise.prototype.finally.no-change-resolution.js">Promise.prototype.finally.no-change-resolution.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es2018/async-iterators.for-await-of.js">async-iterators.for-await-of.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es2018/async-iterators.generators.js">async-iterators.generators.js</a>: TypeError: "setTimeout" is already declared
+</pre></li>
+<li>ES2019: 89.6%<pre>
 <a href="../../conformance/compat-table/es2019/annex-b.String.prototype.trimLeft.js">annex-b.String.prototype.trimLeft.js</a>: TypeError: ' \\t \\n abc   \\t\\n'.trimLeft is not a function. (In "' \\t \\n abc   \\t\\n'.trimLeft()", it is undefined)
 <a href="../../conformance/compat-table/es2019/annex-b.String.prototype.trimRight.js">annex-b.String.prototype.trimRight.js</a>: TypeError: ' \\t \\n abc   \\t\\n'.trimRight is not a function. (In "' \\t \\n abc   \\t\\n'.trimRight()", it is undefined)
+<a href="../../conformance/compat-table/es2019/misc.optional-catch-binding.await.js">misc.optional-catch-binding.await.js</a>: TypeError: "setTimeout" is already declared
 </pre></li>
-<li>ES2020: 100%</li>
-<li>ES2021: 100%</li>
+<li>ES2020: 92.9%<pre>
+<a href="../../conformance/compat-table/es2020/Promise.allSettled.js">Promise.allSettled.js</a>: TypeError: "setTimeout" is already declared
+</pre></li>
+<li>ES2021: 85.7%<pre>
+<a href="../../conformance/compat-table/es2021/Promise.any.AggregateError.js">Promise.any.AggregateError.js</a>: TypeError: "setTimeout" is already declared
+<a href="../../conformance/compat-table/es2021/Promise.any.fulfillment.js">Promise.any.fulfillment.js</a>: TypeError: "setTimeout" is already declared
+</pre></li>
 <li>ES2022: 100%</li>
 <li>ES2023: 100%</li>
-<li>ES2024: 71.4%<pre>
-<a href="../../conformance/compat-table/es2024/ArrayBuffer.prototype.detached.js">ArrayBuffer.prototype.detached.js</a>: TypeError: buffer1.transfer is not a function. (In "buffer1.transfer()", it is undefined)
-<a href="../../conformance/compat-table/es2024/ArrayBuffer.prototype.transferToFixedLength.js">ArrayBuffer.prototype.transferToFixedLength.js</a>: TypeError: buffer1.transferToFixedLength is not a function. (In "buffer1.transferToFixedLength()", it is undefined)
-<a href="../../conformance/compat-table/es2024/ArrayBuffer.prototype.transfer.js">ArrayBuffer.prototype.transfer.js</a>: TypeError: buffer1.transfer is not a function. (In "buffer1.transfer()", it is undefined)
+<li>ES2024: 100%</li>
+<li>ES2025: 94.7%<pre>
+<a href="../../conformance/compat-table/es2025/Promise.try.js">Promise.try.js</a>: TypeError: "setTimeout" is already declared
 </pre></li>
-<li>ES2025: 100%</li>
 <li>Next: 9.1%</li>
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 87.9%, main 96.1%, staging 90.8%, annexB 15.7%, Next 66.8%, Intl 2.2%</summary>
+<details><summary>test262: 88.9%, main 97.2%, staging 90.9%, annexB 15.7%, Next 68.1%, Intl 2.2%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/engine262/engine262/commit/e23ee39900d3dee972182c98455752d1f578219f">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/engine262.json">json</a>)</li>
-<li>Overall: 87.9% (46724/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 96.1% (39928/41549)</li>
+<li>Tested version: <a href="https://github.com/engine262/engine262/commit/48fe86658456ac50849dd4caae64a2ee8d2a329c">2026-05-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/engine262.json">json</a>)</li>
+<li>Overall: 88.9% (47287/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 97.2% (40386/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 98.2% (8051/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
-<li>ES6: 97.5% (10778/11054)<pre>
+<li>ES6: 97.4% (10772/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
-ArrayBuffer: 32.8% (88/268)
-DataView: 50.5% (96/190)
+ArrayBuffer: 60.1% (161/268)
+DataView: 64.7% (123/190)
 DataView.prototype.getFloat32: 100% (7/7)
 DataView.prototype.getFloat64: 100% (5/5)
 DataView.prototype.getInt16: 100% (7/7)
@@ -126,44 +141,44 @@ DataView.prototype.getInt32: 100% (7/7)
 DataView.prototype.getInt8: 100% (5/5)
 DataView.prototype.getUint16: 100% (7/7)
 DataView.prototype.getUint32: 100% (7/7)
-DataView.prototype.setUint8: 89.3% (50/56)
+DataView.prototype.setUint8: 100% (56/56)
 Float32Array: 28.6% (2/7)
 Float64Array: 28.6% (2/7)
 Int16Array: 100% (2/2)
 Int32Array: 100% (4/4)
-Int8Array: 77.1% (27/35)
+Int8Array: 85.7% (30/35)
 Map: 100% (40/40)
 Object.is: 100% (2/2)
 Promise: 100% (4/4)
 Proxy: 99.4% (465/468)
-Reflect: 90.8% (425/468)
-Reflect.construct: 87.1% (606/696)
+Reflect: 91.7% (429/468)
+Reflect.construct: 87.9% (612/696)
 Reflect.set: 97.8% (45/46)
 Reflect.setPrototypeOf: 100% (23/23)
 Set: 100% (38/38)
 String.fromCodePoint: 72.7% (16/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
-Symbol: 88.4% (1320/1494)
+Symbol: 89% (1329/1494)
 Symbol.hasInstance: 100% (17/17)
 Symbol.isConcatSpreadable: 94.1% (32/34)
 Symbol.iterator: 99.8% (1862/1865)
 Symbol.match: 97.7% (86/88)
 Symbol.replace: 98% (96/98)
 Symbol.search: 97.3% (36/37)
-Symbol.species: 92.4% (255/276)
+Symbol.species: 96.7% (267/276)
 Symbol.split: 94.8% (55/58)
 Symbol.toPrimitive: 80.3% (187/233)
 Symbol.toStringTag: 78.6% (103/131)
 Symbol.unscopables: 100% (44/44)
-TypedArray: 79.8% (2006/2513)
+TypedArray: 84.3% (2118/2513)
 Uint16Array: 33.3% (2/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 63.6% (7/11)
 Uint8ClampedArray: 33.3% (2/6)
 WeakMap: 100% (79/79)
 WeakSet: 100% (34/34)
-arrow-function: 84.1% (798/949)
+arrow-function: 87.9% (834/949)
 class: 99.8% (4758/4768)
 computed-property-names: 95.6% (457/478)
 const: 100% (15/15)
@@ -182,7 +197,7 @@ tail-call-optimization: 2.9% (1/35)
 template: 100% (1/1)
 </pre></li>
 <li>ES2016: 93.8% (122/130)<pre>
-Array.prototype.includes: 53.6% (37/69)
+Array.prototype.includes: 62.3% (43/69)
 exponentiation: 99% (102/103)
 u180e: 100% (25/25)
 </pre></li>
@@ -199,7 +214,7 @@ intl-normative-optional: 0% (0/4)
 IsHTMLDDA: 35.7% (15/42)
 Promise.prototype.finally: 100% (29/29)
 Symbol.asyncIterator: 100% (538/538)
-async-iteration: 99.8% (4958/4968)
+async-iteration: 99.9% (4967/4968)
 object-rest: 100% (355/355)
 object-spread: 100% (135/135)
 regexp-dotall: 94.1% (16/17)
@@ -221,22 +236,22 @@ stable-typedarray-sort: 100% (1/1)
 string-trimming: 85.2% (46/54)
 well-formed-json-stringify: 100% (1/1)
 </pre></li>
-<li>ES2020: 88.3% (1903/2156)<pre>
-BigInt: 86.6% (1300/1501)
+<li>ES2020: 88.5% (1909/2156)<pre>
+BigInt: 89.5% (1344/1501)
 Intl.NumberFormat-unified: 0% (0/67)
 Intl.RelativeTimeFormat: 0% (0/79)
 Promise.allSettled: 100% (102/102)
 String.prototype.matchAll: 93.8% (15/16)
 Symbol.matchAll: 98.4% (62/63)
 coalesce-expression: 88.5% (23/26)
-dynamic-import: 89.9% (850/946)
-export-star-as-namespace-from-module: 94.7% (18/19)
+dynamic-import: 100% (946/946)
+export-star-as-namespace-from-module: 100% (19/19)
 for-in-order: 100% (9/9)
-globalThis: 98% (145/148)
+globalThis: 98.6% (146/148)
 import.meta: 100% (23/23)
 optional-chaining: 100% (56/56)
 </pre></li>
-<li>ES2021: 67.7% (623/920)<pre>
+<li>ES2021: 67.6% (622/920)<pre>
 AggregateError: 100% (31/31)
 FinalizationRegistry: 100% (49/49)
 Intl.DateTimeFormat-datetimestyle: 0% (0/16)
@@ -248,18 +263,18 @@ Intl.Locale: 0% (0/156)
 Promise.any: 100% (92/92)
 String.prototype.replaceAll: 97.6% (40/41)
 WeakRef: 100% (37/37)
-align-detached-buffer-semantics-with-web-reality: 96.8% (153/158)
+align-detached-buffer-semantics-with-web-reality: 96.2% (152/158)
 logical-assignment-operators: 99.1% (107/108)
 numeric-separator-literal: 100% (159/159)
 </pre></li>
-<li>ES2022: 98.3% (5371/5465)<pre>
+<li>ES2022: 98.3% (5373/5465)<pre>
 Array.prototype.at: 100% (11/11)
 Intl.DateTimeFormat-extend-timezonename: 0% (0/2)
 Intl.DisplayNames-v2: 0% (0/12)
 Intl.Segmenter: 0% (0/79)
 Object.hasOwn: 100% (62/62)
 String.prototype.at: 100% (11/11)
-TypedArray.prototype.at: 84.6% (11/13)
+TypedArray.prototype.at: 100% (13/13)
 arbitrary-module-namespace-names: 100% (16/16)
 class-fields-private: 100% (1134/1134)
 class-fields-private-in: 100% (19/19)
@@ -271,31 +286,31 @@ class-static-fields-public: 100% (213/213)
 class-static-methods-private: 100% (1513/1513)
 error-cause: 100% (5/5)
 regexp-match-indices: 100% (31/31)
-top-level-await: 98.5% (267/271)
+top-level-await: 100% (271/271)
 </pre></li>
 <li>ES2023: 69.3% (284/410)<pre>
 Intl-enumeration: 0% (0/35)
 Intl.NumberFormat-v3: 0% (0/102)
-array-find-from-last: 96.3% (105/109)
-change-array-by-copy: 97.7% (129/132)
+array-find-from-last: 100% (109/109)
+change-array-by-copy: 100% (132/132)
 hashbang: 100% (29/29)
 symbols-as-weakmap-keys: 100% (29/29)
 </pre></li>
-<li>ES2024: 30.7% (258/840)<pre>
+<li>ES2024: 80.7% (678/840)<pre>
 Atomics.waitAsync: 0% (0/101)
 String.prototype.isWellFormed: 100% (8/8)
 String.prototype.toWellFormed: 100% (8/8)
 array-grouping: 100% (28/28)
-arraybuffer-transfer: 0% (0/59)
+arraybuffer-transfer: 89.8% (53/59)
 promise-with-resolvers: 100% (9/9)
 regexp-v-flag: 99.5% (186/187)
-resizable-arraybuffer: 4.1% (19/463)
+resizable-arraybuffer: 87.5% (405/463)
 </pre></li>
-<li>ES2025: 88.9% (1125/1266)<pre>
-Float16Array: 31.4% (16/51)
+<li>ES2025: 91.6% (1160/1266)<pre>
+Float16Array: 98% (50/51)
 Intl.DurationFormat: 0.9% (1/112)
 RegExp.escape: 100% (21/21)
-import-attributes: 94% (94/100)
+import-attributes: 95% (95/100)
 iterator-helpers: 100% (567/567)
 json-modules: 100% (13/13)
 promise-try: 100% (12/12)
@@ -313,25 +328,25 @@ json-parse-with-source: 100% (22/22)
 uint8array-base64: 100% (69/69)
 upsert: 100% (72/72)
 </pre></li>
-<li>Next: 66.8% (5270/7895)<pre>
+<li>Next: 68.1% (5374/7895)<pre>
 Atomics.pause: 0% (0/6)
 ShadowRealm: 98.4% (63/64)
-Temporal: 69.2% (4613/6671)
+Temporal: 69.2% (4614/6671)
 await-dictionary: 100% (37/37)
 canonical-tz: 0% (0/19)
 decorators: 100% (27/27)
 explicit-resource-management: 15.9% (76/477)
 immutable-arraybuffer: 5% (1/20)
 import-bytes: 0% (0/5)
-import-defer: 98.3% (225/229)
+import-defer: 100% (229/229)
 import-text: 100% (6/6)
 joint-iteration: 92.3% (72/78)
 legacy-regexp: 3.8% (1/26)
 nonextensible-applies-to-private: 100% (4/4)
 regexp-duplicate-named-groups: 94.7% (18/19)
-source-phase-imports: 56.1% (128/228)
-source-phase-imports-module-source: 50% (42/84)
+source-phase-imports: 99.6% (227/228)
+source-phase-imports-module-source: 100% (84/84)
 </pre></li>
-<li>N/A: 88.4% (7707/8718)</li>
+<li>N/A: 88.4% (7710/8718)</li>
 </ul>
 </details>

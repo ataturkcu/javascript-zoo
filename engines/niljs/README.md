@@ -14,7 +14,7 @@ JavaScript interpreter for .NET.
 ## Conformance
 
 <details><summary>ES1-ES5: 96%</summary><ul>
-<li>Tested version: 2.6.1721 (<a href="https://github.com/nilproject/NiL.JS/commit/027efd6b753851c8ef206bc26cbe899e646b5f1f">2026-03-10</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/niljs.json">json</a>)</li>
+<li>Tested version: 2.6.1722 (<a href="https://github.com/nilproject/NiL.JS/commit/721ad217b6c457f1d043e60431eb7d60e2c643d0">2026-05-04</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/niljs.json">json</a>)</li>
 <li>ES1: 98.5% (195/198)<pre>
 <a href="../../conformance/es1/annex-b.global.escape.js">annex-b.global.escape.js</a>: FAIL
 <a href="../../conformance/es1/comments.js">comments.js</a>: SyntaxError: Invalid pattern '(*' at offset 2. Quantifier '*' following nothing.
@@ -40,7 +40,7 @@ JavaScript interpreter for .NET.
 </ul></details>
 
 <details><summary>compat-table: ES6 44%, ES2016+ 19%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: 2.6.1721 (<a href="https://github.com/nilproject/NiL.JS/commit/027efd6b753851c8ef206bc26cbe899e646b5f1f">2026-03-10</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/niljs.json">json</a>)</li>
+<li>Tested version: 2.6.1722 (<a href="https://github.com/nilproject/NiL.JS/commit/721ad217b6c457f1d043e60431eb7d60e2c643d0">2026-05-04</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/niljs.json">json</a>)</li>
 <li>ES5: 91.1%<pre>
 <a href="../../conformance/compat-table/es5/Array.prototype.sort.compareFn-type.js">Array.prototype.sort.compareFn-type.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Date.prototype.toJSON.js">Date.prototype.toJSON.js</a>: FAIL
@@ -65,11 +65,11 @@ JavaScript interpreter for .NET.
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 34.6%, main 41.8%, staging 27.3%, annexB 35.8%, Next 3.4%, Intl 0.2%</summary>
+<details><summary>test262: 34.7%, main 41.8%, staging 27.3%, annexB 35.8%, Next 3.4%, Intl 0.2%</summary>
 <ul>
-<li>Tested version: 2.6.1721 (<a href="https://github.com/nilproject/NiL.JS/commit/027efd6b753851c8ef206bc26cbe899e646b5f1f">2026-03-10</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/niljs.json">json</a>)</li>
-<li>Overall: 34.6% (18420/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 41.8% (17353/41549)</li>
+<li>Tested version: 2.6.1722 (<a href="https://github.com/nilproject/NiL.JS/commit/721ad217b6c457f1d043e60431eb7d60e2c643d0">2026-05-04</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/niljs.json">json</a>)</li>
+<li>Overall: 34.7% (18423/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 41.8% (17356/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 96.2% (7888/8197)<pre>
 caller: 91.3% (21/23)
@@ -107,7 +107,7 @@ String.prototype.includes: 50% (13/26)
 Symbol: 8% (119/1494)
 Symbol.hasInstance: 11.8% (2/17)
 Symbol.isConcatSpreadable: 11.8% (4/34)
-Symbol.iterator: 9.5% (177/1865)
+Symbol.iterator: 9.5% (178/1865)
 Symbol.match: 13.6% (12/88)
 Symbol.replace: 7.1% (7/98)
 Symbol.search: 13.5% (5/37)
@@ -128,7 +128,7 @@ class: 19.4% (926/4768)
 computed-property-names: 7.5% (36/478)
 const: 33.3% (5/15)
 cross-realm: 0% (0/201)
-default-parameters: 20.8% (471/2269)
+default-parameters: 20.8% (473/2269)
 destructuring-assignment: 66.7% (94/141)
 destructuring-binding: 16.2% (1076/6637)
 for-of: 0% (0/5)
@@ -146,13 +146,13 @@ Array.prototype.includes: 27.5% (19/69)
 exponentiation: 24.3% (25/103)
 u180e: 44% (11/25)
 </pre></li>
-<li>ES2017: 19.8% (151/763)<pre>
+<li>ES2017: 20.1% (153/763)<pre>
 __getter__: 63% (17/27)
 __setter__: 48.1% (13/27)
 Atomics: 0% (0/378)
 Intl.DateTimeFormat-dayPeriod: 0% (0/12)
 SharedArrayBuffer: 0% (0/464)
-async-functions: 26.7% (188/705)
+async-functions: 27% (190/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>
 <li>ES2018: 11.6% (564/4855)<pre>
@@ -181,7 +181,7 @@ stable-typedarray-sort: 0% (0/1)
 string-trimming: 3.7% (2/54)
 well-formed-json-stringify: 0% (0/1)
 </pre></li>
-<li>ES2020: 12% (259/2156)<pre>
+<li>ES2020: 11.9% (256/2156)<pre>
 BigInt: 2.6% (39/1501)
 Intl.NumberFormat-unified: 0% (0/67)
 Intl.RelativeTimeFormat: 0% (0/79)
@@ -189,7 +189,7 @@ Promise.allSettled: 2% (2/102)
 String.prototype.matchAll: 0% (0/16)
 Symbol.matchAll: 7.9% (5/63)
 coalesce-expression: 84.6% (22/26)
-dynamic-import: 38.7% (366/946)
+dynamic-import: 38.4% (363/946)
 export-star-as-namespace-from-module: 15.8% (3/19)
 for-in-order: 44.4% (4/9)
 globalThis: 5.4% (8/148)
@@ -292,6 +292,6 @@ regexp-duplicate-named-groups: 10.5% (2/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 55.1% (4806/8718)</li>
+<li>N/A: 55.2% (4810/8718)</li>
 </ul>
 </details>

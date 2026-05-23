@@ -21,8 +21,8 @@ those cases just trip the whitelist.
 
 ## Conformance
 
-<details><summary>ES1-ES5: 72%</summary><ul>
-<li>Tested version: 0.9.3-1-gfe79ab4 (<a href="https://github.com/nyariv/SandboxJS/commit/fe79ab4f87a288710d9857c5efbadd80d4651a85">2026-04-17</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/sandboxjs.json">json</a>)</li>
+<details><summary>ES1-ES5: 71%</summary><ul>
+<li>Tested version: 0.9.3-3-g8268652 (<a href="https://github.com/nyariv/SandboxJS/commit/826865251232611ec94078bab5a18ec875dad4a5">2026-05-09</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/sandboxjs.json">json</a>)</li>
 <li>ES1: 84.8% (168/198)<pre>
 <a href="../../conformance/es1/Array.js">Array.js</a>: FAIL: Array.prototype failed
 <a href="../../conformance/es1/Array.prototype.constructor.js">Array.prototype.constructor.js</a>: FAIL: SandboxAccessError: Access to prototype of global object is not permitted
@@ -69,12 +69,12 @@ those cases just trip the whitelist.
 <a href="../../conformance/es3/global.RangeError.js">global.RangeError.js</a>: FAIL: SandboxAccessError: Static method or property access not permitted: RangeError.prototype
 ...
 </pre></li>
-<li>ES5: 28.4% (21/74)</li>
+<li>ES5: 27% (20/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 33%, ES2016+ 42%, Next 8%, Intl 50%</summary><ul>
-<li>Tested version: 0.9.3-1-gfe79ab4 (<a href="https://github.com/nyariv/SandboxJS/commit/fe79ab4f87a288710d9857c5efbadd80d4651a85">2026-04-17</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/sandboxjs.json">json</a>)</li>
-<li>ES5: 32.9%</li>
+<li>Tested version: 0.9.3-3-g8268652 (<a href="https://github.com/nyariv/SandboxJS/commit/826865251232611ec94078bab5a18ec875dad4a5">2026-05-09</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/sandboxjs.json">json</a>)</li>
+<li>ES5: 32%</li>
 <li>ES6: 33%</li>
 <li>ES2016: 30.3%</li>
 <li>ES2017: 36%</li>
@@ -157,7 +157,7 @@ those cases just trip the whitelist.
 
 <details><summary>test262: 6.9%, main 8.3%, staging 0.3%, annexB 0.6%, Next 2.8%, Intl 0%</summary>
 <ul>
-<li>Tested version: 0.9.3-1-gfe79ab4 (<a href="https://github.com/nyariv/SandboxJS/commit/fe79ab4f87a288710d9857c5efbadd80d4651a85">2026-04-17</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/sandboxjs.json">json</a>)</li>
+<li>Tested version: 0.9.3-3-g8268652 (<a href="https://github.com/nyariv/SandboxJS/commit/826865251232611ec94078bab5a18ec875dad4a5">2026-05-09</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/sandboxjs.json">json</a>)</li>
 <li>Overall: 6.9% (3669/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 8.3% (3436/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

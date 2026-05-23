@@ -26,25 +26,23 @@ Sandboxed ES5 interpreter in JavaScript.
 
 ## Conformance
 
-<details><summary>ES1-ES5: 92%</summary><ul>
-<li>Tested version: <a href="https://github.com/NeilFraser/JS-Interpreter/commit/37e73f830051d4bcfdf0e6b466e7bd8dc1d45709">2025-02-27</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/js-interpreter.json">json</a>)</li>
-<li>ES1: 98.5% (195/198)<pre>
+<details><summary>ES1-ES5: 93%</summary><ul>
+<li>Tested version: <a href="https://github.com/NeilFraser/JS-Interpreter/commit/174c2e73298336162e924ae06c051fa553f05f45">2026-05-12</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/js-interpreter.json">json</a>)</li>
+<li>ES1: 97.5% (193/198)<pre>
+<a href="../../conformance/es1/Array.prototype.sort.generic.js">Array.prototype.sort.generic.js</a>: TypeError: invalid Array.prototype.sort argument
+<a href="../../conformance/es1/Array.prototype.sort.js">Array.prototype.sort.js</a>: TypeError: invalid Array.prototype.sort argument
 <a href="../../conformance/es1/String.generics.js">String.generics.js</a>: FAIL: charAt failed; charCodeAt failed; indexOf failed; lastIndexOf failed; split failed; substring failed; toLowerCase failed; toUpperCase failed
 <a href="../../conformance/es1/arguments.callee.js">arguments.callee.js</a>: TypeError: arguments.callee is not a function
 <a href="../../conformance/es1/unary.delete.var.js">unary.delete.var.js</a>: FAIL
 </pre></li>
-<li>ES3: 95.9% (142/148)<pre>
+<li>ES3: 97.3% (144/148)<pre>
 <a href="../../conformance/es3/Number.prototype.toExponential.throws-infinity.js">Number.prototype.toExponential.throws-infinity.js</a>: FAIL: toExponential(Infinity) does not throw RangeError; toExponential(-Infinity) does not throw RangeError
 <a href="../../conformance/es3/Object.prototype.toLocaleString.js">Object.prototype.toLocaleString.js</a>: FAIL: custom toString failed
 <a href="../../conformance/es3/String.prototype.replace.generic.js">String.prototype.replace.generic.js</a>: FAIL: object with toString failed; regex with capture failed
-<a href="../../conformance/es3/String.prototype.split.bugs.js">String.prototype.split.bugs.js</a>: FAIL: '0'.split(undefined, 0).length !== 0
-<a href="../../conformance/es3/String.prototype.split.limit.js">String.prototype.split.limit.js</a>: FAIL: split with limit 0 failed
 <a href="../../conformance/es3/global.TypeError.thrown.js">global.TypeError.thrown.js</a>: FAIL: no exception for Function.prototype.toString on non-function
 </pre></li>
-<li>ES5: 68.9% (51/74)<pre>
-<a href="../../conformance/es5/Array.isArray.js">Array.isArray.js</a>: FAIL: null not array failed; undefined not array failed
-<a href="../../conformance/es5/Array.prototype.sort.TypeError.js">Array.prototype.sort.TypeError.js</a>: FAIL
-<a href="../../conformance/es5/Function.prototype.bind.js">Function.prototype.bind.js</a>: FAIL: length property incorrect
+<li>ES5: 71.6% (53/74)<pre>
+<a href="../../conformance/es5/Array.prototype.sort.undefined-comparefn.js">Array.prototype.sort.undefined-comparefn.js</a>: TypeError: invalid Array.prototype.sort argument
 <a href="../../conformance/es5/JSON.parse.reviver.js">JSON.parse.reviver.js</a>: FAIL: failed to apply reviver function; failed to delete property for which reviver returned undefined
 <a href="../../conformance/es5/JSON.stringify.js">JSON.stringify.js</a>: FAIL: failed to drop undefined/function values; undefined/function values in array not converted to null; didn't call user-provided toJSON() method
 <a href="../../conformance/es5/JSON.stringify.replacer.js">JSON.stringify.replacer.js</a>: TypeError: Function replacer on JSON.stringify not supported
@@ -62,19 +60,20 @@ Sandboxed ES5 interpreter in JavaScript.
 <a href="../../conformance/es5/strict.no-eval-or-arguments-bindings.js">strict.no-eval-or-arguments-bindings.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-function-caller-or-arguments.js">strict.no-function-caller-or-arguments.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-octal-literals.js">strict.no-octal-literals.js</a>: FAIL
+<a href="../../conformance/es5/strict.no-with.js">strict.no-with.js</a>: FAIL
+<a href="../../conformance/es5/strict.reserved-words.js">strict.reserved-words.js</a>: FAIL: 'var implements' did not throw in strict mode
 ...
 </pre></li>
 </ul></details>
 
 <details><summary>compat-table: ES6 5%, ES2016+ 4%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/NeilFraser/JS-Interpreter/commit/37e73f830051d4bcfdf0e6b466e7bd8dc1d45709">2025-02-27</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/js-interpreter.json">json</a>)</li>
-<li>ES5: 81.1%<pre>
-<a href="../../conformance/compat-table/es5/Array.prototype.sort.compareFn-type.js">Array.prototype.sort.compareFn-type.js</a>: FAIL
+<li>Tested version: <a href="https://github.com/NeilFraser/JS-Interpreter/commit/174c2e73298336162e924ae06c051fa553f05f45">2026-05-12</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/js-interpreter.json">json</a>)</li>
+<li>ES5: 82.2%<pre>
+<a href="../../conformance/compat-table/es5/Array.prototype.sort.compareFn-undefined.js">Array.prototype.sort.compareFn-undefined.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Object.freeze.js">Object.freeze.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Object.isFrozen.js">Object.isFrozen.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Object.isSealed.js">Object.isSealed.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Object.seal.js">Object.seal.js</a>: FAIL
-<a href="../../conformance/compat-table/es5/String.prototype.split.js">String.prototype.split.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/misc.Arguments.toStringTag.js">misc.Arguments.toStringTag.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.arguments-callee-error.js">strict.arguments-callee-error.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.assignment-eval-arguments-error.js">strict.assignment-eval-arguments-error.js</a>: FAIL
@@ -105,11 +104,11 @@ Sandboxed ES5 interpreter in JavaScript.
 
 <details><summary>test262: 26.2%, main 31.9%, staging 12.1%, annexB 27%, Next 2.4%, Intl 0.5%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/NeilFraser/JS-Interpreter/commit/37e73f830051d4bcfdf0e6b466e7bd8dc1d45709">2025-02-27</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/js-interpreter.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/NeilFraser/JS-Interpreter/commit/174c2e73298336162e924ae06c051fa553f05f45">2026-05-12</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/js-interpreter.json">json</a>)</li>
 <li>Overall: 26.2% (13933/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 31.9% (13256/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 79% (6475/8197)<pre>
+<li>ES5: 79.1% (6482/8197)<pre>
 caller: 87% (20/23)
 </pre></li>
 <li>ES6: 11.6% (1286/11054)<pre>
@@ -330,6 +329,6 @@ regexp-duplicate-named-groups: 31.6% (6/19)
 source-phase-imports: 31.6% (72/228)
 source-phase-imports-module-source: 40.5% (34/84)
 </pre></li>
-<li>N/A: 43.6% (3798/8718)</li>
+<li>N/A: 43.5% (3791/8718)</li>
 </ul>
 </details>

@@ -15,7 +15,7 @@ JavaScript engine for .NET. Tree-walking interpreter + expression compiler to .N
 ## Conformance
 
 <details><summary>ES1-ES5: 78%</summary><ul>
-<li>Tested version: 1.2.334 (<a href="https://github.com/yantrajs/yantra/commit/284d019dbaafc900381dfa6bc7a5401a35da7b87">2026-04-19</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/yantra.json">json</a>)</li>
+<li>Tested version: 1.2.368 (<a href="https://github.com/yantrajs/yantra/commit/b0b2495e3131eec4421107f819034b4accbc79c2">2026-05-19</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/yantra.json">json</a>)</li>
 <li>ES1: 87.9% (174/198)<pre>
 <a href="../../conformance/es1/Boolean.js">Boolean.js</a>: FAIL: Boolean(true) failed; Boolean(false) failed
 <a href="../../conformance/es1/Date.js">Date.js</a>: FAIL: typeof Date() != 'string'
@@ -24,7 +24,7 @@ JavaScript engine for .NET. Tree-walking interpreter + expression compiler to .N
 <a href="../../conformance/es1/String.js">String.js</a>: FAIL: 15.5.1.1 String(value) failed; 15.5.1.2 String() failed
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: TypeError: Method getYear not found in Sat Jan 01 2000 00:00:00 GMT+0000 (Coordinated Universal Time)
 <a href="../../conformance/es1/annex-b.Date.prototype.setYear.js">annex-b.Date.prototype.setYear.js</a>: TypeError: Method setYear not found in Sat Jan 01 2000 00:00:00 GMT+0000 (Coordinated Universal Time)
-<a href="../../conformance/es1/annex-b.Date.prototype.toGMTString.js">annex-b.Date.prototype.toGMTString.js</a>: TypeError: Method toGMTString not found in Fri Apr 24 2026 06:49:51 GMT+0000 (Coordinated Universal Time)
+<a href="../../conformance/es1/annex-b.Date.prototype.toGMTString.js">annex-b.Date.prototype.toGMTString.js</a>: TypeError: Method toGMTString not found in Fri May 22 2026 14:18:44 GMT+0000 (Coordinated Universal Time)
 <a href="../../conformance/es1/annex-b.global.escape.js">annex-b.global.escape.js</a>: TypeError: undefined is not a function
 <a href="../../conformance/es1/annex-b.global.unescape.js">annex-b.global.unescape.js</a>: TypeError: undefined is not a function
 <a href="../../conformance/es1/annex-b.literals.octal.js">annex-b.literals.octal.js</a>: FAIL: 0755 failed; max safe integer failed
@@ -58,7 +58,7 @@ JavaScript engine for .NET. Tree-walking interpreter + expression compiler to .N
 <a href="../../conformance/es3/global.EvalError.js">global.EvalError.js</a>: FAIL: name failed
 <a href="../../conformance/es3/global.RangeError.js">global.RangeError.js</a>: FAIL: name failed
 <a href="../../conformance/es3/global.RangeError.thrown.js">global.RangeError.thrown.js</a>: FAIL: wrong exception for new Array with negative length; wrong exception for new Array with non-integer length; wrong exception for new Array with length &gt;= 2^32; wrong exception for negative array length;...
-<a href="../../conformance/es3/global.ReferenceError.js">global.ReferenceError.js</a>: TypeError: Cannot get property prototype of undefined
+<a href="../../conformance/es3/global.ReferenceError.js">global.ReferenceError.js</a>: TypeError: Cannot get property $prototype of undefined
 <a href="../../conformance/es3/global.ReferenceError.thrown.js">global.ReferenceError.thrown.js</a>: FAIL: no exception for undeclared variable; wrong exception for undeclared function; no exception for undeclared in expression; wrong exception for property access on undeclared
 ...
 </pre></li>
@@ -67,9 +67,9 @@ JavaScript engine for .NET. Tree-walking interpreter + expression compiler to .N
 <a href="../../conformance/es5/Array.prototype.sort.TypeError.js">Array.prototype.sort.TypeError.js</a>: FAIL
 <a href="../../conformance/es5/Date.prototype.toISOString.js">Date.prototype.toISOString.js</a>: FAIL: invalid date does not throw RangeError
 <a href="../../conformance/es5/Function.prototype.apply.array-like.js">Function.prototype.apply.array-like.js</a>: FAIL: array-like object not accepted
-<a href="../../conformance/es5/Function.prototype.bind.js">Function.prototype.bind.js</a>: FAIL: Unhandled exception. YantraJS.Core.JSException: Cannot set property value of null; at Item in /src/YantraJS.Core/Core/Primitive/JSNull.cs:line 69; Ctor: Cannot set property value of null; at Ctor:/zoo...
+<a href="../../conformance/es5/Function.prototype.bind.js">Function.prototype.bind.js</a>: TypeError: Cannot set property $value of null
 <a href="../../conformance/es5/JSON.parse.js">JSON.parse.js</a>: FAIL: invalid JSON does not throw SyntaxError; trailing comma does not throw SyntaxError
-<a href="../../conformance/es5/JSON.stringify.js">JSON.stringify.js</a>: FAIL: Stack overflow.; at YantraJS.Core.JSArray.GetElementEnumerator(); at YantraJS.Core.JSJSON.Stringify(System.IO.TextWriter, YantraJS.Core.JSValue, System.Func`2&lt;System.ValueTuple`3&lt;YantraJS.Core.JSValue...
+<a href="../../conformance/es5/JSON.stringify.js">JSON.stringify.js</a>: FAIL: Stack overflow.; Repeated 18714 times:; --------------------------------; at YantraJS.Core.JSJSON.Stringify(System.IO.TextWriter, YantraJS.Core.JSValue, System.Func`2&lt;System.ValueTuple`3&lt;YantraJS.Core...
 <a href="../../conformance/es5/Object.create.js">Object.create.js</a>: FAIL: null prototype failed; Properties argument failed
 <a href="../../conformance/es5/Object.defineProperties.js">Object.defineProperties.js</a>: TypeError: Cannot modify property a of [object Object]
 <a href="../../conformance/es5/Object.defineProperty.js">Object.defineProperty.js</a>: TypeError: Cannot modify property y of [object Object]
@@ -88,7 +88,7 @@ JavaScript engine for .NET. Tree-walking interpreter + expression compiler to .N
 </ul></details>
 
 <details><summary>compat-table: ES6 49%, ES2016+ 29%, Next 6%, Intl 36%</summary><ul>
-<li>Tested version: 1.2.334 (<a href="https://github.com/yantrajs/yantra/commit/284d019dbaafc900381dfa6bc7a5401a35da7b87">2026-04-19</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/yantra.json">json</a>)</li>
+<li>Tested version: 1.2.368 (<a href="https://github.com/yantrajs/yantra/commit/b0b2495e3131eec4421107f819034b4accbc79c2">2026-05-19</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/yantra.json">json</a>)</li>
 <li>ES5: 78.5%<pre>
 <a href="../../conformance/compat-table/es5/Array.prototype.unshift.return-count.js">Array.prototype.unshift.return-count.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.no-throw-edge-cases.js">Number.prototype.toExponential.no-throw-edge-cases.js</a>: FAIL
@@ -110,9 +110,9 @@ JavaScript engine for .NET. Tree-walking interpreter + expression compiler to .N
 <a href="../../conformance/compat-table/es5/strict.function-caller-arguments-error.js">strict.function-caller-arguments-error.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.legacy-octal-error.js">strict.legacy-octal-error.js</a>: FAIL
 </pre></li>
-<li>ES6: 48.9%</li>
+<li>ES6: 48.8%</li>
 <li>ES2016: 30.3%</li>
-<li>ES2017: 22.9%</li>
+<li>ES2017: 22%</li>
 <li>ES2018: 15.8%</li>
 <li>ES2019: 28.9%</li>
 <li>ES2020: 38.6%</li>

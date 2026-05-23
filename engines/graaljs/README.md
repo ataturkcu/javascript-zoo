@@ -31,14 +31,14 @@ Related: [weval](https://github.com/bytecodealliance/weval) ([blog](https://cfal
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: 25.1.0 with experimental flags (2026-04-22, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/graaljs_exp.json">json</a>)</li>
+<li>Tested version: 25.1.0 with experimental flags (2026-05-22, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/graaljs_exp.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 100%, Next 62%, Intl 100%</summary><ul>
-<li>Tested version: 25.1.0 with experimental flags (2026-04-22, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/graaljs_exp.json">json</a>)</li>
+<li>Tested version: 25.1.0 with experimental flags (2026-05-22, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/graaljs_exp.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 98.1%<pre>
 <a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: RangeError: Maximum call stack size exceeded
@@ -69,10 +69,10 @@ Related: [weval](https://github.com/bytecodealliance/weval) ([blog](https://cfal
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 98.6%, main 99.9%, staging 97.8%, annexB 97.6%, Next 91.9%, Intl 84.5%</summary>
+<details><summary>test262: 98.7%, main 99.9%, staging 97.8%, annexB 97.6%, Next 92.8%, Intl 84.5%</summary>
 <ul>
-<li>Tested version: 25.1.0 with experimental flags (2026-04-22, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/graaljs_exp.json">json</a>)</li>
-<li>Overall: 98.6% (52426/53167)</li>
+<li>Tested version: 25.1.0 with experimental flags (2026-05-22, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/graaljs_exp.json">json</a>)</li>
+<li>Overall: 98.7% (52499/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 99.9% (41513/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 99.9% (8195/8197)<pre>
@@ -277,7 +277,7 @@ json-parse-with-source: 100% (22/22)
 uint8array-base64: 100% (69/69)
 upsert: 100% (72/72)
 </pre></li>
-<li>Next: 91.9% (7254/7895)<pre>
+<li>Next: 92.8% (7327/7895)<pre>
 Atomics.pause: 100% (6/6)
 ShadowRealm: 100% (64/64)
 Temporal: 92% (6138/6671)
@@ -289,7 +289,7 @@ immutable-arraybuffer: 100% (20/20)
 import-bytes: 100% (5/5)
 import-defer: 100% (229/229)
 import-text: 100% (6/6)
-joint-iteration: 6.4% (5/78)
+joint-iteration: 100% (78/78)
 legacy-regexp: 100% (26/26)
 nonextensible-applies-to-private: 100% (4/4)
 regexp-duplicate-named-groups: 100% (19/19)

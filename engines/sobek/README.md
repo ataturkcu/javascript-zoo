@@ -16,7 +16,7 @@ Grafana's fork of [goja](../goja/README.md) engine, adding ES modules support.
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: <a href="https://github.com/grafana/sobek/commit/6d789dcdd1773496f3069ea095d54fb21c9fd941">2026-04-06</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/sobek.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/grafana/sobek/commit/a66d4790012b6d507a27ae554c154b349e68057a">2026-04-29</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/sobek.json">json</a>)</li>
 <li>ES1: 98.5% (195/198)<pre>
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: TypeError: Object has no member 'getYear'
 <a href="../../conformance/es1/annex-b.Date.prototype.setYear.js">annex-b.Date.prototype.setYear.js</a>: TypeError: Object has no member 'setYear'
@@ -28,12 +28,12 @@ Grafana's fork of [goja](../goja/README.md) engine, adding ES modules support.
 </pre></li>
 </ul></details>
 
-<details><summary>compat-table: ES6 97%, ES2016+ 66%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/grafana/sobek/commit/6d789dcdd1773496f3069ea095d54fb21c9fd941">2026-04-06</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/sobek.json">json</a>)</li>
+<details><summary>compat-table: ES6 98%, ES2016+ 66%, Next 0%, Intl 25%</summary><ul>
+<li>Tested version: <a href="https://github.com/grafana/sobek/commit/a66d4790012b6d507a27ae554c154b349e68057a">2026-04-29</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/sobek.json">json</a>)</li>
 <li>ES5: 99.1%<pre>
 <a href="../../conformance/compat-table/es5/strict.legacy-octal-error.js">strict.legacy-octal-error.js</a>: FAIL
 </pre></li>
-<li>ES6: 96.9%<pre>
+<li>ES6: 97.9%<pre>
 <a href="../../conformance/compat-table/es6/Symbol.JSON.stringify.object.js">Symbol.JSON.stringify.object.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.existence.js">annex-b.String.prototype.html.existence.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.lowercase.js">annex-b.String.prototype.html.lowercase.js</a>: TypeError: Object has no member 'anchor'
@@ -51,7 +51,6 @@ Grafana's fork of [goja](../goja/README.md) engine, adding ES modules support.
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.String.search.js">misc.Proxy.get.String.search.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.ToPropertyDescriptor.js">misc.Proxy.get.ToPropertyDescriptor.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.instanceof.js">misc.Proxy.get.instanceof.js</a>: TypeError: Expecting a function in instanceof check, but got function () { [native code] }
-<a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: TIMEOUT: &gt;60s
 </pre></li>
 <li>ES2016: 90.9%<pre>
 <a href="../../conformance/compat-table/es2016/misc.strict-fn-non-simple-params-error.js">misc.strict-fn-non-simple-params-error.js</a>: FAIL
@@ -108,16 +107,16 @@ Grafana's fork of [goja](../goja/README.md) engine, adding ES modules support.
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 67%, main 81.2%, staging 66.5%, annexB 56.4%, Next 3.6%, Intl 0.7%</summary>
+<details><summary>test262: 67%, main 81.2%, staging 66.5%, annexB 56.5%, Next 3.6%, Intl 0.7%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/grafana/sobek/commit/6d789dcdd1773496f3069ea095d54fb21c9fd941">2026-04-06</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/sobek.json">json</a>)</li>
-<li>Overall: 67% (35637/53167)</li>
+<li>Tested version: <a href="https://github.com/grafana/sobek/commit/a66d4790012b6d507a27ae554c154b349e68057a">2026-04-29</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/sobek.json">json</a>)</li>
+<li>Overall: 67% (35639/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 81.2% (33737/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 98.5% (8072/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 96.9% (10707/11054)<pre>
+<li>ES6: 96.9% (10709/11054)<pre>
 __proto__: 94.4% (17/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 32.8% (88/268)

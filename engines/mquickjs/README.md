@@ -107,10 +107,10 @@ JavaScript engine targeted at embedded systems.
 <details><summary>test262: 17.7%, main 21.6%, staging 8.1%, annexB 4.4%, Next 3.3%, Intl 0%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/bellard/mquickjs/commit/ee50431eac9b14b99f722b537ec4cac0c8dd75ab">2026-01-15</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/mquickjs.json">json</a>)</li>
-<li>Overall: 17.7% (9395/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 21.6% (8963/41549)</li>
+<li>Overall: 17.7% (9390/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 21.6% (8958/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 42.1% (3450/8197)<pre>
+<li>ES5: 42% (3446/8197)<pre>
 caller: 60.9% (14/23)
 </pre></li>
 <li>ES6: 12.6% (1392/11054)<pre>
@@ -331,6 +331,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 22.5% (1965/8718)</li>
+<li>N/A: 22.5% (1964/8718)</li>
 </ul>
 </details>

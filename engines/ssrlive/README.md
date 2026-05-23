@@ -34,17 +34,15 @@ JavaScript engine written in Rust.
 </pre></li>
 </ul></details>
 
-<details><summary>compat-table: ES6 93%, ES2016+ 93%, Next 33%, Intl 100%</summary><ul>
+<details><summary>compat-table: ES6 94%, ES2016+ 93%, Next 33%, Intl 100%</summary><ul>
 <li>Tested version: <a href="https://github.com/ssrlive/javascript/commit/46d998190bac056e0c90bbb7e8a8997d343d3e71">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/ssrlive.json">json</a>)</li>
 <li>ES5: 98.2%<pre>
 <a href="../../conformance/compat-table/es5/strict.assignment-eval-arguments-error.js">strict.assignment-eval-arguments-error.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.repeated-params-error.js">strict.repeated-params-error.js</a>: FAIL
 </pre></li>
-<li>ES6: 92.6%<pre>
+<li>ES6: 93.5%<pre>
 <a href="../../conformance/compat-table/es6/Function.name.class-object-method.js">Function.name.class-object-method.js</a>: TypeError: Cannot read properties of undefined (reading 'name')
 <a href="../../conformance/compat-table/es6/Map.zero-key.js">Map.zero-key.js</a>: FAIL
-<a href="../../conformance/compat-table/es6/Promise.all.iterable.js">Promise.all.iterable.js</a>: FAIL
-<a href="../../conformance/compat-table/es6/Promise.all.js">Promise.all.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Proxy.handler.apply.invariants.js">Proxy.handler.apply.invariants.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Proxy.handler.getOwnPropertyDescriptor.js">Proxy.handler.getOwnPropertyDescriptor.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Set.zero-key.js">Set.zero-key.js</a>: FAIL
@@ -61,6 +59,8 @@ JavaScript engine written in Rust.
 <a href="../../conformance/compat-table/es6/class.new-target.js">class.new-target.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/destructuring-assign.object-primitives.js">destructuring-assign.object-primitives.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/destructuring-decl.multiple-var.js">destructuring-decl.multiple-var.js</a>: SyntaxError: Unexpected token
+<a href="../../conformance/compat-table/es6/destructuring-decl.object-primitives.js">destructuring-decl.object-primitives.js</a>: FAIL
+<a href="../../conformance/compat-table/es6/destructuring-params.defaults-separate-scope.js">destructuring-params.defaults-separate-scope.js</a>: FAIL
 ...
 </pre></li>
 <li>ES2016: 90.9%<pre>

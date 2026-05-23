@@ -47,7 +47,7 @@ JavaScript interpreter written in Ruby.
 <a href="../../conformance/es3/Array.prototype.push.generic.js">Array.prototype.push.generic.js</a>: FAIL: vm_frame.rb:53:in `throw': uncaught throw :exception (UncaughtThrowError); vm_frame.rb:53:in `execute'; vm.rb:16:in `execute'
 <a href="../../conformance/es3/Array.prototype.shift.generic.js">Array.prototype.shift.generic.js</a>: FAIL: vm_frame.rb:53:in `throw': uncaught throw :exception (UncaughtThrowError); vm_frame.rb:53:in `execute'; vm.rb:16:in `execute'
 <a href="../../conformance/es3/Array.prototype.splice.generic.js">Array.prototype.splice.generic.js</a>: FAIL: vm_frame.rb:53:in `throw': uncaught throw :exception (UncaughtThrowError); vm_frame.rb:53:in `execute'; vm.rb:16:in `execute'
-<a href="../../conformance/es3/Array.prototype.splice.js">Array.prototype.splice.js</a>: FAIL: twostroke-dist/repl.rb: failed to allocate memory (NoMemoryError)
+<a href="../../conformance/es3/Array.prototype.splice.js">Array.prototype.splice.js</a>: OOM: &gt;4096MB
 <a href="../../conformance/es3/Array.prototype.toLocaleString.js">Array.prototype.toLocaleString.js</a>: FAIL: vm_frame.rb:53:in `throw': uncaught throw :exception (UncaughtThrowError); vm_frame.rb:53:in `execute'; vm.rb:16:in `execute'
 <a href="../../conformance/es3/Array.prototype.unshift.generic.js">Array.prototype.unshift.generic.js</a>: FAIL: vm_frame.rb:53:in `throw': uncaught throw :exception (UncaughtThrowError); vm_frame.rb:53:in `execute'; vm.rb:16:in `execute'
 <a href="../../conformance/es3/Array.prototype.unshift.js">Array.prototype.unshift.js</a>: FAIL: unshift multiple elements failed; unshift on empty array failed

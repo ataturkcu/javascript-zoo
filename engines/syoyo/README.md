@@ -13,7 +13,7 @@ Vibe-coded JavaScript engine written in C++.
 ## Conformance
 
 <details><summary>ES1-ES5: 96%</summary><ul>
-<li>Tested version: <a href="https://github.com/syoyo/lightjs/commit/f7c09511aeb9282b3e36dd9d9e94a69b0b0f65e6">2026-04-13</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/syoyo.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/syoyo/lightjs/commit/3f18478e6f42a677dc09c1c22ff5207d5922b1df">2026-05-07</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/syoyo.json">json</a>)</li>
 <li>ES1: 97.5% (193/198)<pre>
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: FAIL
 <a href="../../conformance/es1/annex-b.Date.prototype.setYear.js">annex-b.Date.prototype.setYear.js</a>: FAIL
@@ -39,7 +39,7 @@ Vibe-coded JavaScript engine written in C++.
 </ul></details>
 
 <details><summary>compat-table: ES6 78%, ES2016+ 80%, Next 21%, Intl 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/syoyo/lightjs/commit/f7c09511aeb9282b3e36dd9d9e94a69b0b0f65e6">2026-04-13</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/syoyo.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/syoyo/lightjs/commit/3f18478e6f42a677dc09c1c22ff5207d5922b1df">2026-05-07</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/syoyo.json">json</a>)</li>
 <li>ES5: 97.6%<pre>
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.rounds-properly.js">Number.prototype.toExponential.rounds-properly.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.this-not-coerced-accessors.js">strict.this-not-coerced-accessors.js</a>: FAIL
@@ -139,16 +139,16 @@ Vibe-coded JavaScript engine written in C++.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 71%, main 78%, staging 57.7%, annexB 41.5%, Next 36%, Intl 59.2%</summary>
+<details><summary>test262: 71%, main 78%, staging 57.6%, annexB 41.5%, Next 36%, Intl 59.2%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/syoyo/lightjs/commit/f7c09511aeb9282b3e36dd9d9e94a69b0b0f65e6">2026-04-13</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/syoyo.json">json</a>)</li>
-<li>Overall: 71% (37775/53167)</li>
+<li>Tested version: <a href="https://github.com/syoyo/lightjs/commit/3f18478e6f42a677dc09c1c22ff5207d5922b1df">2026-05-07</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/syoyo.json">json</a>)</li>
+<li>Overall: 71% (37774/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 78% (32426/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 97.1% (7962/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 87.7% (9690/11054)<pre>
+<li>ES6: 87.7% (9689/11054)<pre>
 __proto__: 72.2% (13/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 72.4% (194/268)
@@ -190,7 +190,7 @@ Symbol.split: 89.7% (52/58)
 Symbol.toPrimitive: 79.8% (186/233)
 Symbol.toStringTag: 70.2% (92/131)
 Symbol.unscopables: 56.8% (25/44)
-TypedArray: 49.1% (1233/2513)
+TypedArray: 49% (1232/2513)
 Uint16Array: 66.7% (4/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 81.8% (9/11)

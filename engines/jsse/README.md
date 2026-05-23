@@ -13,7 +13,7 @@ Agent-coded JavaScript engine in Rust passing nearly 100% of test262.
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: <a href="https://github.com/pmatos/jsse/commit/78b95414de39af2b956d02a43d982f80c28f72a8">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/jsse.json">json</a>)</li>
+<li>Tested version: perf-2026-05-07-36-g52fa940 (<a href="https://github.com/pmatos/jsse/commit/52fa9405ff400e3db08bbc2913ada400f149a6a9">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/jsse.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 99.3% (147/148)<pre>
 <a href="../../conformance/es3/Number.prototype.toFixed.js">Number.prototype.toFixed.js</a>: FAIL: rounding failed
@@ -22,14 +22,14 @@ Agent-coded JavaScript engine in Rust passing nearly 100% of test262.
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 100%, Next 39%, Intl 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/pmatos/jsse/commit/78b95414de39af2b956d02a43d982f80c28f72a8">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/jsse.json">json</a>)</li>
+<li>Tested version: perf-2026-05-07-36-g52fa940 (<a href="https://github.com/pmatos/jsse/commit/52fa9405ff400e3db08bbc2913ada400f149a6a9">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/jsse.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 98%<pre>
 <a href="../../conformance/compat-table/es6/Map.iterator-prototype-chain.js">Map.iterator-prototype-chain.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Promise.all.iterable.js">Promise.all.iterable.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Promise.all.js">Promise.all.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Proxy.handler.apply.invariants.js">Proxy.handler.apply.invariants.js</a>: FAIL
-<a href="../../conformance/compat-table/es6/Proxy.handler.construct.js">Proxy.handler.construct.js</a>: TypeError: object (class=Object, callable=false, id=1072, keys=[]) is not a function
+<a href="../../conformance/compat-table/es6/Proxy.handler.construct.js">Proxy.handler.construct.js</a>: TypeError: object (class=Object, callable=false, id=1073, keys=[]) is not a function
 <a href="../../conformance/compat-table/es6/Proxy.handler.getOwnPropertyDescriptor.js">Proxy.handler.getOwnPropertyDescriptor.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Set.iterator-prototype-chain.js">Set.iterator-prototype-chain.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/arrow.precedence.js">arrow.precedence.js</a>: FAIL
@@ -50,13 +50,13 @@ Agent-coded JavaScript engine in Rust passing nearly 100% of test262.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 99.9%, main 99.9%, staging 98.7%, annexB 100%, Next 99.7%, Intl 100%</summary>
+<details><summary>test262: 99.9%, main 99.9%, staging 98.7%, annexB 99.5%, Next 99.7%, Intl 100%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/pmatos/jsse/commit/78b95414de39af2b956d02a43d982f80c28f72a8">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/jsse.json">json</a>)</li>
-<li>Overall: 99.9% (53116/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.9% (41542/41549)</li>
+<li>Tested version: perf-2026-05-07-36-g52fa940 (<a href="https://github.com/pmatos/jsse/commit/52fa9405ff400e3db08bbc2913ada400f149a6a9">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/jsse.json">json</a>)</li>
+<li>Overall: 99.9% (53103/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.9% (41534/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 100% (8197/8197)<pre>
+<li>ES5: 99.9% (8190/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
 <li>ES6: 99.9% (11053/11054)<pre>
@@ -81,7 +81,7 @@ Map: 100% (40/40)
 Object.is: 100% (2/2)
 Promise: 100% (4/4)
 Proxy: 100% (468/468)
-Reflect: 99.8% (467/468)
+Reflect: 100% (468/468)
 Reflect.construct: 100% (696/696)
 Reflect.set: 100% (46/46)
 Reflect.setPrototypeOf: 100% (23/23)
@@ -108,7 +108,7 @@ Uint8Array: 100% (11/11)
 Uint8ClampedArray: 100% (6/6)
 WeakMap: 100% (79/79)
 WeakSet: 100% (34/34)
-arrow-function: 99.9% (948/949)
+arrow-function: 100% (949/949)
 class: 100% (4768/4768)
 computed-property-names: 100% (478/478)
 const: 100% (15/15)
@@ -126,8 +126,8 @@ super: 100% (19/19)
 tail-call-optimization: 100% (35/35)
 template: 100% (1/1)
 </pre></li>
-<li>ES2016: 99.2% (129/130)<pre>
-Array.prototype.includes: 98.6% (68/69)
+<li>ES2016: 100% (130/130)<pre>
+Array.prototype.includes: 100% (69/69)
 exponentiation: 100% (103/103)
 u180e: 100% (25/25)
 </pre></li>
@@ -277,6 +277,6 @@ regexp-duplicate-named-groups: 100% (19/19)
 source-phase-imports: 99.6% (227/228)
 source-phase-imports-module-source: 100% (84/84)
 </pre></li>
-<li>N/A: 99.8% (8699/8718)</li>
+<li>N/A: 99.7% (8692/8718)</li>
 </ul>
 </details>

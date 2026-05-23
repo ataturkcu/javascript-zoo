@@ -109,13 +109,13 @@ Unmaintained old Rust codebase, only builds on x64.
 <details><summary>test262: 22%, main 26.7%, staging 11%, annexB 17.7%, Next 3.4%, Intl 0.1%</summary>
 <ul>
 <li>Tested version: 0.0.1-55-g503e789 (<a href="https://github.com/Starlight-JS/starlight/commit/503e789b9ef53594aee30c45a621018e855dcc17">2021-10-31</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/starlight.json">json</a>)</li>
-<li>Overall: 22% (11712/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 26.7% (11088/41549)</li>
+<li>Overall: 22% (11710/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 26.7% (11086/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 56.8% (4655/8197)<pre>
+<li>ES5: 56.8% (4654/8197)<pre>
 caller: 69.6% (16/23)
 </pre></li>
-<li>ES6: 16.7% (1843/11054)<pre>
+<li>ES6: 16.7% (1842/11054)<pre>
 __proto__: 0% (0/18)
 Array.prototype.values: 0% (0/4)
 ArrayBuffer: 9% (24/268)

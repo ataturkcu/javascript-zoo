@@ -11,16 +11,16 @@ JavaScript interpreter written in Rust with QuickJS-inspired bytecode.
 
 ## Conformance
 
-<details><summary>ES1-ES5: 30%</summary><ul>
-<li>Tested version: <a href="https://github.com/echosoar/jsi/commit/43ec7dc547bb3afd4004f71cd0648538bd815093">2026-04-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/echosoar.json">json</a>)</li>
-<li>ES1: 43.4% (86/198)</li>
-<li>ES3: 18.9% (28/148)</li>
-<li>ES5: 18.9% (14/74)</li>
+<details><summary>ES1-ES5: 34%</summary><ul>
+<li>Tested version: <a href="https://github.com/echosoar/jsi/commit/924246fdf5ff55611817bbcf3aa311ace9168894">2026-05-04</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/echosoar.json">json</a>)</li>
+<li>ES1: 43.9% (87/198)</li>
+<li>ES3: 25% (37/148)</li>
+<li>ES5: 27% (20/74)</li>
 </ul></details>
 
-<details><summary>compat-table: ES6 8%, ES2016+ 5%, Next 0%, Intl 0%</summary><ul>
-<li>Tested version: <a href="https://github.com/echosoar/jsi/commit/43ec7dc547bb3afd4004f71cd0648538bd815093">2026-04-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/echosoar.json">json</a>)</li>
-<li>ES5: 33.5%</li>
+<details><summary>compat-table: ES6 8%, ES2016+ 6%, Next 0%, Intl 0%</summary><ul>
+<li>Tested version: <a href="https://github.com/echosoar/jsi/commit/924246fdf5ff55611817bbcf3aa311ace9168894">2026-05-04</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/echosoar.json">json</a>)</li>
+<li>ES5: 42.5%</li>
 <li>ES6: 7.7%</li>
 <li>ES2016: 4.5%</li>
 <li>ES2017: 14%</li>
@@ -28,24 +28,24 @@ JavaScript interpreter written in Rust with QuickJS-inspired bytecode.
 <li>ES2019: 8.3%</li>
 <li>ES2020: 7.1%</li>
 <li>ES2021: 0%</li>
-<li>ES2022: 6%</li>
+<li>ES2022: 10.7%</li>
 <li>ES2023: 0%</li>
-<li>ES2024: 0%</li>
+<li>ES2024: 4.1%</li>
 <li>ES2025: 0%</li>
 <li>Next: 0%</li>
 <li>Intl: 0%</li>
 </ul></details>
 
-<details><summary>test262: 12.7%, main 15.2%, staging 4.2%, annexB 7.9%, Next 3.6%, Intl 1.1%</summary>
+<details><summary>test262: 13.8%, main 16.5%, staging 4.9%, annexB 8%, Next 3.6%, Intl 1.1%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/echosoar/jsi/commit/43ec7dc547bb3afd4004f71cd0648538bd815093">2026-04-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/echosoar.json">json</a>)</li>
-<li>Overall: 12.7% (6765/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 15.2% (6302/41549)</li>
+<li>Tested version: <a href="https://github.com/echosoar/jsi/commit/924246fdf5ff55611817bbcf3aa311ace9168894">2026-05-04</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/echosoar.json">json</a>)</li>
+<li>Overall: 13.8% (7351/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 16.5% (6875/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 26.3% (2154/8197)<pre>
+<li>ES5: 28.1% (2306/8197)<pre>
 caller: 78.3% (18/23)
 </pre></li>
-<li>ES6: 9.9% (1096/11054)<pre>
+<li>ES6: 10% (1102/11054)<pre>
 __proto__: 0% (0/18)
 Array.prototype.values: 0% (0/4)
 ArrayBuffer: 0% (0/268)
@@ -68,7 +68,7 @@ Object.is: 0% (0/2)
 Promise: 25% (1/4)
 Proxy: 0% (0/468)
 Reflect: 0% (0/468)
-Reflect.construct: 0% (0/696)
+Reflect.construct: 0.3% (2/696)
 Reflect.set: 0% (0/46)
 Reflect.setPrototypeOf: 0% (0/23)
 Set: 0% (0/38)
@@ -117,13 +117,13 @@ Array.prototype.includes: 11.6% (8/69)
 exponentiation: 14.6% (15/103)
 u180e: 36% (9/25)
 </pre></li>
-<li>ES2017: 13.4% (102/763)<pre>
+<li>ES2017: 13.2% (101/763)<pre>
 __getter__: 0% (0/27)
 __setter__: 0% (0/27)
 Atomics: 0% (0/378)
 Intl.DateTimeFormat-dayPeriod: 0% (0/12)
 SharedArrayBuffer: 0% (0/464)
-async-functions: 19.7% (139/705)
+async-functions: 19.6% (138/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>
 <li>ES2018: 11.7% (570/4855)<pre>
@@ -263,6 +263,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 17.9% (1557/8718)</li>
+<li>N/A: 22.8% (1986/8718)</li>
 </ul>
 </details>

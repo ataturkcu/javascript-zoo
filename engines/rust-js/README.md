@@ -78,10 +78,10 @@ JavaScript engine written in Rust.
 <details><summary>test262: 27.6%, main 33.4%, staging 17%, annexB 21.9%, Next 3.3%, Intl 0.4%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/rust-js/rjs/commit/61391286b0f0d6ce23720ee13501f62751c26b29">2015-07-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/rust-js.json">json</a>)</li>
-<li>Overall: 27.6% (14653/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 33.4% (13887/41549)</li>
+<li>Overall: 27.6% (14652/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 33.4% (13886/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 87.2% (7145/8197)<pre>
+<li>ES5: 87.2% (7144/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
 <li>ES6: 10.9% (1200/11054)<pre>

@@ -14,14 +14,14 @@ JavaScript engine written in Rust, with nearly complete ES2025 support.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/Hans-Halverson/brimstone/commit/6a04fef645608b7995fa119b445e3f18e2281473">2025-12-17</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/brimstone.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/Hans-Halverson/brimstone/commit/deb3f5a5a636716e717235efaa7b46a9edc3c4e0">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/brimstone.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 97%, ES2016+ 97%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/Hans-Halverson/brimstone/commit/6a04fef645608b7995fa119b445e3f18e2281473">2025-12-17</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/brimstone.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/Hans-Halverson/brimstone/commit/deb3f5a5a636716e717235efaa7b46a9edc3c4e0">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/brimstone.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 97.3%<pre>
 <a href="../../conformance/compat-table/es6/annex-b.function.hoisted-block-level.js">annex-b.function.hoisted-block-level.js</a>: ReferenceError: g is not defined
@@ -62,16 +62,16 @@ JavaScript engine written in Rust, with nearly complete ES2025 support.
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 80%, main 97.5%, staging 89.4%, annexB 35%, Next 3.9%, Intl 0.7%</summary>
+<details><summary>test262: 80%, main 97.5%, staging 89.4%, annexB 35.6%, Next 3.9%, Intl 0.7%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/Hans-Halverson/brimstone/commit/6a04fef645608b7995fa119b445e3f18e2281473">2025-12-17</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/brimstone.json">json</a>)</li>
-<li>Overall: 80% (42543/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 97.5% (40516/41549)</li>
+<li>Tested version: <a href="https://github.com/Hans-Halverson/brimstone/commit/deb3f5a5a636716e717235efaa7b46a9edc3c4e0">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/brimstone.json">json</a>)</li>
+<li>Overall: 80% (42540/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 97.5% (40507/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 97.6% (7997/8197)<pre>
+<li>ES5: 97.5% (7990/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
-<li>ES6: 99.1% (10960/11054)<pre>
+<li>ES6: 99.1% (10959/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 60.1% (161/268)
@@ -121,7 +121,7 @@ Uint8ClampedArray: 33.3% (2/6)
 WeakMap: 72.2% (57/79)
 WeakSet: 100% (34/34)
 arrow-function: 71.3% (677/949)
-class: 99.2% (4731/4768)
+class: 99.2% (4730/4768)
 computed-property-names: 95.6% (457/478)
 const: 100% (15/15)
 cross-realm: 85.1% (171/201)
@@ -289,6 +289,6 @@ regexp-duplicate-named-groups: 100% (19/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 88.5% (7715/8718)</li>
+<li>N/A: 88.6% (7720/8718)</li>
 </ul>
 </details>

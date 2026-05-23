@@ -20,14 +20,14 @@
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: 0.18.0 (<a href="https://gitlab.com/cznic/quickjs/-/commit/0d9935b5f36c42824ff1640cd124ad4ee8d38f5b">2026-04-13</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/modernc-quickjs.json">json</a>)</li>
+<li>Tested version: 0.18.2 (<a href="https://gitlab.com/cznic/quickjs/-/commit/5aa546db279ca74b5e9ed14280ab6f82eb14f930">2026-05-16</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/modernc-quickjs.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
-<details><summary>compat-table: ES6 94%, ES2016+ 78%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: 0.18.0 (<a href="https://gitlab.com/cznic/quickjs/-/commit/0d9935b5f36c42824ff1640cd124ad4ee8d38f5b">2026-04-13</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/modernc-quickjs.json">json</a>)</li>
+<details><summary>compat-table: ES6 94%, ES2016+ 87%, Next 0%, Intl 25%</summary><ul>
+<li>Tested version: 0.18.2 (<a href="https://gitlab.com/cznic/quickjs/-/commit/5aa546db279ca74b5e9ed14280ab6f82eb14f930">2026-05-16</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/modernc-quickjs.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 93.9%<pre>
 <a href="../../conformance/compat-table/es6/Promise.all.iterable.js">Promise.all.iterable.js</a>: FAIL
@@ -85,22 +85,22 @@
 </pre></li>
 <li>ES2022: 100%</li>
 <li>ES2023: 100%</li>
-<li>ES2024: 67.3%<pre>
-<a href="../../conformance/compat-table/es2024/ArrayBuffer.prototype.detached.js">ArrayBuffer.prototype.detached.js</a>: TypeError: not a function
-<a href="../../conformance/compat-table/es2024/ArrayBuffer.prototype.transferToFixedLength.js">ArrayBuffer.prototype.transferToFixedLength.js</a>: TypeError: not a function
-<a href="../../conformance/compat-table/es2024/ArrayBuffer.prototype.transfer.js">ArrayBuffer.prototype.transfer.js</a>: TypeError: not a function
+<li>ES2024: 95.9%<pre>
 <a href="../../conformance/compat-table/es2024/regex.flags.v.unicode-17.0.js">regex.flags.v.unicode-17.0.js</a>: FAIL
 </pre></li>
-<li>ES2025: 26.3%</li>
+<li>ES2025: 89.5%<pre>
+<a href="../../conformance/compat-table/es2025/Promise.try.js">Promise.try.js</a>: FAIL
+<a href="../../conformance/compat-table/es2025/regex.duplicate-named-groups.js">regex.duplicate-named-groups.js</a>: SyntaxError: duplicate group name
+</pre></li>
 <li>Next: 0%</li>
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 68.3%, main 81.8%, staging 72%, annexB 92%, Next 3.4%, Intl 0.7%</summary>
+<details><summary>test262: 70.7%, main 84.3%, staging 83.5%, annexB 92%, Next 3.6%, Intl 0.7%</summary>
 <ul>
-<li>Tested version: 0.18.0 (<a href="https://gitlab.com/cznic/quickjs/-/commit/0d9935b5f36c42824ff1640cd124ad4ee8d38f5b">2026-04-13</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/modernc-quickjs.json">json</a>)</li>
-<li>Overall: 68.3% (36338/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 81.8% (33977/41549)</li>
+<li>Tested version: 0.18.2 (<a href="https://gitlab.com/cznic/quickjs/-/commit/5aa546db279ca74b5e9ed14280ab6f82eb14f930">2026-05-16</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/modernc-quickjs.json">json</a>)</li>
+<li>Overall: 70.7% (37582/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 84.3% (35040/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 98.6% (8086/8197)<pre>
 caller: 100% (23/23)
@@ -108,8 +108,8 @@ caller: 100% (23/23)
 <li>ES6: 95.4% (10551/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
-ArrayBuffer: 63.4% (170/268)
-DataView: 73.7% (140/190)
+ArrayBuffer: 91.8% (246/268)
+DataView: 87.9% (167/190)
 DataView.prototype.getFloat32: 100% (7/7)
 DataView.prototype.getFloat64: 100% (5/5)
 DataView.prototype.getInt16: 100% (7/7)
@@ -122,39 +122,39 @@ Float32Array: 57.1% (4/7)
 Float64Array: 57.1% (4/7)
 Int16Array: 100% (2/2)
 Int32Array: 100% (4/4)
-Int8Array: 85.7% (30/35)
-Map: 92.5% (37/40)
+Int8Array: 94.3% (33/35)
+Map: 100% (40/40)
 Object.is: 100% (2/2)
 Promise: 100% (4/4)
 Proxy: 90.4% (423/468)
-Reflect: 72.4% (339/468)
-Reflect.construct: 70.3% (489/696)
+Reflect: 73.3% (343/468)
+Reflect.construct: 73% (508/696)
 Reflect.set: 97.8% (45/46)
 Reflect.setPrototypeOf: 100% (23/23)
-Set: 97.4% (37/38)
+Set: 100% (38/38)
 String.fromCodePoint: 100% (22/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
-Symbol: 61.8% (924/1494)
+Symbol: 63.8% (953/1494)
 Symbol.hasInstance: 94.1% (16/17)
 Symbol.isConcatSpreadable: 97.1% (33/34)
-Symbol.iterator: 49.3% (920/1865)
+Symbol.iterator: 49.9% (931/1865)
 Symbol.match: 93.2% (82/88)
 Symbol.replace: 88.8% (87/98)
 Symbol.search: 83.8% (31/37)
-Symbol.species: 87.3% (241/276)
+Symbol.species: 91.7% (253/276)
 Symbol.split: 86.2% (50/58)
 Symbol.toPrimitive: 84.1% (196/233)
-Symbol.toStringTag: 48.9% (64/131)
+Symbol.toStringTag: 51.9% (68/131)
 Symbol.unscopables: 65.9% (29/44)
-TypedArray: 77.8% (1954/2513)
+TypedArray: 82.7% (2079/2513)
 Uint16Array: 66.7% (4/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 81.8% (9/11)
 Uint8ClampedArray: 66.7% (4/6)
-WeakMap: 72.2% (57/79)
+WeakMap: 100% (79/79)
 WeakSet: 100% (34/34)
-arrow-function: 53.6% (509/949)
+arrow-function: 58.5% (555/949)
 class: 77.3% (3684/4768)
 computed-property-names: 87.9% (420/478)
 const: 86.7% (13/15)
@@ -163,7 +163,7 @@ default-parameters: 96.3% (2185/2269)
 destructuring-assignment: 100% (141/141)
 destructuring-binding: 82.8% (5495/6637)
 for-of: 100% (5/5)
-generators: 88% (3593/4085)
+generators: 88% (3594/4085)
 let: 89.6% (69/77)
 new.target: 96.7% (59/61)
 proxy-missing-checks: 100% (3/3)
@@ -173,16 +173,16 @@ tail-call-optimization: 97.1% (34/35)
 template: 100% (1/1)
 </pre></li>
 <li>ES2016: 94.6% (123/130)<pre>
-Array.prototype.includes: 52.2% (36/69)
+Array.prototype.includes: 63.8% (44/69)
 exponentiation: 98.1% (101/103)
 u180e: 100% (25/25)
 </pre></li>
 <li>ES2017: 66.4% (507/763)<pre>
 __getter__: 100% (27/27)
 __setter__: 100% (27/27)
-Atomics: 52.9% (200/378)
+Atomics: 54% (204/378)
 Intl.DateTimeFormat-dayPeriod: 0% (0/12)
-SharedArrayBuffer: 55.8% (259/464)
+SharedArrayBuffer: 66.4% (308/464)
 async-functions: 33% (233/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>
@@ -213,7 +213,7 @@ string-trimming: 100% (54/54)
 well-formed-json-stringify: 100% (1/1)
 </pre></li>
 <li>ES2020: 66.3% (1430/2156)<pre>
-BigInt: 72% (1080/1501)
+BigInt: 74.9% (1124/1501)
 Intl.NumberFormat-unified: 0% (0/67)
 Intl.RelativeTimeFormat: 0% (0/79)
 Promise.allSettled: 44.1% (45/102)
@@ -223,7 +223,7 @@ coalesce-expression: 96.2% (25/26)
 dynamic-import: 45.5% (430/946)
 export-star-as-namespace-from-module: 21.1% (4/19)
 for-in-order: 100% (9/9)
-globalThis: 40.5% (60/148)
+globalThis: 49.3% (73/148)
 import.meta: 91.3% (21/23)
 optional-chaining: 89.3% (50/56)
 </pre></li>
@@ -250,7 +250,7 @@ Intl.DisplayNames-v2: 0% (0/12)
 Intl.Segmenter: 0% (0/79)
 Object.hasOwn: 100% (62/62)
 String.prototype.at: 100% (11/11)
-TypedArray.prototype.at: 84.6% (11/13)
+TypedArray.prototype.at: 100% (13/13)
 arbitrary-module-namespace-names: 43.8% (7/16)
 class-fields-private: 89.8% (1018/1134)
 class-fields-private-in: 94.7% (18/19)
@@ -267,45 +267,45 @@ top-level-await: 3.7% (10/271)
 <li>ES2023: 66.8% (274/410)<pre>
 Intl-enumeration: 0% (0/35)
 Intl.NumberFormat-v3: 0% (0/102)
-array-find-from-last: 89% (97/109)
-change-array-by-copy: 96.2% (127/132)
+array-find-from-last: 92.7% (101/109)
+change-array-by-copy: 98.5% (130/132)
 hashbang: 100% (29/29)
-symbols-as-weakmap-keys: 72.4% (21/29)
+symbols-as-weakmap-keys: 100% (29/29)
 </pre></li>
-<li>ES2024: 30.5% (256/840)<pre>
+<li>ES2024: 86.1% (723/840)<pre>
 Atomics.waitAsync: 0% (0/101)
 String.prototype.isWellFormed: 100% (8/8)
 String.prototype.toWellFormed: 100% (8/8)
 array-grouping: 100% (28/28)
-arraybuffer-transfer: 3.4% (2/59)
+arraybuffer-transfer: 89.8% (53/59)
 promise-with-resolvers: 66.7% (6/9)
 regexp-v-flag: 97.3% (182/187)
-resizable-arraybuffer: 4.8% (22/463)
+resizable-arraybuffer: 98.5% (456/463)
 </pre></li>
-<li>ES2025: 31.3% (396/1266)<pre>
-Float16Array: 80.4% (41/51)
+<li>ES2025: 86.3% (1093/1266)<pre>
+Float16Array: 84.3% (43/51)
 Intl.DurationFormat: 0% (0/112)
 RegExp.escape: 90.5% (19/21)
 import-attributes: 49% (49/100)
-iterator-helpers: 2.3% (13/567)
+iterator-helpers: 97.2% (551/567)
 json-modules: 0% (0/13)
 promise-try: 75% (9/12)
 regexp-modifiers: 100% (230/230)
-set-methods: 18.2% (35/192)
+set-methods: 100% (192/192)
 </pre></li>
-<li>ES2026: 11.1% (40/361)<pre>
+<li>ES2026: 28.3% (102/361)<pre>
 Array.fromAsync: 0% (0/95)
 Error.isError: 84.6% (11/13)
 Intl.Era-monthcode: 0% (0/1543)
 Intl.Locale-info: 0% (0/43)
-Math.sumPrecise: 0% (0/10)
-iterator-sequencing: 0% (0/32)
+Math.sumPrecise: 100% (10/10)
+iterator-sequencing: 9.4% (3/32)
 json-parse-with-source: 0% (0/22)
 uint8array-base64: 8.7% (6/69)
-upsert: 31.9% (23/72)
+upsert: 100% (72/72)
 </pre></li>
-<li>Next: 3.4% (272/7895)<pre>
-Atomics.pause: 16.7% (1/6)
+<li>Next: 3.6% (282/7895)<pre>
+Atomics.pause: 100% (6/6)
 ShadowRealm: 0% (0/64)
 Temporal: 0% (0/6671)
 await-dictionary: 5.4% (2/37)
@@ -316,13 +316,13 @@ immutable-arraybuffer: 5% (1/20)
 import-bytes: 0% (0/5)
 import-defer: 31.4% (72/229)
 import-text: 0% (0/6)
-joint-iteration: 0% (0/78)
+joint-iteration: 6.4% (5/78)
 legacy-regexp: 0% (0/26)
 nonextensible-applies-to-private: 0% (0/4)
 regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 92.4% (8057/8718)</li>
+<li>N/A: 92.5% (8065/8718)</li>
 </ul>
 </details>

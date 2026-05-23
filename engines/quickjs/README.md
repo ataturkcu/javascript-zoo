@@ -40,14 +40,14 @@ Lightweight embeddable JavaScript engine by Fabrice Bellard and Charlie Gordon.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/bellard/quickjs/commit/d7ae12ae71dfd6ab2997527d295014a8996fa0f9">2026-03-23</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/quickjs_262.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/bellard/quickjs/commit/d73189dd5a582c19c565774bd56fed4e72d33c99">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/quickjs_262.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
-<details><summary>compat-table: ES6 97%, ES2016+ 100%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/bellard/quickjs/commit/d7ae12ae71dfd6ab2997527d295014a8996fa0f9">2026-03-23</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/quickjs_262.json">json</a>)</li>
+<details><summary>compat-table: ES6 97%, ES2016+ 100%, Next 6%, Intl 25%</summary><ul>
+<li>Tested version: <a href="https://github.com/bellard/quickjs/commit/d73189dd5a582c19c565774bd56fed4e72d33c99">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/quickjs_262.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 97%<pre>
 <a href="../../conformance/compat-table/es6/Proxy.handler.construct.invariants.js">Proxy.handler.construct.invariants.js</a>: FAIL
@@ -75,15 +75,15 @@ Lightweight embeddable JavaScript engine by Fabrice Bellard and Charlie Gordon.
 <li>ES2023: 100%</li>
 <li>ES2024: 100%</li>
 <li>ES2025: 100%</li>
-<li>Next: 0%</li>
+<li>Next: 6.1%</li>
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 82.8%, main 99.2%, staging 93.2%, annexB 97%, Next 4%, Intl 0.7%</summary>
+<details><summary>test262: 82.9%, main 99.4%, staging 93.3%, annexB 97%, Next 4%, Intl 0.7%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/bellard/quickjs/commit/d7ae12ae71dfd6ab2997527d295014a8996fa0f9">2026-03-23</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/quickjs_262.json">json</a>)</li>
-<li>Overall: 82.8% (43999/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.2% (41236/41549)</li>
+<li>Tested version: <a href="https://github.com/bellard/quickjs/commit/d73189dd5a582c19c565774bd56fed4e72d33c99">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/quickjs_262.json">json</a>)</li>
+<li>Overall: 82.9% (44061/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.4% (41296/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 98.5% (8073/8197)<pre>
 caller: 100% (23/23)
@@ -111,7 +111,7 @@ Object.is: 100% (2/2)
 Promise: 100% (4/4)
 Proxy: 99.4% (465/468)
 Reflect: 93.2% (436/468)
-Reflect.construct: 74.6% (519/696)
+Reflect.construct: 75.4% (525/696)
 Reflect.set: 97.8% (45/46)
 Reflect.setPrototypeOf: 100% (23/23)
 Set: 100% (38/38)
@@ -130,7 +130,7 @@ Symbol.split: 100% (58/58)
 Symbol.toPrimitive: 87.6% (204/233)
 Symbol.toStringTag: 76.3% (100/131)
 Symbol.unscopables: 100% (44/44)
-TypedArray: 94% (2361/2513)
+TypedArray: 96.4% (2422/2513)
 Uint16Array: 66.7% (4/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 81.8% (9/11)
@@ -276,7 +276,7 @@ promise-try: 100% (12/12)
 regexp-modifiers: 100% (230/230)
 set-methods: 100% (192/192)
 </pre></li>
-<li>ES2026: 43.2% (156/361)<pre>
+<li>ES2026: 60.1% (217/361)<pre>
 Array.fromAsync: 0% (0/95)
 Error.isError: 100% (13/13)
 Intl.Era-monthcode: 0% (0/1543)
@@ -284,7 +284,7 @@ Intl.Locale-info: 0% (0/43)
 Math.sumPrecise: 100% (10/10)
 iterator-sequencing: 100% (32/32)
 json-parse-with-source: 95.5% (21/22)
-uint8array-base64: 11.6% (8/69)
+uint8array-base64: 100% (69/69)
 upsert: 100% (72/72)
 </pre></li>
 <li>Next: 4% (315/7895)<pre>
@@ -306,6 +306,6 @@ regexp-duplicate-named-groups: 100% (19/19)
 source-phase-imports: 56.6% (129/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 96.7% (8434/8718)</li>
+<li>N/A: 96.8% (8435/8718)</li>
 </ul>
 </details>

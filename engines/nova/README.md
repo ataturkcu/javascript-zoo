@@ -19,7 +19,7 @@ Experimental JavaScript engine written in Rust with a cache-friendly data-orient
 ## Conformance
 
 <details><summary>ES1-ES5: 95%</summary><ul>
-<li>Tested version: <a href="https://github.com/trynova/nova/commit/285a37e9d1cf3516258b71992d98762b36be67f3">2026-04-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/nova.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/trynova/nova/commit/bece61acd71a8a980d83cad2a0c3cd3e56614229">2026-05-10</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/nova.json">json</a>)</li>
 <li>ES1: 96.5% (191/198)<pre>
 <a href="../../conformance/es1/Date.prototype.toLocaleString.js">Date.prototype.toLocaleString.js</a>: FAIL: Date.prototype.toLocaleString not implemented
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: TypeError: Not a callable object
@@ -49,7 +49,7 @@ Experimental JavaScript engine written in Rust with a cache-friendly data-orient
 </ul></details>
 
 <details><summary>compat-table: ES6 94%, ES2016+ 85%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/trynova/nova/commit/285a37e9d1cf3516258b71992d98762b36be67f3">2026-04-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/nova.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/trynova/nova/commit/bece61acd71a8a980d83cad2a0c3cd3e56614229">2026-05-10</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/nova.json">json</a>)</li>
 <li>ES5: 98.6%<pre>
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.rounds-properly.js">Number.prototype.toExponential.rounds-properly.js</a>: FAIL
 </pre></li>
@@ -151,10 +151,10 @@ Experimental JavaScript engine written in Rust with a cache-friendly data-orient
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 77.7%, main 93.2%, staging 72.5%, annexB 52.1%, Next 12%, Intl 0.8%</summary>
+<details><summary>test262: 78%, main 93.2%, staging 72.5%, annexB 52.1%, Next 13.5%, Intl 0.8%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/trynova/nova/commit/285a37e9d1cf3516258b71992d98762b36be67f3">2026-04-19</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/nova.json">json</a>)</li>
-<li>Overall: 77.7% (41325/53167)</li>
+<li>Tested version: <a href="https://github.com/trynova/nova/commit/bece61acd71a8a980d83cad2a0c3cd3e56614229">2026-05-10</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/nova.json">json</a>)</li>
+<li>Overall: 78% (41444/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 93.2% (38722/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 95.1% (7794/8197)<pre>
@@ -183,14 +183,14 @@ Object.is: 100% (2/2)
 Promise: 50% (2/4)
 Proxy: 73.3% (343/468)
 Reflect: 76.1% (356/468)
-Reflect.construct: 72.7% (506/696)
+Reflect.construct: 73% (508/696)
 Reflect.set: 97.8% (45/46)
 Reflect.setPrototypeOf: 91.3% (21/23)
 Set: 100% (38/38)
 String.fromCodePoint: 63.6% (14/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
-Symbol: 71% (1061/1494)
+Symbol: 71.7% (1071/1494)
 Symbol.hasInstance: 94.1% (16/17)
 Symbol.isConcatSpreadable: 97.1% (33/34)
 Symbol.iterator: 98.2% (1832/1865)
@@ -268,7 +268,7 @@ string-trimming: 100% (54/54)
 well-formed-json-stringify: 100% (1/1)
 </pre></li>
 <li>ES2020: 89.7% (1935/2156)<pre>
-BigInt: 87.5% (1314/1501)
+BigInt: 87.7% (1317/1501)
 Intl.NumberFormat-unified: 0% (0/67)
 Intl.RelativeTimeFormat: 0% (0/79)
 Promise.allSettled: 60.8% (62/102)
@@ -359,10 +359,10 @@ json-parse-with-source: 0% (0/22)
 uint8array-base64: 11.6% (8/69)
 upsert: 31.9% (23/72)
 </pre></li>
-<li>Next: 12% (949/7895)<pre>
+<li>Next: 13.5% (1068/7895)<pre>
 Atomics.pause: 16.7% (1/6)
 ShadowRealm: 0% (0/64)
-Temporal: 7.5% (501/6671)
+Temporal: 9.3% (620/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 0% (0/19)
 decorators: 85.2% (23/27)

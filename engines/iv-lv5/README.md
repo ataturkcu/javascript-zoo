@@ -59,16 +59,16 @@ JIT-enabled ES5 engine in C++.
 <li>Intl: 46.4%</li>
 </ul></details>
 
-<details><summary>test262: 16%, main 18.7%, staging 8.6%, annexB 28.5%, Next 3.3%, Intl 0.7%</summary>
+<details><summary>test262: 16%, main 18.7%, staging 8.6%, annexB 28.8%, Next 3.3%, Intl 0.7%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/Constellation/iv/commit/64c3a9c7c517063f29d90d449180ea8f6f4d946f">2015-03-24</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/iv-lv5.json">json</a>)</li>
-<li>Overall: 16% (8500/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 18.7% (7777/41549)</li>
+<li>Overall: 16% (8505/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 18.7% (7779/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 32.6% (2673/8197)<pre>
+<li>ES5: 32.6% (2669/8197)<pre>
 caller: 30.4% (7/23)
 </pre></li>
-<li>ES6: 12.2% (1352/11054)<pre>
+<li>ES6: 12.3% (1355/11054)<pre>
 __proto__: 0% (0/18)
 Array.prototype.values: 0% (0/4)
 ArrayBuffer: 0% (0/268)
@@ -105,7 +105,7 @@ Symbol.iterator: 0.5% (9/1865)
 Symbol.match: 1.1% (1/88)
 Symbol.replace: 0% (0/98)
 Symbol.search: 0% (0/37)
-Symbol.species: 3.3% (9/276)
+Symbol.species: 3.6% (10/276)
 Symbol.split: 0% (0/58)
 Symbol.toPrimitive: 0.4% (1/233)
 Symbol.toStringTag: 1.5% (2/131)
@@ -286,6 +286,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 24% (2095/8718)</li>
+<li>N/A: 24.1% (2101/8718)</li>
 </ul>
 </details>

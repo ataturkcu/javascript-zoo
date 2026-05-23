@@ -60,7 +60,7 @@ Small footprint embedded ES5 engine.
 <a href="../../conformance/es5/Function.prototype.bind.js">Function.prototype.bind.js</a>: FAIL: argument binding failed; length property incorrect; bound constructor failed; non-callable does not throw TypeError
 <a href="../../conformance/es5/JSON.parse.js">JSON.parse.js</a>: SyntaxError: Parse JSON error
 <a href="../../conformance/es5/JSON.stringify.js">JSON.stringify.js</a>: TypeError: Structure is cyclical
-<a href="../../conformance/es5/JSON.stringify.replacer.js">JSON.stringify.replacer.js</a>: FAIL: replacer function failed; replacer array failed
+<a href="../../conformance/es5/JSON.stringify.replacer.js">JSON.stringify.replacer.js</a>: FAIL: replacer function failed
 <a href="../../conformance/es5/JSON.stringify.space.js">JSON.stringify.space.js</a>: FAIL: space parameter failed
 <a href="../../conformance/es5/Object.create.js">Object.create.js</a>: TypeError: Value is not an object
 <a href="../../conformance/es5/global.Infinity.immutable.js">global.Infinity.immutable.js</a>: FAIL: Infinity is not a number after assignment; Infinity not positive infinity after assignment

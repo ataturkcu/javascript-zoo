@@ -46,14 +46,14 @@ JavaScript engine of Safari/WebKit.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: 311817 with experimental flags (<a href="https://github.com/WebKit/WebKit/commit/89dd2f9ec73985c4f68a7a8bb299e1121b2a78b5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/jsc_exp.json">json</a>)</li>
+<li>Tested version: 313706 with experimental flags (<a href="https://github.com/WebKit/WebKit/commit/cf9c1ca91a47666c6aa6c80310936ed064f122e0">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/jsc_exp.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 100%, ES2016+ 100%, Next 39%, Intl 100%</summary><ul>
-<li>Tested version: 311817 with experimental flags (<a href="https://github.com/WebKit/WebKit/commit/89dd2f9ec73985c4f68a7a8bb299e1121b2a78b5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/jsc_exp.json">json</a>)</li>
+<li>Tested version: 313706 with experimental flags (<a href="https://github.com/WebKit/WebKit/commit/cf9c1ca91a47666c6aa6c80310936ed064f122e0">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/jsc_exp.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 100%</li>
 <li>ES2016: 100%</li>
@@ -70,16 +70,16 @@ JavaScript engine of Safari/WebKit.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 92.1%, main 99.8%, staging 97.4%, annexB 99.9%, Next 48.6%, Intl 38.9%</summary>
+<details><summary>test262: 92.4%, main 99.8%, staging 97.5%, annexB 99.9%, Next 50.5%, Intl 38.9%</summary>
 <ul>
-<li>Tested version: 311817 with experimental flags (<a href="https://github.com/WebKit/WebKit/commit/89dd2f9ec73985c4f68a7a8bb299e1121b2a78b5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/jsc_exp.json">json</a>)</li>
-<li>Overall: 92.1% (48987/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.8% (41479/41549)</li>
+<li>Tested version: 313706 with experimental flags (<a href="https://github.com/WebKit/WebKit/commit/cf9c1ca91a47666c6aa6c80310936ed064f122e0">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/jsc_exp.json">json</a>)</li>
+<li>Overall: 92.4% (49140/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.8% (41480/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 100% (8197/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 99.7% (11020/11054)<pre>
+<li>ES6: 99.7% (11021/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 100% (268/268)
@@ -112,7 +112,7 @@ String.prototype.includes: 100% (26/26)
 Symbol: 90.9% (1358/1494)
 Symbol.hasInstance: 100% (17/17)
 Symbol.isConcatSpreadable: 100% (34/34)
-Symbol.iterator: 99.7% (1860/1865)
+Symbol.iterator: 99.8% (1861/1865)
 Symbol.match: 100% (88/88)
 Symbol.replace: 100% (98/98)
 Symbol.search: 100% (37/37)
@@ -164,7 +164,7 @@ intl-normative-optional: 100% (4/4)
 IsHTMLDDA: 100% (42/42)
 Promise.prototype.finally: 100% (29/29)
 Symbol.asyncIterator: 100% (538/538)
-async-iteration: 99.7% (4953/4968)
+async-iteration: 99.8% (4957/4968)
 object-rest: 100% (355/355)
 object-spread: 100% (135/135)
 regexp-dotall: 100% (17/17)
@@ -194,7 +194,7 @@ Promise.allSettled: 100% (102/102)
 String.prototype.matchAll: 100% (16/16)
 Symbol.matchAll: 100% (63/63)
 coalesce-expression: 100% (26/26)
-dynamic-import: 84.2% (797/946)
+dynamic-import: 90.4% (855/946)
 export-star-as-namespace-from-module: 100% (19/19)
 for-in-order: 100% (9/9)
 globalThis: 100% (148/148)
@@ -236,7 +236,7 @@ class-static-fields-public: 100% (213/213)
 class-static-methods-private: 100% (1513/1513)
 error-cause: 100% (5/5)
 regexp-match-indices: 100% (31/31)
-top-level-await: 96.3% (261/271)
+top-level-await: 100% (271/271)
 </pre></li>
 <li>ES2023: 99.8% (409/410)<pre>
 Intl-enumeration: 65.7% (23/35)
@@ -278,7 +278,7 @@ json-parse-with-source: 100% (22/22)
 uint8array-base64: 97.1% (67/69)
 upsert: 100% (72/72)
 </pre></li>
-<li>Next: 48.6% (3839/7895)<pre>
+<li>Next: 50.5% (3989/7895)<pre>
 Atomics.pause: 100% (6/6)
 ShadowRealm: 100% (64/64)
 Temporal: 45.3% (3025/6671)
@@ -288,7 +288,7 @@ decorators: 11.1% (3/27)
 explicit-resource-management: 100% (477/477)
 immutable-arraybuffer: 5% (1/20)
 import-bytes: 0% (0/5)
-import-defer: 34.1% (78/229)
+import-defer: 99.6% (228/229)
 import-text: 0% (0/6)
 joint-iteration: 6.4% (5/78)
 legacy-regexp: 100% (26/26)
@@ -297,6 +297,6 @@ regexp-duplicate-named-groups: 100% (19/19)
 source-phase-imports: 56.6% (129/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 99.2% (8649/8718)</li>
+<li>N/A: 99.2% (8651/8718)</li>
 </ul>
 </details>

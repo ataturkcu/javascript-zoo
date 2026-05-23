@@ -126,13 +126,13 @@ Experimental JavaScript engine written in C++.
 <details><summary>test262: 33.8%, main 40.1%, staging 25.8%, annexB 35.6%, Next 5.9%, Intl 2.7%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/solarbrowser/quanta/commit/04bcf711ebf69bdcc31a4ae6b66411af471b7a7a">2026-04-10</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/quanta.json">json</a>)</li>
-<li>Overall: 33.8% (17969/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 40.1% (16662/41549)</li>
+<li>Overall: 33.8% (17973/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 40.1% (16665/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 72% (5904/8197)<pre>
+<li>ES5: 72% (5902/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 37.2% (4111/11054)<pre>
+<li>ES6: 37.2% (4114/11054)<pre>
 __proto__: 50% (9/18)
 Array.prototype.values: 75% (3/4)
 ArrayBuffer: 32.1% (86/268)
@@ -169,12 +169,12 @@ Symbol.iterator: 8% (150/1865)
 Symbol.match: 36.4% (32/88)
 Symbol.replace: 22.4% (22/98)
 Symbol.search: 48.6% (18/37)
-Symbol.species: 17% (47/276)
+Symbol.species: 17.8% (49/276)
 Symbol.split: 25.9% (15/58)
 Symbol.toPrimitive: 9% (21/233)
 Symbol.toStringTag: 16% (21/131)
 Symbol.unscopables: 18.2% (8/44)
-TypedArray: 19% (477/2513)
+TypedArray: 19% (478/2513)
 Uint16Array: 66.7% (4/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 36.4% (4/11)
@@ -182,15 +182,15 @@ Uint8ClampedArray: 66.7% (4/6)
 WeakMap: 39.2% (31/79)
 WeakSet: 47.1% (16/34)
 arrow-function: 47.4% (450/949)
-class: 33.4% (1591/4768)
+class: 33.3% (1590/4768)
 computed-property-names: 20.7% (99/478)
 const: 0% (0/15)
 cross-realm: 0% (0/201)
-default-parameters: 30.5% (691/2269)
+default-parameters: 30.5% (692/2269)
 destructuring-assignment: 36.2% (51/141)
 destructuring-binding: 25.4% (1685/6637)
 for-of: 0% (0/5)
-generators: 20.4% (833/4085)
+generators: 20.4% (834/4085)
 let: 14.3% (11/77)
 new.target: 37.7% (23/61)
 proxy-missing-checks: 0% (0/3)
@@ -204,22 +204,22 @@ Array.prototype.includes: 27.5% (19/69)
 exponentiation: 34% (35/103)
 u180e: 64% (16/25)
 </pre></li>
-<li>ES2017: 35.6% (272/763)<pre>
+<li>ES2017: 35.8% (273/763)<pre>
 __getter__: 22.2% (6/27)
 __setter__: 22.2% (6/27)
-Atomics: 24.6% (93/378)
+Atomics: 24.9% (94/378)
 Intl.DateTimeFormat-dayPeriod: 0% (0/12)
 SharedArrayBuffer: 15.5% (72/464)
 async-functions: 21.8% (154/705)
 intl-normative-optional: 100% (4/4)
 </pre></li>
-<li>ES2018: 8.2% (397/4855)<pre>
+<li>ES2018: 8.2% (398/4855)<pre>
 IsHTMLDDA: 0% (0/42)
 Promise.prototype.finally: 27.6% (8/29)
 Symbol.asyncIterator: 0% (0/538)
 async-iteration: 7.7% (384/4968)
 object-rest: 17.7% (63/355)
-object-spread: 52.6% (71/135)
+object-spread: 53.3% (72/135)
 regexp-dotall: 5.9% (1/17)
 regexp-lookbehind: 15.8% (3/19)
 regexp-named-groups: 2% (2/100)
@@ -254,7 +254,7 @@ globalThis: 33.1% (49/148)
 import.meta: 65.2% (15/23)
 optional-chaining: 64.3% (36/56)
 </pre></li>
-<li>ES2021: 16.6% (153/920)<pre>
+<li>ES2021: 16.5% (152/920)<pre>
 AggregateError: 45.2% (14/31)
 FinalizationRegistry: 34.7% (17/49)
 Intl.DateTimeFormat-datetimestyle: 0% (0/16)
@@ -266,11 +266,11 @@ Intl.Locale: 0% (0/156)
 Promise.any: 8.7% (8/92)
 String.prototype.replaceAll: 14.6% (6/41)
 WeakRef: 35.1% (13/37)
-align-detached-buffer-semantics-with-web-reality: 1.3% (2/158)
+align-detached-buffer-semantics-with-web-reality: 0.6% (1/158)
 logical-assignment-operators: 11.1% (12/108)
 numeric-separator-literal: 47.8% (76/159)
 </pre></li>
-<li>ES2022: 31.8% (1736/5465)<pre>
+<li>ES2022: 31.7% (1735/5465)<pre>
 Array.prototype.at: 72.7% (8/11)
 Intl.DateTimeFormat-extend-timezonename: 0% (0/2)
 Intl.DisplayNames-v2: 0% (0/12)
@@ -281,12 +281,12 @@ TypedArray.prototype.at: 61.5% (8/13)
 arbitrary-module-namespace-names: 0% (0/16)
 class-fields-private: 34.4% (390/1134)
 class-fields-private-in: 21.1% (4/19)
-class-fields-public: 36.8% (757/2058)
+class-fields-public: 36.7% (756/2058)
 class-methods-private: 29.7% (507/1709)
 class-static-block: 43.1% (28/65)
 class-static-fields-private: 20.9% (72/345)
 class-static-fields-public: 1.9% (4/213)
-class-static-methods-private: 32.9% (498/1513)
+class-static-methods-private: 32.8% (497/1513)
 error-cause: 60% (3/5)
 regexp-match-indices: 3.2% (1/31)
 top-level-await: 73.1% (198/271)
@@ -299,10 +299,10 @@ change-array-by-copy: 40.2% (53/132)
 hashbang: 48.3% (14/29)
 symbols-as-weakmap-keys: 3.4% (1/29)
 </pre></li>
-<li>ES2024: 6% (50/840)<pre>
+<li>ES2024: 5.8% (49/840)<pre>
 Atomics.waitAsync: 0% (0/101)
 String.prototype.isWellFormed: 50% (4/8)
-String.prototype.toWellFormed: 50% (4/8)
+String.prototype.toWellFormed: 37.5% (3/8)
 array-grouping: 39.3% (11/28)
 arraybuffer-transfer: 28.8% (17/59)
 promise-with-resolvers: 11.1% (1/9)
@@ -331,10 +331,10 @@ json-parse-with-source: 18.2% (4/22)
 uint8array-base64: 0% (0/69)
 upsert: 29.2% (21/72)
 </pre></li>
-<li>Next: 5.9% (463/7895)<pre>
+<li>Next: 5.9% (464/7895)<pre>
 Atomics.pause: 0% (0/6)
 ShadowRealm: 0% (0/64)
-Temporal: 4.9% (324/6671)
+Temporal: 4.9% (325/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 0% (0/19)
 decorators: 0% (0/27)
@@ -350,6 +350,6 @@ regexp-duplicate-named-groups: 21.1% (4/19)
 source-phase-imports: 0.9% (2/228)
 source-phase-imports-module-source: 0% (0/84)
 </pre></li>
-<li>N/A: 48.6% (4236/8718)</li>
+<li>N/A: 48.6% (4239/8718)</li>
 </ul>
 </details>

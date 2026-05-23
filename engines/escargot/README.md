@@ -20,14 +20,14 @@ Lightweight JavaScript engine by Samsung for mid-range devices like phones/TVs.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/Samsung/escargot/commit/633fe63795cd470e1bf2893cd5ce6f98ff3ce70b">2026-04-16</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/escargot_full.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/Samsung/escargot/commit/36f5fb58366a67b713c02f6fd985e924fcc09e31">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/escargot_full.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 99%, ES2016+ 100%, Next 39%, Intl 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/Samsung/escargot/commit/633fe63795cd470e1bf2893cd5ce6f98ff3ce70b">2026-04-16</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/escargot_full.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/Samsung/escargot/commit/36f5fb58366a67b713c02f6fd985e924fcc09e31">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/escargot_full.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 99.6%<pre>
 <a href="../../conformance/compat-table/es6/Map.prototype-not-instance.js">Map.prototype-not-instance.js</a>: FAIL
@@ -54,9 +54,9 @@ Lightweight JavaScript engine by Samsung for mid-range devices like phones/TVs.
 
 <details><summary>test262: 96.8%, main 99.1%, staging 91.2%, annexB 99.3%, Next 85%, Intl 78.5%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/Samsung/escargot/commit/633fe63795cd470e1bf2893cd5ce6f98ff3ce70b">2026-04-16</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/escargot_full.json">json</a>)</li>
-<li>Overall: 96.8% (51446/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.1% (41175/41549)</li>
+<li>Tested version: <a href="https://github.com/Samsung/escargot/commit/36f5fb58366a67b713c02f6fd985e924fcc09e31">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/escargot_full.json">json</a>)</li>
+<li>Overall: 96.8% (51443/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.1% (41172/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 99.8% (8184/8197)<pre>
 caller: 100% (23/23)
@@ -91,7 +91,7 @@ Set: 100% (38/38)
 String.fromCodePoint: 100% (22/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
-Symbol: 99% (1479/1494)
+Symbol: 98.9% (1478/1494)
 Symbol.hasInstance: 100% (17/17)
 Symbol.isConcatSpreadable: 100% (34/34)
 Symbol.iterator: 99.9% (1863/1865)
@@ -100,10 +100,10 @@ Symbol.replace: 100% (98/98)
 Symbol.search: 100% (37/37)
 Symbol.species: 99.3% (274/276)
 Symbol.split: 100% (58/58)
-Symbol.toPrimitive: 100% (233/233)
+Symbol.toPrimitive: 99.6% (232/233)
 Symbol.toStringTag: 100% (131/131)
 Symbol.unscopables: 93.2% (41/44)
-TypedArray: 99.8% (2508/2513)
+TypedArray: 99.7% (2505/2513)
 Uint16Array: 100% (6/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 100% (11/11)
@@ -133,12 +133,12 @@ Array.prototype.includes: 97.1% (67/69)
 exponentiation: 100% (103/103)
 u180e: 100% (25/25)
 </pre></li>
-<li>ES2017: 99% (755/763)<pre>
+<li>ES2017: 98.7% (753/763)<pre>
 __getter__: 100% (27/27)
 __setter__: 100% (27/27)
-Atomics: 99.5% (376/378)
+Atomics: 98.7% (373/378)
 Intl.DateTimeFormat-dayPeriod: 100% (12/12)
-SharedArrayBuffer: 99.1% (460/464)
+SharedArrayBuffer: 98.5% (457/464)
 async-functions: 99.1% (699/705)
 intl-normative-optional: 100% (4/4)
 </pre></li>
@@ -168,8 +168,8 @@ stable-typedarray-sort: 100% (1/1)
 string-trimming: 100% (54/54)
 well-formed-json-stringify: 100% (1/1)
 </pre></li>
-<li>ES2020: 97.4% (2101/2156)<pre>
-BigInt: 99.7% (1496/1501)
+<li>ES2020: 97.4% (2100/2156)<pre>
+BigInt: 99.6% (1495/1501)
 Intl.NumberFormat-unified: 100% (67/67)
 Intl.RelativeTimeFormat: 100% (79/79)
 Promise.allSettled: 100% (102/102)

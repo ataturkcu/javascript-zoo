@@ -14,11 +14,10 @@ JavaScript engine written in Rust.
 
 <details><summary>ES1-ES5: 97%</summary><ul>
 <li>Tested version: <a href="https://github.com/nupha/zuqe/commit/3d05a00633375b3aa139db116f0763e829957745">2026-03-11</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/zuqe.json">json</a>)</li>
-<li>ES1: 98% (194/198)<pre>
+<li>ES1: 98.5% (195/198)<pre>
 <a href="../../conformance/es1/annex-b.global.escape.js">annex-b.global.escape.js</a>: ReferenceError: 'escape' is not defined
 <a href="../../conformance/es1/annex-b.global.unescape.js">annex-b.global.unescape.js</a>: ReferenceError: 'unescape' is not defined
 <a href="../../conformance/es1/conversions.ToInt32.js">conversions.ToInt32.js</a>: FAIL: +Infinity failed; 2^32-1 failed; 2^32 failed; 2^31 failed; -2^31 failed; -2^31-1 failed
-<a href="../../conformance/es1/conversions.js">conversions.js</a>: FAIL: 123 != '123'; '123' != 123.0; '123' &gt;= 124; 123 - '123' != 0
 </pre></li>
 <li>ES3: 96.6% (143/148)<pre>
 <a href="../../conformance/es3/Number.prototype.toExponential.rounding.js">Number.prototype.toExponential.rounding.js</a>: FAIL: (1.255).toExponential(2) != '1.25e+0', got '1.26e+0'
@@ -27,7 +26,8 @@ JavaScript engine written in Rust.
 <a href="../../conformance/es3/global.encodeURIComponent.js">global.encodeURIComponent.js</a>: ReferenceError: 'encodeURIComponent' is not defined
 <a href="../../conformance/es3/global.encodeURI.js">global.encodeURI.js</a>: ReferenceError: 'encodeURI' is not defined
 </pre></li>
-<li>ES5: 97.3% (72/74)<pre>
+<li>ES5: 95.9% (71/74)<pre>
+<a href="../../conformance/es5/JSON.parse.js">JSON.parse.js</a>: FAIL: negative number failed; fraction failed
 <a href="../../conformance/es5/strict.reserved-words.js">strict.reserved-words.js</a>: FAIL: 'var yield' did not throw in strict mode
 <a href="../../conformance/es5/strict.this-primitive-not-coerced-in-accessors.js">strict.this-primitive-not-coerced-in-accessors.js</a>: FAIL: string 'this' was coerced in accessor
 </pre></li>
@@ -41,7 +41,7 @@ JavaScript engine written in Rust.
 <a href="../../conformance/compat-table/es5/strict.reserved-words.js">strict.reserved-words.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.this-not-coerced-accessors.js">strict.this-not-coerced-accessors.js</a>: FAIL
 </pre></li>
-<li>ES6: 93.1%<pre>
+<li>ES6: 93.3%<pre>
 <a href="../../conformance/compat-table/es6/Promise.all.iterable.js">Promise.all.iterable.js</a>: TIMEOUT: &gt;60s
 <a href="../../conformance/compat-table/es6/Promise.all.js">Promise.all.js</a>: TIMEOUT: &gt;60s
 <a href="../../conformance/compat-table/es6/Promise.constructor-requires-new.js">Promise.constructor-requires-new.js</a>: FAIL
@@ -53,7 +53,6 @@ JavaScript engine written in Rust.
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.lowercase.js">annex-b.String.prototype.html.lowercase.js</a>: TypeError: not a function
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.quotes-escaped.js">annex-b.String.prototype.html.quotes-escaped.js</a>: TypeError: not a function
 <a href="../../conformance/compat-table/es6/annex-b.function.if-statement.js">annex-b.function.if-statement.js</a>: TypeError: not a function
-<a href="../../conformance/compat-table/es6/literals.binary.Number.js">literals.binary.Number.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.RegExp.Symbol.split.js">misc.Proxy.get.RegExp.Symbol.split.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.RegExp.test.js">misc.Proxy.get.RegExp.test.js</a>: TypeError: RegExp object expected
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.String.match.js">misc.Proxy.get.String.match.js</a>: FAIL
@@ -62,6 +61,7 @@ JavaScript engine written in Rust.
 <a href="../../conformance/compat-table/es6/misc.bound-function-prototype.arrow.js">misc.bound-function-prototype.arrow.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.bound-function-prototype.class.js">misc.bound-function-prototype.class.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.bound-function-prototype.function.js">misc.bound-function-prototype.function.js</a>: FAIL
+<a href="../../conformance/compat-table/es6/misc.bound-function-prototype.generator.js">misc.bound-function-prototype.generator.js</a>: FAIL
 ...
 </pre></li>
 <li>ES2016: 100%</li>
@@ -119,13 +119,13 @@ JavaScript engine written in Rust.
 <details><summary>test262: 74.9%, main 90.7%, staging 65%, annexB 80.2%, Next 3.6%, Intl 0.6%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/nupha/zuqe/commit/3d05a00633375b3aa139db116f0763e829957745">2026-03-11</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/zuqe.json">json</a>)</li>
-<li>Overall: 74.9% (39828/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 90.7% (37696/41549)</li>
+<li>Overall: 74.9% (39825/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 90.7% (37693/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 98% (8030/8197)<pre>
 caller: 91.3% (21/23)
 </pre></li>
-<li>ES6: 95.3% (10531/11054)<pre>
+<li>ES6: 95.3% (10529/11054)<pre>
 __proto__: 94.4% (17/18)
 Array.prototype.values: 75% (3/4)
 ArrayBuffer: 17.2% (46/268)
@@ -152,7 +152,7 @@ Reflect.construct: 62.6% (436/696)
 Reflect.set: 78.3% (36/46)
 Reflect.setPrototypeOf: 100% (23/23)
 Set: 94.7% (36/38)
-String.fromCodePoint: 100% (22/22)
+String.fromCodePoint: 95.5% (21/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
 Symbol: 51.3% (767/1494)
@@ -164,10 +164,10 @@ Symbol.replace: 94.9% (93/98)
 Symbol.search: 91.9% (34/37)
 Symbol.species: 71% (196/276)
 Symbol.split: 89.7% (52/58)
-Symbol.toPrimitive: 52.8% (123/233)
+Symbol.toPrimitive: 52.4% (122/233)
 Symbol.toStringTag: 64.1% (84/131)
 Symbol.unscopables: 95.5% (42/44)
-TypedArray: 48.9% (1228/2513)
+TypedArray: 48.8% (1227/2513)
 Uint16Array: 33.3% (2/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 63.6% (7/11)
@@ -197,12 +197,12 @@ Array.prototype.includes: 49.3% (34/69)
 exponentiation: 85.4% (88/103)
 u180e: 100% (25/25)
 </pre></li>
-<li>ES2017: 62.5% (477/763)<pre>
+<li>ES2017: 62.4% (476/763)<pre>
 __getter__: 0% (0/27)
 __setter__: 0% (0/27)
 Atomics: 0% (0/378)
 Intl.DateTimeFormat-dayPeriod: 0% (0/12)
-SharedArrayBuffer: 33% (153/464)
+SharedArrayBuffer: 32.8% (152/464)
 async-functions: 92.8% (654/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>

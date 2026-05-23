@@ -27,10 +27,10 @@ Embeddable JavaScript engine.
 <li>ES1: 73.7% (146/198)<pre>
 <a href="../../conformance/es1/Array.js">Array.js</a>: FAIL: Array.length failed
 <a href="../../conformance/es1/Array.prototype.constructor.js">Array.prototype.constructor.js</a>: FAIL: Array.prototype.constructor failed
-<a href="../../conformance/es1/Array.prototype.join.generic.js">Array.prototype.join.generic.js</a>: FAIL
+<a href="../../conformance/es1/Array.prototype.join.generic.js">Array.prototype.join.generic.js</a>: CRASH: SIGSEGV
 <a href="../../conformance/es1/Array.prototype.join.js">Array.prototype.join.js</a>: FAIL: join() without separator failed
-<a href="../../conformance/es1/Array.prototype.reverse.generic.js">Array.prototype.reverse.generic.js</a>: CRASH: SIGSEGV
-<a href="../../conformance/es1/Array.prototype.sort.generic.js">Array.prototype.sort.generic.js</a>: FAIL
+<a href="../../conformance/es1/Array.prototype.reverse.generic.js">Array.prototype.reverse.generic.js</a>: FAIL
+<a href="../../conformance/es1/Array.prototype.sort.generic.js">Array.prototype.sort.generic.js</a>: CRASH: SIGSEGV
 <a href="../../conformance/es1/Array.prototype.sort.js">Array.prototype.sort.js</a>: FAIL: sort with comparefn failed; reverse comparefn failed
 <a href="../../conformance/es1/Boolean.js">Boolean.js</a>: FAIL: new Boolean(true) failed; new Boolean() failed
 <a href="../../conformance/es1/Boolean.prototype.constructor.js">Boolean.prototype.constructor.js</a>: FAIL: Boolean.prototype.constructor failed
@@ -116,8 +116,8 @@ Embeddable JavaScript engine.
 <details><summary>test262: 6%, main 7.3%, staging 0.3%, annexB 0.4%, Next 1.7%, Intl 0%</summary>
 <ul>
 <li>Tested version: 2.7.7-22-gbb38d46e9 (<a href="https://github.com/embedthis/ejscript/commit/bb38d46e96ad20e923821d31d4a37e64de926d5a">2025-03-09</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/ejscript.json">json</a>)</li>
-<li>Overall: 6% (3198/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 7.3% (3052/41549)</li>
+<li>Overall: 6% (3197/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 7.3% (3051/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 2.2% (183/8197)<pre>
 caller: 0% (0/23)
@@ -203,11 +203,11 @@ SharedArrayBuffer: 0% (0/464)
 async-functions: 25.7% (181/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>
-<li>ES2018: 12% (584/4855)<pre>
+<li>ES2018: 12% (583/4855)<pre>
 IsHTMLDDA: 0% (0/42)
 Promise.prototype.finally: 0% (0/29)
 Symbol.asyncIterator: 0% (0/538)
-async-iteration: 11.2% (556/4968)
+async-iteration: 11.2% (555/4968)
 object-rest: 1.1% (4/355)
 object-spread: 17.8% (24/135)
 regexp-dotall: 0% (0/17)

@@ -54,14 +54,14 @@ JavaScript engine of Chrome, Node.js etc.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: 14.9.102 with experimental flags (<a href="https://github.com/v8/v8/commit/863bc0d099db5255ac22b45d3511d63e5ae59b39">2026-04-14</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/v8_exp.json">json</a>)</li>
+<li>Tested version: 15.0.188 with experimental flags (<a href="https://github.com/v8/v8/commit/5b5f77018c9296911170b4f886570c1735e97919">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/v8_exp.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 99%, Next 39%, Intl 100%</summary><ul>
-<li>Tested version: 14.9.102 with experimental flags (<a href="https://github.com/v8/v8/commit/863bc0d099db5255ac22b45d3511d63e5ae59b39">2026-04-14</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/v8_exp.json">json</a>)</li>
+<li>Tested version: 15.0.188 with experimental flags (<a href="https://github.com/v8/v8/commit/5b5f77018c9296911170b4f886570c1735e97919">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/v8_exp.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 98%<pre>
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.RegExp.flags.js">misc.Proxy.get.RegExp.flags.js</a>: FAIL
@@ -87,16 +87,16 @@ JavaScript engine of Chrome, Node.js etc.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 99%, main 99.2%, staging 99.3%, annexB 97.5%, Next 98%, Intl 98.9%</summary>
+<details><summary>test262: 99.1%, main 99.2%, staging 99.4%, annexB 97.5%, Next 98.6%, Intl 98.9%</summary>
 <ul>
-<li>Tested version: 14.9.102 with experimental flags (<a href="https://github.com/v8/v8/commit/863bc0d099db5255ac22b45d3511d63e5ae59b39">2026-04-14</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/v8_exp.json">json</a>)</li>
-<li>Overall: 99% (52653/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.2% (41216/41549)</li>
+<li>Tested version: 15.0.188 with experimental flags (<a href="https://github.com/v8/v8/commit/5b5f77018c9296911170b4f886570c1735e97919">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/v8_exp.json">json</a>)</li>
+<li>Overall: 99.1% (52697/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.2% (41217/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 99.2% (8135/8197)<pre>
+<li>ES5: 99.2% (8134/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 99.5% (11003/11054)<pre>
+<li>ES6: 99.5% (11004/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 100% (268/268)
@@ -133,12 +133,12 @@ Symbol.iterator: 100% (1865/1865)
 Symbol.match: 100% (88/88)
 Symbol.replace: 100% (98/98)
 Symbol.search: 100% (37/37)
-Symbol.species: 99.3% (274/276)
+Symbol.species: 100% (276/276)
 Symbol.split: 100% (58/58)
 Symbol.toPrimitive: 100% (233/233)
 Symbol.toStringTag: 100% (131/131)
 Symbol.unscopables: 93.2% (41/44)
-TypedArray: 99.6% (2503/2513)
+TypedArray: 99.7% (2505/2513)
 Uint16Array: 100% (6/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 100% (11/11)
@@ -203,15 +203,15 @@ stable-typedarray-sort: 100% (1/1)
 string-trimming: 100% (54/54)
 well-formed-json-stringify: 100% (1/1)
 </pre></li>
-<li>ES2020: 98.4% (2121/2156)<pre>
-BigInt: 99.8% (1498/1501)
+<li>ES2020: 98.4% (2122/2156)<pre>
+BigInt: 99.9% (1499/1501)
 Intl.NumberFormat-unified: 100% (67/67)
 Intl.RelativeTimeFormat: 100% (79/79)
 Promise.allSettled: 100% (102/102)
 String.prototype.matchAll: 100% (16/16)
 Symbol.matchAll: 100% (63/63)
 coalesce-expression: 92.3% (24/26)
-dynamic-import: 99.9% (945/946)
+dynamic-import: 100% (946/946)
 export-star-as-namespace-from-module: 100% (19/19)
 for-in-order: 100% (9/9)
 globalThis: 78.4% (116/148)
@@ -277,7 +277,7 @@ resizable-arraybuffer: 98.9% (458/463)
 Float16Array: 100% (51/51)
 Intl.DurationFormat: 98.2% (110/112)
 RegExp.escape: 100% (21/21)
-import-attributes: 89% (89/100)
+import-attributes: 95% (95/100)
 iterator-helpers: 100% (567/567)
 json-modules: 100% (13/13)
 promise-try: 100% (12/12)
@@ -295,10 +295,10 @@ json-parse-with-source: 100% (22/22)
 uint8array-base64: 98.6% (68/69)
 upsert: 100% (72/72)
 </pre></li>
-<li>Next: 98% (7741/7895)<pre>
+<li>Next: 98.6% (7783/7895)<pre>
 Atomics.pause: 100% (6/6)
 ShadowRealm: 96.9% (62/64)
-Temporal: 99.7% (6654/6671)
+Temporal: 99.7% (6650/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 78.9% (15/19)
 decorators: 25.9% (7/27)
@@ -306,14 +306,14 @@ explicit-resource-management: 100% (477/477)
 immutable-arraybuffer: 75% (15/20)
 import-bytes: 0% (0/5)
 import-defer: 100% (229/229)
-import-text: 0% (0/6)
-joint-iteration: 48.7% (38/78)
+import-text: 100% (6/6)
+joint-iteration: 100% (78/78)
 legacy-regexp: 3.8% (1/26)
 nonextensible-applies-to-private: 100% (4/4)
 regexp-duplicate-named-groups: 100% (19/19)
 source-phase-imports: 100% (228/228)
 source-phase-imports-module-source: 100% (84/84)
 </pre></li>
-<li>N/A: 98.8% (8610/8718)</li>
+<li>N/A: 98.8% (8611/8718)</li>
 </ul>
 </details>

@@ -109,10 +109,10 @@ Toy metacircular JavaScript interpreter.
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 26.1%, main 31.8%, staging 15.2%, annexB 13.2%, Next 3.4%, Intl 0.5%</summary>
+<details><summary>test262: 26.1%, main 31.8%, staging 15.2%, annexB 13.2%, Next 3.5%, Intl 0.5%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/bramblex/jsjs/commit/ab7133f7435acdf16a86473cbd36ab68d6195fba">2018-03-08</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/bramblex.json">json</a>)</li>
-<li>Overall: 26.1% (13877/53167)</li>
+<li>Overall: 26.1% (13880/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 31.8% (13225/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 67.8% (5559/8197)<pre>
@@ -141,7 +141,7 @@ Object.is: 0% (0/2)
 Promise: 25% (1/4)
 Proxy: 0% (0/468)
 Reflect: 0% (0/468)
-Reflect.construct: 1.1% (8/696)
+Reflect.construct: 1.3% (9/696)
 Reflect.set: 0% (0/46)
 Reflect.setPrototypeOf: 0% (0/23)
 Set: 0% (0/38)
@@ -317,10 +317,10 @@ json-parse-with-source: 9.1% (2/22)
 uint8array-base64: 0% (0/69)
 upsert: 0% (0/72)
 </pre></li>
-<li>Next: 3.4% (271/7895)<pre>
+<li>Next: 3.5% (274/7895)<pre>
 Atomics.pause: 0% (0/6)
 ShadowRealm: 0% (0/64)
-Temporal: 0% (0/6671)
+Temporal: 0% (3/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 0% (0/19)
 decorators: 0% (0/27)

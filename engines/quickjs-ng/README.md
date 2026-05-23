@@ -29,14 +29,14 @@ Pass `--script` argument to force classic sloppy script mode.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: 0.14.0-11-gc707cf5 (<a href="https://github.com/quickjs-ng/quickjs/commit/c707cf5eda67a97bbff7a60cb2ef124fd4a77420">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/quickjs-ng_262.json">json</a>)</li>
+<li>Tested version: 0.15.0-1-g3adc8c9 (<a href="https://github.com/quickjs-ng/quickjs/commit/3adc8c93284e970760ae394336b307b56ce83024">2026-05-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/quickjs-ng_262.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
-<details><summary>compat-table: ES6 97%, ES2016+ 95%, Next 6%, Intl 25%</summary><ul>
-<li>Tested version: 0.14.0-11-gc707cf5 (<a href="https://github.com/quickjs-ng/quickjs/commit/c707cf5eda67a97bbff7a60cb2ef124fd4a77420">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/quickjs-ng_262.json">json</a>)</li>
+<details><summary>compat-table: ES6 97%, ES2016+ 95%, Next 30%, Intl 25%</summary><ul>
+<li>Tested version: 0.15.0-1-g3adc8c9 (<a href="https://github.com/quickjs-ng/quickjs/commit/3adc8c93284e970760ae394336b307b56ce83024">2026-05-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/quickjs-ng_262.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 96.6%<pre>
 <a href="../../conformance/compat-table/es6/Proxy.handler.construct.invariants.js">Proxy.handler.construct.invariants.js</a>: FAIL
@@ -78,20 +78,20 @@ Pass `--script` argument to force classic sloppy script mode.
 <a href="../../conformance/compat-table/es2025/regex.pattern-modifiers.m.js">regex.pattern-modifiers.m.js</a>: SyntaxError: invalid group
 <a href="../../conformance/compat-table/es2025/regex.pattern-modifiers.s.js">regex.pattern-modifiers.s.js</a>: SyntaxError: invalid group
 </pre></li>
-<li>Next: 6.1%</li>
+<li>Next: 30.3%</li>
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 82.7%, main 99.1%, staging 87.7%, annexB 96.9%, Next 5%, Intl 0.7%</summary>
+<details><summary>test262: 83.4%, main 99.1%, staging 90.8%, annexB 96.9%, Next 10%, Intl 0.7%</summary>
 <ul>
-<li>Tested version: 0.14.0-11-gc707cf5 (<a href="https://github.com/quickjs-ng/quickjs/commit/c707cf5eda67a97bbff7a60cb2ef124fd4a77420">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/quickjs-ng_262.json">json</a>)</li>
-<li>Overall: 82.7% (43949/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.1% (41188/41549)</li>
+<li>Tested version: 0.15.0-1-g3adc8c9 (<a href="https://github.com/quickjs-ng/quickjs/commit/3adc8c93284e970760ae394336b307b56ce83024">2026-05-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/quickjs-ng_262.json">json</a>)</li>
+<li>Overall: 83.4% (44351/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.1% (41189/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 98.5% (8073/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 99.1% (10959/11054)<pre>
+<li>ES6: 99.1% (10960/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 96.6% (259/268)
@@ -113,25 +113,25 @@ Map: 100% (40/40)
 Object.is: 100% (2/2)
 Promise: 100% (4/4)
 Proxy: 97.6% (457/468)
-Reflect: 91.9% (430/468)
-Reflect.construct: 75.6% (526/696)
+Reflect: 92.9% (435/468)
+Reflect.construct: 78.4% (546/696)
 Reflect.set: 93.5% (43/46)
 Reflect.setPrototypeOf: 100% (23/23)
 Set: 100% (38/38)
 String.fromCodePoint: 100% (22/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
-Symbol: 70.3% (1051/1494)
+Symbol: 71.1% (1062/1494)
 Symbol.hasInstance: 100% (17/17)
 Symbol.isConcatSpreadable: 100% (34/34)
-Symbol.iterator: 99.9% (1863/1865)
+Symbol.iterator: 99.9% (1864/1865)
 Symbol.match: 98.9% (87/88)
 Symbol.replace: 99% (97/98)
 Symbol.search: 94.6% (35/37)
 Symbol.species: 99.3% (274/276)
 Symbol.split: 100% (58/58)
-Symbol.toPrimitive: 87.6% (204/233)
-Symbol.toStringTag: 76.3% (100/131)
+Symbol.toPrimitive: 88.4% (206/233)
+Symbol.toStringTag: 77.9% (102/131)
 Symbol.unscopables: 97.7% (43/44)
 TypedArray: 95.7% (2405/2513)
 Uint16Array: 66.7% (4/6)
@@ -140,17 +140,17 @@ Uint8Array: 81.8% (9/11)
 Uint8ClampedArray: 66.7% (4/6)
 WeakMap: 100% (79/79)
 WeakSet: 100% (34/34)
-arrow-function: 73.9% (701/949)
-class: 99.2% (4732/4768)
+arrow-function: 74.9% (711/949)
+class: 99.3% (4734/4768)
 computed-property-names: 95.6% (457/478)
 const: 100% (15/15)
-cross-realm: 87.6% (176/201)
+cross-realm: 90% (181/201)
 default-parameters: 100% (2269/2269)
 destructuring-assignment: 100% (141/141)
 destructuring-binding: 99.9% (6631/6637)
 for-of: 100% (5/5)
-generators: 99.9% (4082/4085)
-let: 98.7% (76/77)
+generators: 99.9% (4084/4085)
+let: 100% (77/77)
 new.target: 100% (61/61)
 proxy-missing-checks: 100% (3/3)
 rest-parameters: 100% (96/96)
@@ -209,7 +209,7 @@ coalesce-expression: 92.3% (24/26)
 dynamic-import: 84.2% (797/946)
 export-star-as-namespace-from-module: 100% (19/19)
 for-in-order: 100% (9/9)
-globalThis: 98.6% (146/148)
+globalThis: 100% (148/148)
 import.meta: 100% (23/23)
 optional-chaining: 100% (56/56)
 </pre></li>
@@ -242,7 +242,7 @@ class-fields-private: 99.6% (1130/1134)
 class-fields-private-in: 94.7% (18/19)
 class-fields-public: 99.8% (2053/2058)
 class-methods-private: 100% (1709/1709)
-class-static-block: 98.5% (64/65)
+class-static-block: 100% (65/65)
 class-static-fields-private: 100% (345/345)
 class-static-fields-public: 99.5% (212/213)
 class-static-methods-private: 100% (1513/1513)
@@ -290,14 +290,14 @@ json-parse-with-source: 95.5% (21/22)
 uint8array-base64: 100% (69/69)
 upsert: 100% (72/72)
 </pre></li>
-<li>Next: 5% (392/7895)<pre>
+<li>Next: 10% (793/7895)<pre>
 Atomics.pause: 100% (6/6)
 ShadowRealm: 0% (0/64)
 Temporal: 0% (0/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 0% (0/19)
 decorators: 11.1% (3/27)
-explicit-resource-management: 15.9% (76/477)
+explicit-resource-management: 100% (477/477)
 immutable-arraybuffer: 100% (20/20)
 import-bytes: 100% (5/5)
 import-defer: 32.3% (74/229)

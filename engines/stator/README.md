@@ -51,7 +51,7 @@ JavaScript engine written in Rust.
 <a href="../../conformance/es3/global.ReferenceError.thrown.js">global.ReferenceError.thrown.js</a>: FAIL: no exception for undeclared variable; wrong exception for undeclared function; no exception for undeclared in expression; wrong exception for property access on undeclared
 ...
 </pre></li>
-<li>ES5: 58.1% (43/74)<pre>
+<li>ES5: 59.5% (44/74)<pre>
 <a href="../../conformance/es5/Array.prototype.every.js">Array.prototype.every.js</a>: FAIL: sparse array skips missing elements failed
 <a href="../../conformance/es5/Array.prototype.filter.js">Array.prototype.filter.js</a>: FAIL: sparse array skips missing elements failed
 <a href="../../conformance/es5/Array.prototype.forEach.js">Array.prototype.forEach.js</a>: FAIL: sparse array skips missing elements failed
@@ -59,7 +59,6 @@ JavaScript engine written in Rust.
 <a href="../../conformance/es5/Array.prototype.sort.TypeError.js">Array.prototype.sort.TypeError.js</a>: FAIL
 <a href="../../conformance/es5/Date.prototype.toJSON.js">Date.prototype.toJSON.js</a>: TypeError: Cannot read properties of undefined (reading 'toISOString')
 <a href="../../conformance/es5/Function.prototype.bind.js">Function.prototype.bind.js</a>: FAIL: bound constructor failed
-<a href="../../conformance/es5/JSON.parse.reviver.js">JSON.parse.reviver.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/range_analysis.rs:408:37:
 <a href="../../conformance/es5/JSON.stringify.replacer.js">JSON.stringify.replacer.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/range_analysis.rs:408:37:
 <a href="../../conformance/es5/JSON.stringify.space.js">JSON.stringify.space.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/range_analysis.rs:408:37:
 <a href="../../conformance/es5/Object.getPrototypeOf.js">Object.getPrototypeOf.js</a>: FAIL: Object.prototype failed
@@ -72,11 +71,12 @@ JavaScript engine written in Rust.
 <a href="../../conformance/es5/strict.js">strict.js</a>: ReferenceError: testVariable is not defined
 <a href="../../conformance/es5/strict.no-arguments-callee.js">strict.no-arguments-callee.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-assignment-to-non-writable.js">strict.no-assignment-to-non-writable.js</a>: FAIL
+<a href="../../conformance/es5/strict.no-assignment-to-unresolvable.js">strict.no-assignment-to-unresolvable.js</a>: FAIL
 ...
 </pre></li>
 </ul></details>
 
-<details><summary>compat-table: ES6 49%, ES2016+ 54%, Next 11%, Intl 79%</summary><ul>
+<details><summary>compat-table: ES6 49%, ES2016+ 55%, Next 11%, Intl 79%</summary><ul>
 <li>Tested version: <a href="https://github.com/telecos/stator/commit/455b1eb10f919ef9f26533a8b741d61e2b3e98c9">2026-04-02</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/stator.json">json</a>)</li>
 <li>ES5: 74%<pre>
 <a href="../../conformance/compat-table/es5/Array.prototype.sort.compareFn-type.js">Array.prototype.sort.compareFn-type.js</a>: FAIL
@@ -101,14 +101,36 @@ JavaScript engine written in Rust.
 <a href="../../conformance/compat-table/es5/strict.reserved-words.js">strict.reserved-words.js</a>: FAIL
 ...
 </pre></li>
-<li>ES6: 49.4%</li>
+<li>ES6: 48.5%</li>
 <li>ES2016: 72.7%<pre>
 <a href="../../conformance/compat-table/es2016/Array.prototype.includes.generic.js">Array.prototype.includes.generic.js</a>: TypeError: CallProperty: callee is not a function (got Undefined)
 <a href="../../conformance/compat-table/es2016/Array.prototype.includes.sparse.js">Array.prototype.includes.sparse.js</a>: FAIL
 <a href="../../conformance/compat-table/es2016/misc.Proxy-Array-includes.js">misc.Proxy-Array-includes.js</a>: TypeError: CallProperty: callee is not a function (got Undefined)
-<a href="../../conformance/compat-table/es2016/misc.generator-no-new.js">misc.generator-no-new.js</a>: InternalError: bytecode fell off the end without Return
+<a href="../../conformance/compat-table/es2016/misc.generator-no-new.js">misc.generator-no-new.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/codegen.rs:2104:57:
 </pre></li>
-<li>ES2017: 48.1%</li>
+<li>ES2017: 52.1%<pre>
+<a href="../../conformance/compat-table/es2017/Object.getOwnPropertyDescriptors.js">Object.getOwnPropertyDescriptors.js</a>: TypeError: Cannot read properties of undefined (reading 'value')
+<a href="../../conformance/compat-table/es2017/SharedArrayBuffer.Symbol.species.js">SharedArrayBuffer.Symbol.species.js</a>: FAIL
+<a href="../../conformance/compat-table/es2017/SharedArrayBuffer.prototype.byteLength.js">SharedArrayBuffer.prototype.byteLength.js</a>: FAIL
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__defineGetter__.ToObject.js">annex-b.Object.prototype.__defineGetter__.ToObject.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/codegen.rs:2104:57:
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__defineGetter__.js">annex-b.Object.prototype.__defineGetter__.js</a>: TypeError: Cannot read properties of undefined (reading 'get')
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__defineGetter__.symbols.js">annex-b.Object.prototype.__defineGetter__.symbols.js</a>: TypeError: Cannot read properties of undefined (reading 'get')
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__defineSetter__.ToObject.js">annex-b.Object.prototype.__defineSetter__.ToObject.js</a>: TypeError: Cannot read properties of undefined (reading 'call')
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__defineSetter__.js">annex-b.Object.prototype.__defineSetter__.js</a>: TypeError: Cannot read properties of undefined (reading 'set')
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__defineSetter__.symbols.js">annex-b.Object.prototype.__defineSetter__.symbols.js</a>: TypeError: Cannot read properties of undefined (reading 'set')
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupGetter__.ToObject.js">annex-b.Object.prototype.__lookupGetter__.ToObject.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/codegen.rs:2104:57:
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupGetter__.js">annex-b.Object.prototype.__lookupGetter__.js</a>: TypeError: CallAnyReceiver: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupGetter__.prototype-chain.js">annex-b.Object.prototype.__lookupGetter__.prototype-chain.js</a>: TypeError: CallAnyReceiver: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupGetter__.shadow-accessors.js">annex-b.Object.prototype.__lookupGetter__.shadow-accessors.js</a>: TypeError: CallProperty: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupGetter__.symbols.js">annex-b.Object.prototype.__lookupGetter__.symbols.js</a>: TypeError: CallAnyReceiver: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupSetter__.ToObject.js">annex-b.Object.prototype.__lookupSetter__.ToObject.js</a>: CRASH: thread '&lt;unnamed&gt;' panicked at crates/stator_core/src/compiler/maglev/codegen.rs:2104:57:
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupSetter__.js">annex-b.Object.prototype.__lookupSetter__.js</a>: TypeError: CallAnyReceiver: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupSetter__.prototype-chain.js">annex-b.Object.prototype.__lookupSetter__.prototype-chain.js</a>: TypeError: CallAnyReceiver: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupSetter__.shadow-accessors.js">annex-b.Object.prototype.__lookupSetter__.shadow-accessors.js</a>: TypeError: CallProperty: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Object.prototype.__lookupSetter__.symbols.js">annex-b.Object.prototype.__lookupSetter__.symbols.js</a>: TypeError: CallAnyReceiver: callee is not a function (got Undefined)
+<a href="../../conformance/compat-table/es2017/annex-b.Proxy.__defineGetter__.js">annex-b.Proxy.__defineGetter__.js</a>: FAIL
+...
+</pre></li>
 <li>ES2018: 50.5%<pre>
 <a href="../../conformance/compat-table/es2018/Promise.prototype.finally.change-rejection.js">Promise.prototype.finally.change-rejection.js</a>: TypeError: Promise.prototype.finally called on non-Promise
 <a href="../../conformance/compat-table/es2018/Promise.prototype.finally.js">Promise.prototype.finally.js</a>: TypeError: Promise.prototype.then called on non-Promise
@@ -175,13 +197,13 @@ JavaScript engine written in Rust.
 <details><summary>test262: 7%, main 7.7%, staging 2.1%, annexB 26%, Next 2.7%, Intl 0%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/telecos/stator/commit/455b1eb10f919ef9f26533a8b741d61e2b3e98c9">2026-04-02</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/stator.json">json</a>)</li>
-<li>Overall: 7% (3711/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 7.7% (3187/41549)</li>
+<li>Overall: 7% (3707/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 7.7% (3183/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 8% (656/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 6.4% (708/11054)<pre>
+<li>ES6: 6.4% (706/11054)<pre>
 __proto__: 0% (0/18)
 Array.prototype.values: 0% (0/4)
 ArrayBuffer: 0% (0/268)
@@ -214,7 +236,7 @@ String.prototype.includes: 0% (0/26)
 Symbol: 0.3% (4/1494)
 Symbol.hasInstance: 0% (0/17)
 Symbol.isConcatSpreadable: 0% (0/34)
-Symbol.iterator: 0.3% (5/1865)
+Symbol.iterator: 0.2% (4/1865)
 Symbol.match: 0% (0/88)
 Symbol.replace: 0% (0/98)
 Symbol.search: 0% (0/37)
@@ -236,7 +258,7 @@ computed-property-names: 0% (0/478)
 const: 0% (0/15)
 cross-realm: 0% (0/201)
 default-parameters: 8.8% (199/2269)
-destructuring-assignment: 4.3% (6/141)
+destructuring-assignment: 3.5% (5/141)
 destructuring-binding: 7.2% (476/6637)
 for-of: 0% (0/5)
 generators: 8.2% (335/4085)
@@ -399,6 +421,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 11.2% (975/8718)</li>
+<li>N/A: 11.2% (973/8718)</li>
 </ul>
 </details>

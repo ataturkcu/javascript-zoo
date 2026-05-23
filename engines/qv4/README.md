@@ -33,7 +33,7 @@ First appeared in Qt 5.0 (2012) as a V8 wrapper, then switched to a home-grown e
 ## Conformance
 
 <details><summary>ES1-ES5: 98%</summary><ul>
-<li>Tested version: <a href="https://github.com/qt/qt5/commit/3687dbd3e25cf9293717c3fc0555414e2813ab17">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/qv4.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/qt/qt5/commit/8dc4442f30fb2868857bf7f5a8e9d50717864c73">2026-05-16</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/qv4.json">json</a>)</li>
 <li>ES1: 99% (196/198)<pre>
 <a href="../../conformance/es1/annex-b.literals.octal.js">annex-b.literals.octal.js</a>: SyntaxError: Unexpected token `'
 <a href="../../conformance/es1/annex-b.literals.string.octal.js">annex-b.literals.string.octal.js</a>: SyntaxError: Unexpected token `'
@@ -51,7 +51,7 @@ First appeared in Qt 5.0 (2012) as a V8 wrapper, then switched to a home-grown e
 </ul></details>
 
 <details><summary>compat-table: ES6 87%, ES2016+ 21%, Next 6%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/qt/qt5/commit/3687dbd3e25cf9293717c3fc0555414e2813ab17">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/qv4.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/qt/qt5/commit/8dc4442f30fb2868857bf7f5a8e9d50717864c73">2026-05-16</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/qv4.json">json</a>)</li>
 <li>ES5: 97.1%<pre>
 <a href="../../conformance/compat-table/es5/String.prototype.split.js">String.prototype.split.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.assignment-non-writable-error.js">strict.assignment-non-writable-error.js</a>: FAIL
@@ -121,7 +121,7 @@ First appeared in Qt 5.0 (2012) as a V8 wrapper, then switched to a home-grown e
 
 <details><summary>test262: 49.8%, main 60.7%, staging 47.3%, annexB 24.4%, Next 3.4%, Intl 0.6%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/qt/qt5/commit/3687dbd3e25cf9293717c3fc0555414e2813ab17">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/qv4.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/qt/qt5/commit/8dc4442f30fb2868857bf7f5a8e9d50717864c73">2026-05-16</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/qv4.json">json</a>)</li>
 <li>Overall: 49.8% (26483/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 60.7% (25235/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

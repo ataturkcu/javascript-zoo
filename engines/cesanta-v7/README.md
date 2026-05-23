@@ -106,10 +106,10 @@ JavaScript engine for microcontrollers.
 <details><summary>test262: 20.6%, main 25.3%, staging 9.6%, annexB 8.5%, Next 2.3%, Intl 0.1%</summary>
 <ul>
 <li>Tested version: 3.0-151-gce5212a (<a href="https://github.com/cesanta/v7/commit/ce5212ae42dfd93247c56fbc233f65367e9def27">2017-08-26</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/cesanta-v7.json">json</a>)</li>
-<li>Overall: 20.6% (10928/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 25.3% (10507/41549)</li>
+<li>Overall: 20.6% (10926/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 25.3% (10506/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 63.7% (5220/8197)<pre>
+<li>ES5: 63.7% (5218/8197)<pre>
 caller: 91.3% (21/23)
 </pre></li>
 <li>ES6: 10.3% (1141/11054)<pre>

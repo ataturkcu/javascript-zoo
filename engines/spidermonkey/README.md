@@ -47,14 +47,14 @@ JavaScript engine of Firefox.
 ## Conformance
 
 <details><summary>ES1-ES5: 100%</summary><ul>
-<li>Tested version: 152.0 with experimental flags (<a href="https://github.com/mozilla-firefox/firefox/commit/986b2e474acca54ab469aca8d549b71cdcea33a5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/spidermonkey_exp.json">json</a>)</li>
+<li>Tested version: 153.0 with experimental flags (<a href="https://github.com/mozilla-firefox/firefox/commit/1f7030c8de8f2b349c7d91d7b5a3253c109a1cc1">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/spidermonkey_exp.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 100% (148/148)</li>
 <li>ES5: 100% (74/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 100%, Next 55%, Intl 100%</summary><ul>
-<li>Tested version: 152.0 with experimental flags (<a href="https://github.com/mozilla-firefox/firefox/commit/986b2e474acca54ab469aca8d549b71cdcea33a5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/spidermonkey_exp.json">json</a>)</li>
+<li>Tested version: 153.0 with experimental flags (<a href="https://github.com/mozilla-firefox/firefox/commit/1f7030c8de8f2b349c7d91d7b5a3253c109a1cc1">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/spidermonkey_exp.json">json</a>)</li>
 <li>ES5: 100%</li>
 <li>ES6: 98.1%<pre>
 <a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: InternalError: too much recursion
@@ -89,10 +89,10 @@ JavaScript engine of Firefox.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 99.1%, main 99.6%, staging 99.8%, annexB 99.8%, Next 96.7%, Intl 98.6%</summary>
+<details><summary>test262: 99.2%, main 99.6%, staging 99.8%, annexB 99.8%, Next 96.7%, Intl 99.8%</summary>
 <ul>
-<li>Tested version: 152.0 with experimental flags (<a href="https://github.com/mozilla-firefox/firefox/commit/986b2e474acca54ab469aca8d549b71cdcea33a5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/spidermonkey_exp.json">json</a>)</li>
-<li>Overall: 99.1% (52710/53167)</li>
+<li>Tested version: 153.0 with experimental flags (<a href="https://github.com/mozilla-firefox/firefox/commit/1f7030c8de8f2b349c7d91d7b5a3253c109a1cc1">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/spidermonkey_exp.json">json</a>)</li>
+<li>Overall: 99.2% (52752/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 99.6% (41395/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 99.9% (8195/8197)<pre>
@@ -120,7 +120,7 @@ Map: 100% (40/40)
 Object.is: 100% (2/2)
 Promise: 100% (4/4)
 Proxy: 99.4% (465/468)
-Reflect: 97.9% (458/468)
+Reflect: 98.5% (461/468)
 Reflect.construct: 99.6% (693/696)
 Reflect.set: 100% (46/46)
 Reflect.setPrototypeOf: 100% (23/23)
@@ -166,7 +166,7 @@ tail-call-optimization: 2.9% (1/35)
 template: 100% (1/1)
 </pre></li>
 <li>ES2016: 99.2% (129/130)<pre>
-Array.prototype.includes: 94.2% (65/69)
+Array.prototype.includes: 97.1% (67/69)
 exponentiation: 100% (103/103)
 u180e: 100% (25/25)
 </pre></li>
@@ -228,7 +228,7 @@ Intl.DateTimeFormat-formatRange: 100% (37/37)
 Intl.DateTimeFormat-fractionalSecondDigits: 100% (10/10)
 Intl.DisplayNames: 100% (47/47)
 Intl.ListFormat: 100% (81/81)
-Intl.Locale: 73.1% (114/156)
+Intl.Locale: 100% (156/156)
 Promise.any: 100% (92/92)
 String.prototype.replaceAll: 100% (41/41)
 WeakRef: 100% (37/37)
@@ -286,11 +286,11 @@ promise-try: 100% (12/12)
 regexp-modifiers: 100% (230/230)
 set-methods: 100% (192/192)
 </pre></li>
-<li>ES2026: 88.1% (318/361)<pre>
+<li>ES2026: 99.7% (360/361)<pre>
 Array.fromAsync: 100% (95/95)
 Error.isError: 100% (13/13)
 Intl.Era-monthcode: 99.9% (1542/1543)
-Intl.Locale-info: 2.3% (1/43)
+Intl.Locale-info: 100% (43/43)
 Math.sumPrecise: 100% (10/10)
 iterator-sequencing: 100% (32/32)
 json-parse-with-source: 100% (22/22)

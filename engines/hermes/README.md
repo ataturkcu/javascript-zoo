@@ -31,7 +31,7 @@ JavaScript engine from Facebook optimized for running React Native mobile apps.
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: <a href="https://github.com/facebook/hermes/commit/cc613ea2043c9bb9f03f8fbe75942ffabaf8b966">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/hermes_full.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/facebook/hermes/commit/cc7861e6e93c4b7bd46ecc57ca6bf619c02415eb">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/hermes_full.json">json</a>)</li>
 <li>ES1: 99.5% (197/198)<pre>
 <a href="../../conformance/es1/with.js">with.js</a>: SyntaxError: with statement is not supported
 </pre></li>
@@ -45,19 +45,18 @@ JavaScript engine from Facebook optimized for running React Native mobile apps.
 </pre></li>
 </ul></details>
 
-<details><summary>compat-table: ES6 91%, ES2016+ 89%, Next 12%, Intl 96%</summary><ul>
-<li>Tested version: <a href="https://github.com/facebook/hermes/commit/cc613ea2043c9bb9f03f8fbe75942ffabaf8b966">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/hermes_full.json">json</a>)</li>
+<details><summary>compat-table: ES6 92%, ES2016+ 90%, Next 12%, Intl 96%</summary><ul>
+<li>Tested version: <a href="https://github.com/facebook/hermes/commit/cc7861e6e93c4b7bd46ecc57ca6bf619c02415eb">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/hermes_full.json">json</a>)</li>
 <li>ES5: 98%<pre>
 <a href="../../conformance/compat-table/es5/misc.enumerable-shadow.js">misc.enumerable-shadow.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.eval-no-bindings.js">strict.eval-no-bindings.js</a>: FAIL
 </pre></li>
-<li>ES6: 91.4%<pre>
+<li>ES6: 92.4%<pre>
 <a href="../../conformance/compat-table/es6/Array.Symbol.species.js">Array.Symbol.species.js</a>: TypeError: right operand of 'in' is not an object
 <a href="../../conformance/compat-table/es6/Array.prototype.Symbol.unscopables.js">Array.prototype.Symbol.unscopables.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/Map.Symbol.species.js">Map.Symbol.species.js</a>: TypeError: right operand of 'in' is not an object
 <a href="../../conformance/compat-table/es6/Promise.Symbol.species.js">Promise.Symbol.species.js</a>: TypeError: right operand of 'in' is not an object
-<a href="../../conformance/compat-table/es6/Promise.prototype-not-instance.js">Promise.prototype-not-instance.js</a>: FAIL
-<a href="../../conformance/compat-table/es6/Reflect.construct.Promise-subclassing.js">Reflect.construct.Promise-subclassing.js</a>: FAIL
+<a href="../../conformance/compat-table/es6/Reflect.construct.Promise-subclassing.js">Reflect.construct.Promise-subclassing.js</a>: TypeError: Promise.prototype.then called on non-Promise
 <a href="../../conformance/compat-table/es6/RegExp.Symbol.species.js">RegExp.Symbol.species.js</a>: TypeError: right operand of 'in' is not an object
 <a href="../../conformance/compat-table/es6/Set.Symbol.species.js">Set.Symbol.species.js</a>: TypeError: right operand of 'in' is not an object
 <a href="../../conformance/compat-table/es6/annex-b.RegExp.prototype.compile.js">annex-b.RegExp.prototype.compile.js</a>: FAIL
@@ -72,10 +71,11 @@ JavaScript engine from Facebook optimized for running React Native mobile apps.
 <a href="../../conformance/compat-table/es6/destructuring-decl.defaults-tdz.js">destructuring-decl.defaults-tdz.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.defineProperty.SetIntegrityLevel.js">misc.Proxy.defineProperty.SetIntegrityLevel.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.Array.concat.js">misc.Proxy.get.Array.concat.js</a>: FAIL
+<a href="../../conformance/compat-table/es6/misc.Proxy.get.Array.splice.js">misc.Proxy.get.Array.splice.js</a>: FAIL
 ...
 </pre></li>
 <li>ES2016: 100%</li>
-<li>ES2017: 76%<pre>
+<li>ES2017: 80%<pre>
 <a href="../../conformance/compat-table/es2017/Atomics.add.js">Atomics.add.js</a>: ReferenceError: Property 'Atomics' doesn't exist
 <a href="../../conformance/compat-table/es2017/Atomics.and.js">Atomics.and.js</a>: ReferenceError: Property 'Atomics' doesn't exist
 <a href="../../conformance/compat-table/es2017/Atomics.compareExchange.js">Atomics.compareExchange.js</a>: ReferenceError: Property 'Atomics' doesn't exist
@@ -94,7 +94,6 @@ JavaScript engine from Facebook optimized for running React Native mobile apps.
 <a href="../../conformance/compat-table/es2017/SharedArrayBuffer.prototype.byteLength.js">SharedArrayBuffer.prototype.byteLength.js</a>: ReferenceError: Property 'SharedArrayBuffer' doesn't exist
 <a href="../../conformance/compat-table/es2017/SharedArrayBuffer.prototype.slice.js">SharedArrayBuffer.prototype.slice.js</a>: ReferenceError: Property 'SharedArrayBuffer' doesn't exist
 <a href="../../conformance/compat-table/es2017/misc.arguments-caller-removed.js">misc.arguments-caller-removed.js</a>: FAIL
-<a href="../../conformance/compat-table/es2017/regex.flags.u.case-folding.js">regex.flags.u.case-folding.js</a>: FAIL
 </pre></li>
 <li>ES2018: 100%</li>
 <li>ES2019: 81%<pre>
@@ -116,8 +115,7 @@ JavaScript engine from Facebook optimized for running React Native mobile apps.
 <a href="../../conformance/compat-table/es2023/TypedArray.prototype.with.js">TypedArray.prototype.with.js</a>: TypeError: undefined is not a function
 </pre></li>
 <li>ES2024: 42.9%</li>
-<li>ES2025: 84.2%<pre>
-<a href="../../conformance/compat-table/es2025/Promise.try.js">Promise.try.js</a>: FAIL
+<li>ES2025: 89.5%<pre>
 <a href="../../conformance/compat-table/es2025/RegExp.escape.js">RegExp.escape.js</a>: TypeError: undefined is not a function
 <a href="../../conformance/compat-table/es2025/regex.duplicate-named-groups.js">regex.duplicate-named-groups.js</a>: SyntaxError: Invalid regular expression: Duplicate capture group name
 </pre></li>
@@ -127,16 +125,16 @@ JavaScript engine from Facebook optimized for running React Native mobile apps.
 </pre></li>
 </ul></details>
 
-<details><summary>test262: 74.8%, main 89.6%, staging 73.3%, annexB 78.1%, Next 3.7%, Intl 10.3%</summary>
+<details><summary>test262: 75.3%, main 90.2%, staging 73.5%, annexB 78.1%, Next 3.7%, Intl 10.3%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/facebook/hermes/commit/cc613ea2043c9bb9f03f8fbe75942ffabaf8b966">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/hermes_full.json">json</a>)</li>
-<li>Overall: 74.8% (39777/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 89.6% (37223/41549)</li>
+<li>Tested version: <a href="https://github.com/facebook/hermes/commit/cc7861e6e93c4b7bd46ecc57ca6bf619c02415eb">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/hermes_full.json">json</a>)</li>
+<li>Overall: 75.3% (40035/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 90.2% (37478/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 96% (7866/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
-<li>ES6: 92.5% (10221/11054)<pre>
+<li>ES6: 93.5% (10335/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 36.6% (98/268)
@@ -156,27 +154,27 @@ Int32Array: 100% (4/4)
 Int8Array: 80% (28/35)
 Map: 95% (38/40)
 Object.is: 100% (2/2)
-Promise: 75% (3/4)
+Promise: 100% (4/4)
 Proxy: 82.1% (384/468)
 Reflect: 64.3% (301/468)
-Reflect.construct: 66.1% (460/696)
+Reflect.construct: 68.2% (475/696)
 Reflect.set: 93.5% (43/46)
 Reflect.setPrototypeOf: 87% (20/23)
 Set: 100% (38/38)
 String.fromCodePoint: 45.5% (10/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
-Symbol: 58.4% (872/1494)
+Symbol: 58.9% (880/1494)
 Symbol.hasInstance: 88.2% (15/17)
 Symbol.isConcatSpreadable: 91.2% (31/34)
-Symbol.iterator: 89% (1660/1865)
+Symbol.iterator: 92.7% (1729/1865)
 Symbol.match: 87.5% (77/88)
 Symbol.replace: 84.7% (83/98)
 Symbol.search: 75.7% (28/37)
 Symbol.species: 17.8% (49/276)
 Symbol.split: 44.8% (26/58)
 Symbol.toPrimitive: 81.5% (190/233)
-Symbol.toStringTag: 56.5% (74/131)
+Symbol.toStringTag: 58% (76/131)
 Symbol.unscopables: 0% (0/44)
 TypedArray: 72.1% (1812/2513)
 Uint16Array: 33.3% (2/6)
@@ -185,14 +183,14 @@ Uint8Array: 63.6% (7/11)
 Uint8ClampedArray: 33.3% (2/6)
 WeakMap: 72.2% (57/79)
 WeakSet: 100% (34/34)
-arrow-function: 63.2% (600/949)
-class: 96.5% (4600/4768)
+arrow-function: 66.2% (628/949)
+class: 96.8% (4615/4768)
 computed-property-names: 93.7% (448/478)
 const: 86.7% (13/15)
 cross-realm: 0% (0/201)
 default-parameters: 99.3% (2252/2269)
 destructuring-assignment: 100% (141/141)
-destructuring-binding: 99.7% (6617/6637)
+destructuring-binding: 99.7% (6619/6637)
 for-of: 100% (5/5)
 generators: 98.6% (4026/4085)
 let: 68.8% (53/77)
@@ -217,11 +215,11 @@ SharedArrayBuffer: 0% (0/464)
 async-functions: 87% (613/705)
 intl-normative-optional: 100% (4/4)
 </pre></li>
-<li>ES2018: 94% (4565/4855)<pre>
+<li>ES2018: 94.3% (4577/4855)<pre>
 IsHTMLDDA: 35.7% (15/42)
-Promise.prototype.finally: 62.1% (18/29)
+Promise.prototype.finally: 100% (29/29)
 Symbol.asyncIterator: 74.5% (401/538)
-async-iteration: 92.7% (4603/4968)
+async-iteration: 92.7% (4604/4968)
 object-rest: 100% (355/355)
 object-spread: 100% (135/135)
 regexp-dotall: 82.4% (14/17)
@@ -243,11 +241,11 @@ stable-typedarray-sort: 100% (1/1)
 string-trimming: 100% (54/54)
 well-formed-json-stringify: 100% (1/1)
 </pre></li>
-<li>ES2020: 59.5% (1283/2156)<pre>
+<li>ES2020: 62.4% (1345/2156)<pre>
 BigInt: 69.6% (1044/1501)
 Intl.NumberFormat-unified: 1.5% (1/67)
 Intl.RelativeTimeFormat: 0% (0/79)
-Promise.allSettled: 39.2% (40/102)
+Promise.allSettled: 100% (102/102)
 String.prototype.matchAll: 93.8% (15/16)
 Symbol.matchAll: 81% (51/63)
 coalesce-expression: 88.5% (23/26)
@@ -258,7 +256,7 @@ globalThis: 48% (71/148)
 import.meta: 73.9% (17/23)
 optional-chaining: 96.4% (54/56)
 </pre></li>
-<li>ES2021: 61.4% (565/920)<pre>
+<li>ES2021: 64.2% (591/920)<pre>
 AggregateError: 96.8% (30/31)
 FinalizationRegistry: 98% (48/49)
 Intl.DateTimeFormat-datetimestyle: 37.5% (6/16)
@@ -267,7 +265,7 @@ Intl.DateTimeFormat-fractionalSecondDigits: 30% (3/10)
 Intl.DisplayNames: 8.5% (4/47)
 Intl.ListFormat: 1.2% (1/81)
 Intl.Locale: 0% (0/156)
-Promise.any: 70.7% (65/92)
+Promise.any: 98.9% (91/92)
 String.prototype.replaceAll: 97.6% (40/41)
 WeakRef: 97.3% (36/37)
 align-detached-buffer-semantics-with-web-reality: 66.5% (105/158)
@@ -313,15 +311,15 @@ promise-with-resolvers: 66.7% (6/9)
 regexp-v-flag: 27.3% (51/187)
 resizable-arraybuffer: 4.3% (20/463)
 </pre></li>
-<li>ES2025: 82.1% (1039/1266)<pre>
+<li>ES2025: 83.1% (1052/1266)<pre>
 Float16Array: 94.1% (48/51)
 Intl.DurationFormat: 0% (0/112)
 RegExp.escape: 0% (0/21)
 import-attributes: 15% (15/100)
 iterator-helpers: 97.9% (555/567)
 json-modules: 15.4% (2/13)
-promise-try: 16.7% (2/12)
-regexp-modifiers: 98.7% (227/230)
+promise-try: 100% (12/12)
+regexp-modifiers: 100% (230/230)
 set-methods: 100% (192/192)
 </pre></li>
 <li>ES2026: 39.9% (144/361)<pre>
@@ -354,6 +352,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 89.4% (7794/8718)</li>
+<li>N/A: 89.8% (7825/8718)</li>
 </ul>
 </details>

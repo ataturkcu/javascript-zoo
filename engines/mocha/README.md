@@ -80,8 +80,8 @@ The very first JavaScript engine that defined early JavaScript language (JS1.0/1
 <details><summary>test262: 8.7%, main 10.4%, staging 0.5%, annexB 0.6%, Next 3.3%, Intl 0%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/doodlewind/mocha1995/commit/3d109cbf6d185c3665da2982e92ce198406cca01">2024-10-12</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/mocha.json">json</a>)</li>
-<li>Overall: 8.7% (4615/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 10.4% (4340/41549)</li>
+<li>Overall: 8.7% (4616/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 10.4% (4341/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 5.3% (434/8197)<pre>
 caller: 0% (0/23)
@@ -304,6 +304,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 56.1% (128/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 9% (782/8718)</li>
+<li>N/A: 9% (783/8718)</li>
 </ul>
 </details>

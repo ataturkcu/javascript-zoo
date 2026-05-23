@@ -20,7 +20,7 @@ Always runs in strict mode, seemingly no option to disable.
 ## Conformance
 
 <details><summary>ES1-ES5: 88%</summary><ul>
-<li>Tested version: 0.9.7 (<a href="https://github.com/nginx/njs/commit/463ee0d52d687bb6b3bb3a81dc53a42bbc6065fc">2026-04-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/njs.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/nginx/njs/commit/621f7cf9918aaf532cad1bf9244b5d668225fa63">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/njs.json">json</a>)</li>
 <li>ES1: 93.4% (185/198)<pre>
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: TypeError: undefined is not a function
 <a href="../../conformance/es1/annex-b.Date.prototype.setYear.js">annex-b.Date.prototype.setYear.js</a>: TypeError: undefined is not a function
@@ -78,7 +78,7 @@ Always runs in strict mode, seemingly no option to disable.
 </ul></details>
 
 <details><summary>compat-table: ES6 39%, ES2016+ 32%, Next 0%, Intl 11%</summary><ul>
-<li>Tested version: 0.9.7 (<a href="https://github.com/nginx/njs/commit/463ee0d52d687bb6b3bb3a81dc53a42bbc6065fc">2026-04-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/njs.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/nginx/njs/commit/621f7cf9918aaf532cad1bf9244b5d668225fa63">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/njs.json">json</a>)</li>
 <li>ES5: 82.9%<pre>
 <a href="../../conformance/compat-table/es5/Date.prototype.toJSON.js">Date.prototype.toJSON.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/immutable-globals.Infinity.js">immutable-globals.Infinity.js</a>: TypeError: Cannot assign to read-only property "Infinity" of object
@@ -148,7 +148,7 @@ Always runs in strict mode, seemingly no option to disable.
 
 <details><summary>test262: 35.7%, main 44.1%, staging 22.6%, annexB 4.9%, Next 3.4%, Intl 0.3%</summary>
 <ul>
-<li>Tested version: 0.9.7 (<a href="https://github.com/nginx/njs/commit/463ee0d52d687bb6b3bb3a81dc53a42bbc6065fc">2026-04-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/njs.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/nginx/njs/commit/621f7cf9918aaf532cad1bf9244b5d668225fa63">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/njs.json">json</a>)</li>
 <li>Overall: 35.7% (18998/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 44.1% (18334/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

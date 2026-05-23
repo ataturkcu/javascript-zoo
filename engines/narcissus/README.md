@@ -166,13 +166,13 @@ Metacircular JavaScript interpreter, was used for prototyping new language featu
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 31.3%, main 37.3%, staging 24.5%, annexB 39.6%, Next 4.3%, Intl 0.2%</summary>
+<details><summary>test262: 31.2%, main 37.3%, staging 24.5%, annexB 39.6%, Next 4.3%, Intl 0.2%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/ivankra/narcissus/commit/a1eae5c735c3932cc435d869e68933d469d419f6">2025-10-08</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/narcissus.json">json</a>)</li>
-<li>Overall: 31.3% (16620/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 37.3% (15495/41549)</li>
+<li>Overall: 31.2% (16614/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 37.3% (15489/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 73.6% (6036/8197)<pre>
+<li>ES5: 73.6% (6031/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
 <li>ES6: 21.8% (2412/11054)<pre>
@@ -393,6 +393,6 @@ regexp-duplicate-named-groups: 57.9% (11/19)
 source-phase-imports: 50.9% (116/228)
 source-phase-imports-module-source: 45.2% (38/84)
 </pre></li>
-<li>N/A: 53.8% (4691/8718)</li>
+<li>N/A: 53.8% (4690/8718)</li>
 </ul>
 </details>

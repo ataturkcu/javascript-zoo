@@ -13,7 +13,7 @@ JavaScript/TypeScript engine written in Rust.
 ## Conformance
 
 <details><summary>ES1-ES5: 88%</summary><ul>
-<li>Tested version: <a href="https://github.com/Sharktheone/yavashark/commit/c684cdb1b4689e82e2311b02e58c280825442e7d">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/yavashark.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/Sharktheone/yavashark/commit/3e8fd77bd0f6709daf9b9a828c7b62fae2fad7fc">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/yavashark.json">json</a>)</li>
 <li>ES1: 91.9% (182/198)<pre>
 <a href="../../conformance/es1/Function.length.js">Function.length.js</a>: FAIL: Function.length failed
 <a href="../../conformance/es1/String.prototype.charAt.js">String.prototype.charAt.js</a>: FAIL: charAt out of bounds failed; charAt negative failed
@@ -45,7 +45,7 @@ JavaScript/TypeScript engine written in Rust.
 <a href="../../conformance/es3/global.URIError.thrown.js">global.URIError.thrown.js</a>: FAIL: no exception for encodeURI lone low surrogate; no exception for encodeURI lone high surrogate; no exception for encodeURIComponent lone low surrogate; no exception for encodeURIComponent lone high sur...
 <a href="../../conformance/es3/regex.negative-lookahead.js">regex.negative-lookahead.js</a>: SyntaxError: Nothing to repeat at position 3
 </pre></li>
-<li>ES5: 68.9% (51/74)<pre>
+<li>ES5: 70.3% (52/74)<pre>
 <a href="../../conformance/es5/Array.isArray.js">Array.isArray.js</a>: TypeError: expected object
 <a href="../../conformance/es5/Array.prototype.sort.TypeError.js">Array.prototype.sort.TypeError.js</a>: FAIL
 <a href="../../conformance/es5/Function.prototype-not-enumerable.js">Function.prototype-not-enumerable.js</a>: FAIL: named function prototype is enumerable; prototype appears in for-in
@@ -54,8 +54,7 @@ JavaScript/TypeScript engine written in Rust.
 <a href="../../conformance/es5/JSON.stringify.js">JSON.stringify.js</a>: FAIL: stringify object failed; stringify array failed; stringify number failed; failed to drop undefined/function values; undefined/function values in array not converted to null; NaN and Infinity not conve...
 <a href="../../conformance/es5/JSON.stringify.replacer.js">JSON.stringify.replacer.js</a>: FAIL: replacer function failed; replacer array failed
 <a href="../../conformance/es5/JSON.stringify.space.js">JSON.stringify.space.js</a>: FAIL: space parameter failed
-<a href="../../conformance/es5/Object.isSealed.js">Object.isSealed.js</a>: FAIL: sealed object failed; frozen object is sealed failed
-<a href="../../conformance/es5/Object.seal.js">Object.seal.js</a>: FAIL: prevented property addition failed; prevented property deletion failed
+<a href="../../conformance/es5/Object.isSealed.js">Object.isSealed.js</a>: FAIL: frozen object is sealed failed
 <a href="../../conformance/es5/strict.eval-cannot-create-bindings.js">strict.eval-cannot-create-bindings.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-assignment-to-non-writable.js">strict.no-assignment-to-non-writable.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-assignment-to-unresolvable.js">strict.no-assignment-to-unresolvable.js</a>: FAIL
@@ -66,14 +65,18 @@ JavaScript/TypeScript engine written in Rust.
 <a href="../../conformance/es5/strict.no-function-caller-or-arguments.js">strict.no-function-caller-or-arguments.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-octal-literals.js">strict.no-octal-literals.js</a>: FAIL
 <a href="../../conformance/es5/strict.no-with.js">strict.no-with.js</a>: FAIL
+<a href="../../conformance/es5/strict.reserved-words.js">strict.reserved-words.js</a>: FAIL: 'var implements' did not throw in strict mode
 ...
 </pre></li>
 </ul></details>
 
 <details><summary>compat-table: ES6 64%, ES2016+ 73%, Next 4%, Intl 68%</summary><ul>
-<li>Tested version: <a href="https://github.com/Sharktheone/yavashark/commit/c684cdb1b4689e82e2311b02e58c280825442e7d">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/yavashark.json">json</a>)</li>
-<li>ES5: 86.8%<pre>
+<li>Tested version: <a href="https://github.com/Sharktheone/yavashark/commit/3e8fd77bd0f6709daf9b9a828c7b62fae2fad7fc">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/yavashark.json">json</a>)</li>
+<li>ES5: 82.4%<pre>
 <a href="../../conformance/compat-table/es5/Array.prototype.sort.compareFn-type.js">Array.prototype.sort.compareFn-type.js</a>: FAIL
+<a href="../../conformance/compat-table/es5/immutable-globals.Infinity.js">immutable-globals.Infinity.js</a>: FAIL: exception: [object Error]
+<a href="../../conformance/compat-table/es5/immutable-globals.NaN.js">immutable-globals.NaN.js</a>: FAIL: exception: [object Error]
+<a href="../../conformance/compat-table/es5/immutable-globals.undefined.js">immutable-globals.undefined.js</a>: FAIL: exception: [object Error]
 <a href="../../conformance/compat-table/es5/strict.assignment-eval-arguments-error.js">strict.assignment-eval-arguments-error.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.assignment-non-writable-error.js">strict.assignment-non-writable-error.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.assignment-unresolvable-error.js">strict.assignment-unresolvable-error.js</a>: FAIL
@@ -88,7 +91,7 @@ JavaScript/TypeScript engine written in Rust.
 <a href="../../conformance/compat-table/es5/strict.this-undefined.js">strict.this-undefined.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.with-error.js">strict.with-error.js</a>: FAIL
 </pre></li>
-<li>ES6: 64.3%<pre>
+<li>ES6: 64.4%<pre>
 <a href="../../conformance/compat-table/es6/Array.Symbol.species.js">Array.Symbol.species.js</a>: FAIL: exception: [object Error]
 <a href="../../conformance/compat-table/es6/Array.from.iterable-instance.js">Array.from.iterable-instance.js</a>: FAIL: exception: [object Error]
 <a href="../../conformance/compat-table/es6/Array.from.iterable.js">Array.from.iterable.js</a>: FAIL: exception: [object Error]
@@ -211,16 +214,16 @@ JavaScript/TypeScript engine written in Rust.
 </pre></li>
 </ul></details>
 
-<details><summary>test262: 74.9%, main 75.9%, staging 41.5%, annexB 69.6%, Next 78.6%, Intl 73.4%</summary>
+<details><summary>test262: 74.4%, main 75.3%, staging 41.4%, annexB 69.6%, Next 78.8%, Intl 73.4%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/Sharktheone/yavashark/commit/c684cdb1b4689e82e2311b02e58c280825442e7d">2026-04-22</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/yavashark.json">json</a>)</li>
-<li>Overall: 74.9% (39805/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 75.9% (31549/41549)</li>
+<li>Tested version: <a href="https://github.com/Sharktheone/yavashark/commit/3e8fd77bd0f6709daf9b9a828c7b62fae2fad7fc">2026-05-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/yavashark.json">json</a>)</li>
+<li>Overall: 74.4% (39563/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 75.3% (31293/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 85.9% (7041/8197)<pre>
+<li>ES5: 86% (7051/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 69.5% (7680/11054)<pre>
+<li>ES6: 69.5% (7683/11054)<pre>
 __proto__: 11.1% (2/18)
 Array.prototype.values: 25% (1/4)
 ArrayBuffer: 58.6% (157/268)
@@ -250,7 +253,7 @@ Set: 76.3% (29/38)
 String.fromCodePoint: 81.8% (18/22)
 String.prototype.endsWith: 70.4% (19/27)
 String.prototype.includes: 69.2% (18/26)
-Symbol: 68.7% (1026/1494)
+Symbol: 69.9% (1045/1494)
 Symbol.hasInstance: 11.8% (2/17)
 Symbol.isConcatSpreadable: 85.3% (29/34)
 Symbol.iterator: 46.6% (869/1865)
@@ -262,7 +265,7 @@ Symbol.split: 46.6% (27/58)
 Symbol.toPrimitive: 74.7% (174/233)
 Symbol.toStringTag: 43.5% (57/131)
 Symbol.unscopables: 13.6% (6/44)
-TypedArray: 55.6% (1396/2513)
+TypedArray: 55.5% (1395/2513)
 Uint16Array: 33.3% (2/6)
 Uint32Array: 100% (2/2)
 Uint8Array: 54.5% (6/11)
@@ -270,15 +273,15 @@ Uint8ClampedArray: 33.3% (2/6)
 WeakMap: 86.1% (68/79)
 WeakSet: 73.5% (25/34)
 arrow-function: 78.1% (741/949)
-class: 83.9% (4002/4768)
-computed-property-names: 83.7% (400/478)
+class: 84.7% (4040/4768)
+computed-property-names: 84.1% (402/478)
 const: 0% (0/15)
 cross-realm: 1% (2/201)
 default-parameters: 77.6% (1761/2269)
 destructuring-assignment: 80.9% (114/141)
 destructuring-binding: 80.1% (5313/6637)
 for-of: 20% (1/5)
-generators: 82.7% (3377/4085)
+generators: 82.7% (3379/4085)
 let: 35.1% (27/77)
 new.target: 45.9% (28/61)
 proxy-missing-checks: 0% (0/3)
@@ -301,7 +304,7 @@ SharedArrayBuffer: 32.5% (151/464)
 async-functions: 67.7% (477/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>
-<li>ES2018: 78.8% (3828/4855)<pre>
+<li>ES2018: 72.5% (3518/4855)<pre>
 IsHTMLDDA: 0% (0/42)
 Promise.prototype.finally: 34.5% (10/29)
 Symbol.asyncIterator: 0.2% (1/538)
@@ -311,7 +314,7 @@ object-spread: 65.2% (88/135)
 regexp-dotall: 52.9% (9/17)
 regexp-lookbehind: 94.7% (18/19)
 regexp-named-groups: 86% (86/100)
-regexp-unicode-property-escapes: 99.3% (676/681)
+regexp-unicode-property-escapes: 53.7% (366/681)
 </pre></li>
 <li>ES2019: 79.6% (109/137)<pre>
 Array.prototype.flat: 73.3% (11/15)
@@ -327,18 +330,18 @@ stable-typedarray-sort: 0% (0/1)
 string-trimming: 81.5% (44/54)
 well-formed-json-stringify: 0% (0/1)
 </pre></li>
-<li>ES2020: 52.9% (1141/2156)<pre>
-BigInt: 61% (916/1501)
+<li>ES2020: 52.9% (1140/2156)<pre>
+BigInt: 62.1% (932/1501)
 Intl.NumberFormat-unified: 11.9% (8/67)
 Intl.RelativeTimeFormat: 50.6% (40/79)
 Promise.allSettled: 37.3% (38/102)
 String.prototype.matchAll: 81.2% (13/16)
 Symbol.matchAll: 66.7% (42/63)
 coalesce-expression: 69.2% (18/26)
-dynamic-import: 56.9% (538/946)
-export-star-as-namespace-from-module: 21.1% (4/19)
+dynamic-import: 56.6% (535/946)
+export-star-as-namespace-from-module: 10.5% (2/19)
 for-in-order: 66.7% (6/9)
-globalThis: 49.3% (73/148)
+globalThis: 45.3% (67/148)
 import.meta: 43.5% (10/23)
 optional-chaining: 73.2% (41/56)
 </pre></li>
@@ -358,7 +361,7 @@ align-detached-buffer-semantics-with-web-reality: 27.2% (43/158)
 logical-assignment-operators: 61.1% (66/108)
 numeric-separator-literal: 79.9% (127/159)
 </pre></li>
-<li>ES2022: 81.2% (4436/5465)<pre>
+<li>ES2022: 82.3% (4496/5465)<pre>
 Array.prototype.at: 100% (11/11)
 Intl.DateTimeFormat-extend-timezonename: 100% (2/2)
 Intl.DisplayNames-v2: 50% (6/12)
@@ -366,10 +369,10 @@ Intl.Segmenter: 53.2% (42/79)
 Object.hasOwn: 100% (62/62)
 String.prototype.at: 90.9% (10/11)
 TypedArray.prototype.at: 100% (13/13)
-arbitrary-module-namespace-names: 43.8% (7/16)
+arbitrary-module-namespace-names: 6.2% (1/16)
 class-fields-private: 93% (1055/1134)
 class-fields-private-in: 57.9% (11/19)
-class-fields-public: 93% (1914/2058)
+class-fields-public: 93.1% (1916/2058)
 class-methods-private: 79.3% (1355/1709)
 class-static-block: 49.2% (32/65)
 class-static-fields-private: 94.2% (325/345)
@@ -377,7 +380,7 @@ class-static-fields-public: 81.7% (174/213)
 class-static-methods-private: 76.1% (1151/1513)
 error-cause: 0% (0/5)
 regexp-match-indices: 58.1% (18/31)
-top-level-await: 61.6% (167/271)
+top-level-await: 86% (233/271)
 </pre></li>
 <li>ES2023: 77.1% (316/410)<pre>
 Intl-enumeration: 48.6% (17/35)
@@ -393,17 +396,17 @@ String.prototype.isWellFormed: 87.5% (7/8)
 String.prototype.toWellFormed: 87.5% (7/8)
 array-grouping: 46.4% (13/28)
 arraybuffer-transfer: 50.8% (30/59)
-promise-with-resolvers: 44.4% (4/9)
+promise-with-resolvers: 55.6% (5/9)
 regexp-v-flag: 93.6% (175/187)
-resizable-arraybuffer: 60.7% (281/463)
+resizable-arraybuffer: 60.5% (280/463)
 </pre></li>
-<li>ES2025: 75.8% (960/1266)<pre>
+<li>ES2025: 74.9% (948/1266)<pre>
 Float16Array: 76.5% (39/51)
 Intl.DurationFormat: 72.3% (81/112)
 RegExp.escape: 95.2% (20/21)
-import-attributes: 56% (56/100)
-iterator-helpers: 79.5% (451/567)
-json-modules: 15.4% (2/13)
+import-attributes: 43% (43/100)
+iterator-helpers: 79.7% (452/567)
+json-modules: 0% (0/13)
 promise-try: 75% (9/12)
 regexp-modifiers: 93.5% (215/230)
 set-methods: 49% (94/192)
@@ -419,10 +422,10 @@ json-parse-with-source: 63.6% (14/22)
 uint8array-base64: 58% (40/69)
 upsert: 87.5% (63/72)
 </pre></li>
-<li>Next: 78.6% (6208/7895)<pre>
+<li>Next: 78.8% (6223/7895)<pre>
 Atomics.pause: 83.3% (5/6)
 ShadowRealm: 0% (0/64)
-Temporal: 86% (5735/6671)
+Temporal: 86.2% (5752/6671)
 await-dictionary: 5.4% (2/37)
 canonical-tz: 73.7% (14/19)
 decorators: 59.3% (16/27)
@@ -435,9 +438,9 @@ joint-iteration: 29.5% (23/78)
 legacy-regexp: 0% (0/26)
 nonextensible-applies-to-private: 0% (0/4)
 regexp-duplicate-named-groups: 5.3% (1/19)
-source-phase-imports: 75% (171/228)
-source-phase-imports-module-source: 88.1% (74/84)
+source-phase-imports: 74.1% (169/228)
+source-phase-imports-module-source: 85.7% (72/84)
 </pre></li>
-<li>N/A: 73.4% (6403/8718)</li>
+<li>N/A: 73.4% (6396/8718)</li>
 </ul>
 </details>

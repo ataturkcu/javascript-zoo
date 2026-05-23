@@ -15,7 +15,7 @@ JIT-enabled ES5 engine written in Object Pascal.
 ## Conformance
 
 <details><summary>ES1-ES5: 89%</summary><ul>
-<li>Tested version: <a href="https://github.com/BeRo1985/besen/commit/1c271815cf13291d3e4b636999ff7ecd7aa0993b">2020-10-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/besen.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/BeRo1985/besen/commit/a9985c9bbaaaf3e4069019e286a4f77c779cdb50">2026-05-01</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/besen.json">json</a>)</li>
 <li>ES1: 89.9% (178/198)<pre>
 <a href="../../conformance/es1/Date.js">Date.js</a>: FAIL: new Date(2000, 0, 1).getFullYear() != 2000; new Date(2000, 0, 1).getMonth() != 0; new Date(2000, 0, 1).getDate() != 1
 <a href="../../conformance/es1/Date.prototype.getDate.js">Date.prototype.getDate.js</a>: FAIL
@@ -73,7 +73,7 @@ JIT-enabled ES5 engine written in Object Pascal.
 </ul></details>
 
 <details><summary>compat-table: ES6 1%, ES2016+ 1%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: <a href="https://github.com/BeRo1985/besen/commit/1c271815cf13291d3e4b636999ff7ecd7aa0993b">2020-10-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/besen.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/BeRo1985/besen/commit/a9985c9bbaaaf3e4069019e286a4f77c779cdb50">2026-05-01</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/besen.json">json</a>)</li>
 <li>ES5: 89.3%<pre>
 <a href="../../conformance/compat-table/es5/Array.prototype.sort.compareFn-undefined.js">Array.prototype.sort.compareFn-undefined.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Array.prototype.unshift.return-count.js">Array.prototype.unshift.return-count.js</a>: FAIL
@@ -102,7 +102,7 @@ JIT-enabled ES5 engine written in Object Pascal.
 
 <details><summary>test262: 9.3%, main 11.1%, staging 3%, annexB 0.6%, Next 3.3%, Intl 0%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/BeRo1985/besen/commit/1c271815cf13291d3e4b636999ff7ecd7aa0993b">2020-10-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/besen.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/BeRo1985/besen/commit/a9985c9bbaaaf3e4069019e286a4f77c779cdb50">2026-05-01</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/besen.json">json</a>)</li>
 <li>Overall: 9.3% (4943/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 11.1% (4630/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

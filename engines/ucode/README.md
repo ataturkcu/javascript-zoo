@@ -49,14 +49,14 @@ function Counter(start) {
 ## Conformance
 
 <details><summary>ES1-ES5: 1%</summary><ul>
-<li>Tested version: 0.0.20250529-156-g388ef3f (<a href="https://github.com/jow-/ucode/commit/388ef3f35e0a2bb62a626ed86ed727af12bfff02">2026-04-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/ucode.json">json</a>)</li>
+<li>Tested version: 0.0.20250529-158-g0beaa9d (<a href="https://github.com/jow-/ucode/commit/0beaa9dc244f16c52c0a7dc3f180cca0539124cd">2026-04-24</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/ucode.json">json</a>)</li>
 <li>ES1: 2% (4/198)</li>
 <li>ES3: 0.7% (1/148)</li>
 <li>ES5: 1.4% (1/74)</li>
 </ul></details>
 
 <details><summary>compat-table: ES6 5%, ES2016+ 2%, Next 0%, Intl 0%</summary><ul>
-<li>Tested version: 0.0.20250529-156-g388ef3f (<a href="https://github.com/jow-/ucode/commit/388ef3f35e0a2bb62a626ed86ed727af12bfff02">2026-04-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/ucode.json">json</a>)</li>
+<li>Tested version: 0.0.20250529-158-g0beaa9d (<a href="https://github.com/jow-/ucode/commit/0beaa9dc244f16c52c0a7dc3f180cca0539124cd">2026-04-24</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/ucode.json">json</a>)</li>
 <li>ES5: 9.7%</li>
 <li>ES6: 4.7%</li>
 <li>ES2016: 15.2%</li>
@@ -75,7 +75,7 @@ function Counter(start) {
 
 <details><summary>test262: 8.7%, main 10.5%, staging 0.5%, annexB 0.6%, Next 3.2%, Intl 0%</summary>
 <ul>
-<li>Tested version: 0.0.20250529-156-g388ef3f (<a href="https://github.com/jow-/ucode/commit/388ef3f35e0a2bb62a626ed86ed727af12bfff02">2026-04-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/ucode.json">json</a>)</li>
+<li>Tested version: 0.0.20250529-158-g0beaa9d (<a href="https://github.com/jow-/ucode/commit/0beaa9dc244f16c52c0a7dc3f180cca0539124cd">2026-04-24</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/ucode.json">json</a>)</li>
 <li>Overall: 8.7% (4623/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 10.5% (4356/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

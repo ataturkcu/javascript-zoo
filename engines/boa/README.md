@@ -21,7 +21,7 @@ Embeddable JavaScript engine written in Rust.
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: <a href="https://github.com/boa-dev/boa/commit/3ee2b71a306334c2b2a0dcc20ac4b5e1c5a71558">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/boa.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/boa-dev/boa/commit/8f5ef6542d641fd22320e51234e914b59e623717">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/boa.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 99.3% (147/148)<pre>
 <a href="../../conformance/es3/Number.prototype.toExponential.rounding.js">Number.prototype.toExponential.rounding.js</a>: FAIL: (25).toExponential(0) != '3e+1' (got: '2e+1'); (12345).toExponential(3) != '1.235e+4' (got: '1.234e+4'); (1.25).toExponential(1) != '1.26e+0' (got: '1.2e+0')
@@ -32,7 +32,7 @@ Embeddable JavaScript engine written in Rust.
 </ul></details>
 
 <details><summary>compat-table: ES6 98%, ES2016+ 99%, Next 0%, Intl 100%</summary><ul>
-<li>Tested version: <a href="https://github.com/boa-dev/boa/commit/3ee2b71a306334c2b2a0dcc20ac4b5e1c5a71558">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/boa.json">json</a>)</li>
+<li>Tested version: <a href="https://github.com/boa-dev/boa/commit/8f5ef6542d641fd22320e51234e914b59e623717">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/boa.json">json</a>)</li>
 <li>ES5: 97.6%<pre>
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.rounds-properly.js">Number.prototype.toExponential.rounds-properly.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.assignment-non-writable-error.js">strict.assignment-non-writable-error.js</a>: FAIL
@@ -66,11 +66,11 @@ Embeddable JavaScript engine written in Rust.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 96.8%, main 99.6%, staging 89%, annexB 95.9%, Next 88.9%, Intl 78.9%</summary>
+<details><summary>test262: 96.8%, main 99.6%, staging 90%, annexB 95.9%, Next 88.9%, Intl 78.9%</summary>
 <ul>
-<li>Tested version: <a href="https://github.com/boa-dev/boa/commit/3ee2b71a306334c2b2a0dcc20ac4b5e1c5a71558">2026-04-21</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/boa.json">json</a>)</li>
-<li>Overall: 96.8% (51447/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 99.6% (41368/41549)</li>
+<li>Tested version: <a href="https://github.com/boa-dev/boa/commit/8f5ef6542d641fd22320e51234e914b59e623717">2026-05-20</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/boa.json">json</a>)</li>
+<li>Overall: 96.8% (51464/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 99.6% (41370/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 99.5% (8155/8197)<pre>
 caller: 0% (0/23)
@@ -293,6 +293,6 @@ regexp-duplicate-named-groups: 73.7% (14/19)
 source-phase-imports: 96.5% (220/228)
 source-phase-imports-module-source: 100% (84/84)
 </pre></li>
-<li>N/A: 98% (8541/8718)</li>
+<li>N/A: 98.2% (8558/8718)</li>
 </ul>
 </details>

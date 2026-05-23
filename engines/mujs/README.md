@@ -23,7 +23,7 @@ Embeddable JavaScript engine from MuPDF.
 ## Conformance
 
 <details><summary>ES1-ES5: 92%</summary><ul>
-<li>Tested version: 1.3.8-17-g0b4ed7e (<a href="https://codeberg.org/ccxvii/mujs/commit/0b4ed7e4ba37030fdd00f6a17b6de75cd7d7954b">2026-03-31</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/mujs.json">json</a>)</li>
+<li>Tested version: 1.3.8-19-ge892c9f (<a href="https://codeberg.org/ccxvii/mujs/commit/e892c9fdbbddba94e52f656ccb378ed4885e30cc">2026-05-06</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/mujs.json">json</a>)</li>
 <li>ES1: 96% (190/198)<pre>
 <a href="../../conformance/es1/Array.js">Array.js</a>: FAIL: Array.length failed
 <a href="../../conformance/es1/annex-b.Date.prototype.getYear.js">annex-b.Date.prototype.getYear.js</a>: TypeError: undefined is not callable
@@ -66,7 +66,7 @@ Embeddable JavaScript engine from MuPDF.
 </ul></details>
 
 <details><summary>compat-table: ES6 1%, ES2016+ 2%, Next 0%, Intl 25%</summary><ul>
-<li>Tested version: 1.3.8-17-g0b4ed7e (<a href="https://codeberg.org/ccxvii/mujs/commit/0b4ed7e4ba37030fdd00f6a17b6de75cd7d7954b">2026-03-31</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/mujs.json">json</a>)</li>
+<li>Tested version: 1.3.8-19-ge892c9f (<a href="https://codeberg.org/ccxvii/mujs/commit/e892c9fdbbddba94e52f656ccb378ed4885e30cc">2026-05-06</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/mujs.json">json</a>)</li>
 <li>ES5: 86.3%<pre>
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.no-throw-edge-cases.js">Number.prototype.toExponential.no-throw-edge-cases.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.rounds-properly.js">Number.prototype.toExponential.rounds-properly.js</a>: FAIL
@@ -99,7 +99,7 @@ Embeddable JavaScript engine from MuPDF.
 
 <details><summary>test262: 27%, main 32.6%, staging 13.7%, annexB 30%, Next 3.3%, Intl 0.2%</summary>
 <ul>
-<li>Tested version: 1.3.8-17-g0b4ed7e (<a href="https://codeberg.org/ccxvii/mujs/commit/0b4ed7e4ba37030fdd00f6a17b6de75cd7d7954b">2026-03-31</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/mujs.json">json</a>)</li>
+<li>Tested version: 1.3.8-19-ge892c9f (<a href="https://codeberg.org/ccxvii/mujs/commit/e892c9fdbbddba94e52f656ccb378ed4885e30cc">2026-05-06</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/mujs.json">json</a>)</li>
 <li>Overall: 27% (14354/53167)</li>
 <li>Excluding staging, annexB, Next and Intl: 32.6% (13552/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>

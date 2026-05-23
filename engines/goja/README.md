@@ -33,12 +33,12 @@ JavaScript engine in pure Go. ES5 and mostly ES2023 compliant.
 </pre></li>
 </ul></details>
 
-<details><summary>compat-table: ES6 97%, ES2016+ 66%, Next 0%, Intl 25%</summary><ul>
+<details><summary>compat-table: ES6 96%, ES2016+ 66%, Next 0%, Intl 25%</summary><ul>
 <li>Tested version: <a href="https://github.com/dop251/goja/commit/065cd970411c0201a267efd3a4d5ac26d6e4e8a9">2026-03-11</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/goja.json">json</a>)</li>
 <li>ES5: 99.1%<pre>
 <a href="../../conformance/compat-table/es5/strict.legacy-octal-error.js">strict.legacy-octal-error.js</a>: FAIL
 </pre></li>
-<li>ES6: 96.9%<pre>
+<li>ES6: 96%<pre>
 <a href="../../conformance/compat-table/es6/Symbol.JSON.stringify.object.js">Symbol.JSON.stringify.object.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.existence.js">annex-b.String.prototype.html.existence.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/annex-b.String.prototype.html.lowercase.js">annex-b.String.prototype.html.lowercase.js</a>: TypeError: Object has no member 'anchor'
@@ -57,6 +57,7 @@ JavaScript engine in pure Go. ES5 and mostly ES2023 compliant.
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.ToPropertyDescriptor.js">misc.Proxy.get.ToPropertyDescriptor.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.Proxy.get.instanceof.js">misc.Proxy.get.instanceof.js</a>: TypeError: Expecting a function in instanceof check, but got function () { [native code] }
 <a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: TIMEOUT: &gt;60s
+<a href="../../conformance/compat-table/es6/tail-calls.mutual.js">tail-calls.mutual.js</a>: TIMEOUT: &gt;60s
 </pre></li>
 <li>ES2016: 90.9%<pre>
 <a href="../../conformance/compat-table/es2016/misc.strict-fn-non-simple-params-error.js">misc.strict-fn-non-simple-params-error.js</a>: FAIL

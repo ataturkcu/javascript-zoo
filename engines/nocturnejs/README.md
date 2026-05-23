@@ -39,8 +39,8 @@ JavaScript engine written in MoonBit.
 <a href="../../conformance/compat-table/es6/misc.bound-function-prototype.generator.js">misc.bound-function-prototype.generator.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/misc.bound-function-prototype.subclass.js">misc.bound-function-prototype.subclass.js</a>: FAIL
 <a href="../../conformance/compat-table/es6/subclassing.Function.prototype.bind.js">subclassing.Function.prototype.bind.js</a>: FAIL
-<a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: CRASH: SIGSEGV
-<a href="../../conformance/compat-table/es6/tail-calls.mutual.js">tail-calls.mutual.js</a>: CRASH: SIGSEGV
+<a href="../../conformance/compat-table/es6/tail-calls.direct.js">tail-calls.direct.js</a>: RangeError: stack overflow
+<a href="../../conformance/compat-table/es6/tail-calls.mutual.js">tail-calls.mutual.js</a>: RangeError: stack overflow
 <a href="../../conformance/compat-table/es6/well-known.unscopables.js">well-known.unscopables.js</a>: ReferenceError: undefined variable
 </pre></li>
 <li>ES2016: 100%</li>
@@ -57,16 +57,16 @@ JavaScript engine written in MoonBit.
 <li>Intl: 25%</li>
 </ul></details>
 
-<details><summary>test262: 76.1%, main 91.3%, staging 91.4%, annexB 96.8%, Next 1.4%, Intl 0.7%</summary>
+<details><summary>test262: 77%, main 92.4%, staging 91.6%, annexB 96.8%, Next 1.4%, Intl 0.7%</summary>
 <ul>
 <li>Tested version: <a href="https://github.com/Lampese/NocturneJS/commit/a418a962bdeb2933bbb4ff08788e2a7e3b12d5ea">2026-01-30</a> (<a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/nocturnejs.json">json</a>)</li>
-<li>Overall: 76.1% (40474/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 91.3% (37941/41549)</li>
+<li>Overall: 77% (40924/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 92.4% (38388/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
 <li>ES5: 96.6% (7920/8197)<pre>
 caller: 100% (23/23)
 </pre></li>
-<li>ES6: 93.5% (10341/11054)<pre>
+<li>ES6: 93.6% (10348/11054)<pre>
 __proto__: 100% (18/18)
 Array.prototype.values: 100% (4/4)
 ArrayBuffer: 97.8% (262/268)
@@ -93,7 +93,7 @@ Reflect.construct: 74.3% (517/696)
 Reflect.set: 97.8% (45/46)
 Reflect.setPrototypeOf: 100% (23/23)
 Set: 100% (38/38)
-String.fromCodePoint: 72.7% (16/22)
+String.fromCodePoint: 100% (22/22)
 String.prototype.endsWith: 100% (27/27)
 String.prototype.includes: 100% (26/26)
 Symbol: 69.9% (1044/1494)
@@ -147,8 +147,8 @@ SharedArrayBuffer: 81% (376/464)
 async-functions: 79.3% (559/705)
 intl-normative-optional: 0% (0/4)
 </pre></li>
-<li>ES2018: 86% (4176/4855)<pre>
-IsHTMLDDA: 97.6% (41/42)
+<li>ES2018: 95.1% (4617/4855)<pre>
+IsHTMLDDA: 100% (42/42)
 Promise.prototype.finally: 100% (29/29)
 Symbol.asyncIterator: 100% (538/538)
 async-iteration: 93.5% (4645/4968)
@@ -157,7 +157,7 @@ object-spread: 82.2% (111/135)
 regexp-dotall: 100% (17/17)
 regexp-lookbehind: 100% (19/19)
 regexp-named-groups: 100% (100/100)
-regexp-unicode-property-escapes: 35.4% (241/681)
+regexp-unicode-property-escapes: 100% (681/681)
 </pre></li>
 <li>ES2019: 100% (137/137)<pre>
 Array.prototype.flat: 100% (15/15)
@@ -284,6 +284,6 @@ regexp-duplicate-named-groups: 100% (19/19)
 source-phase-imports: 0.4% (1/228)
 source-phase-imports-module-source: 0% (0/84)
 </pre></li>
-<li>N/A: 88% (7672/8718)</li>
+<li>N/A: 88% (7674/8718)</li>
 </ul>
 </details>

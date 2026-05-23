@@ -14,7 +14,7 @@ JavaScript engine written in Zig.
 ## Conformance
 
 <details><summary>ES1-ES5: 99%</summary><ul>
-<li>Tested version: 0.1.0-dev+dccb0db93 (<a href="https://codeberg.org/kiesel-js/kiesel/commit/dccb0db932fea715a6652b8e8fdd4d1a0c9d0bc5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/kiesel.json">json</a>)</li>
+<li>Tested version: 0.3.0-dev.13+5d981c598 (<a href="https://codeberg.org/kiesel-js/kiesel/commit/5d981c5982d868b5ad4555114980ced662368b00">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/kiesel.json">json</a>)</li>
 <li>ES1: 100% (198/198)</li>
 <li>ES3: 98.6% (146/148)<pre>
 <a href="../../conformance/es3/Number.prototype.toExponential.rounding.js">Number.prototype.toExponential.rounding.js</a>: FAIL: (1.255).toExponential(2) != '1.25e+0', got '1.26e+0'
@@ -27,7 +27,7 @@ JavaScript engine written in Zig.
 </ul></details>
 
 <details><summary>compat-table: ES6 94%, ES2016+ 95%, Next 5%, Intl 100%</summary><ul>
-<li>Tested version: 0.1.0-dev+dccb0db93 (<a href="https://codeberg.org/kiesel-js/kiesel/commit/dccb0db932fea715a6652b8e8fdd4d1a0c9d0bc5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/kiesel.json">json</a>)</li>
+<li>Tested version: 0.3.0-dev.13+5d981c598 (<a href="https://codeberg.org/kiesel-js/kiesel/commit/5d981c5982d868b5ad4555114980ced662368b00">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/kiesel.json">json</a>)</li>
 <li>ES5: 96.7%<pre>
 <a href="../../conformance/compat-table/es5/Number.prototype.toExponential.rounds-properly.js">Number.prototype.toExponential.rounds-properly.js</a>: FAIL
 <a href="../../conformance/compat-table/es5/strict.legacy-octal-error.js">strict.legacy-octal-error.js</a>: FAIL
@@ -83,13 +83,13 @@ JavaScript engine written in Zig.
 <li>Intl: 100%</li>
 </ul></details>
 
-<details><summary>test262: 93.7%, main 96.8%, staging 87.2%, annexB 58.7%, Next 87.6%, Intl 80.6%</summary>
+<details><summary>test262: 93.7%, main 96.8%, staging 87.1%, annexB 58.7%, Next 87.6%, Intl 80.6%</summary>
 <ul>
-<li>Tested version: 0.1.0-dev+dccb0db93 (<a href="https://codeberg.org/kiesel-js/kiesel/commit/dccb0db932fea715a6652b8e8fdd4d1a0c9d0bc5">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/kiesel.json">json</a>)</li>
-<li>Overall: 93.7% (49813/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 96.8% (40230/41549)</li>
+<li>Tested version: 0.3.0-dev.13+5d981c598 (<a href="https://codeberg.org/kiesel-js/kiesel/commit/5d981c5982d868b5ad4555114980ced662368b00">2026-05-21</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/kiesel.json">json</a>)</li>
+<li>Overall: 93.7% (49795/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 96.8% (40214/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 97.6% (8002/8197)<pre>
+<li>ES5: 97.5% (7990/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
 <li>ES6: 95.9% (10598/11054)<pre>
@@ -133,7 +133,7 @@ Symbol.species: 100% (276/276)
 Symbol.split: 100% (58/58)
 Symbol.toPrimitive: 93.1% (217/233)
 Symbol.toStringTag: 97.7% (128/131)
-Symbol.unscopables: 97.7% (43/44)
+Symbol.unscopables: 95.5% (42/44)
 TypedArray: 95% (2388/2513)
 Uint16Array: 100% (6/6)
 Uint32Array: 100% (2/2)
@@ -141,7 +141,7 @@ Uint8Array: 100% (11/11)
 Uint8ClampedArray: 100% (6/6)
 WeakMap: 100% (79/79)
 WeakSet: 100% (34/34)
-arrow-function: 87.2% (828/949)
+arrow-function: 87.4% (829/949)
 class: 94.6% (4509/4768)
 computed-property-names: 97.7% (467/478)
 const: 100% (15/15)
@@ -152,7 +152,7 @@ destructuring-binding: 97.6% (6475/6637)
 for-of: 60% (3/5)
 generators: 96.8% (3955/4085)
 let: 89.6% (69/77)
-new.target: 98.4% (60/61)
+new.target: 100% (61/61)
 proxy-missing-checks: 100% (3/3)
 rest-parameters: 100% (96/96)
 super: 100% (19/19)
@@ -310,6 +310,6 @@ regexp-duplicate-named-groups: 94.7% (18/19)
 source-phase-imports: 56.6% (129/228)
 source-phase-imports-module-source: 50% (42/84)
 </pre></li>
-<li>N/A: 91.5% (7978/8718)</li>
+<li>N/A: 91.4% (7972/8718)</li>
 </ul>
 </details>

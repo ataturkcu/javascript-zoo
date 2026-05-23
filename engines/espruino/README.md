@@ -15,8 +15,8 @@ Interpreter for a subset of JavaScript for Espruino microcontrollers.
 ## Conformance
 
 <details><summary>ES1-ES5: 55%</summary><ul>
-<li>Tested version: 2v29 (<a href="https://github.com/espruino/Espruino/commit/a1405bcc4caaf129960fddd7cc7b7bf5e6503957">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/espruino.json">json</a>)</li>
-<li>ES1: 72.7% (144/198)<pre>
+<li>Tested version: 2v29 (<a href="https://github.com/espruino/Espruino/commit/e5d0934aa26e68941eb6db9c4a8d55255e87fad1">2026-05-20</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/es1-5/espruino.json">json</a>)</li>
+<li>ES1: 73.2% (145/198)<pre>
 <a href="../../conformance/es1/Array.js">Array.js</a>: FAIL: Array.length failed
 <a href="../../conformance/es1/Array.length.assignment.js">Array.length.assignment.js</a>: TypeError: Assignment to a constant
 <a href="../../conformance/es1/Array.length.js">Array.length.js</a>: TypeError: Assignment to a constant
@@ -40,13 +40,13 @@ Interpreter for a subset of JavaScript for Espruino microcontrollers.
 ...
 </pre></li>
 <li>ES3: 43.9% (65/148)</li>
-<li>ES5: 29.7% (22/74)</li>
+<li>ES5: 28.4% (21/74)</li>
 </ul></details>
 
-<details><summary>compat-table: ES6 18%, ES2016+ 16%, Next 0%, Intl 0%</summary><ul>
-<li>Tested version: 2v29 (<a href="https://github.com/espruino/Espruino/commit/a1405bcc4caaf129960fddd7cc7b7bf5e6503957">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/espruino.json">json</a>)</li>
+<details><summary>compat-table: ES6 17%, ES2016+ 16%, Next 0%, Intl 0%</summary><ul>
+<li>Tested version: 2v29 (<a href="https://github.com/espruino/Espruino/commit/e5d0934aa26e68941eb6db9c4a8d55255e87fad1">2026-05-20</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/compat-table/espruino.json">json</a>)</li>
 <li>ES5: 47.7%</li>
-<li>ES6: 17.6%</li>
+<li>ES6: 17.5%</li>
 <li>ES2016: 13.6%</li>
 <li>ES2017: 32%</li>
 <li>ES2018: 0%</li>
@@ -61,16 +61,16 @@ Interpreter for a subset of JavaScript for Espruino microcontrollers.
 <li>Intl: 0%</li>
 </ul></details>
 
-<details><summary>test262: 10.2%, main 12%, staging 10.4%, annexB 22.9%, Next 0.3%, Intl 0%</summary>
+<details><summary>test262: 10.2%, main 12%, staging 10.5%, annexB 23.2%, Next 0.3%, Intl 0%</summary>
 <ul>
-<li>Tested version: 2v29 (<a href="https://github.com/espruino/Espruino/commit/a1405bcc4caaf129960fddd7cc7b7bf5e6503957">2026-04-22</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/espruino.json">json</a>)</li>
-<li>Overall: 10.2% (5401/53167)</li>
-<li>Excluding staging, annexB, Next and Intl: 12% (4969/41549)</li>
+<li>Tested version: 2v29 (<a href="https://github.com/espruino/Espruino/commit/e5d0934aa26e68941eb6db9c4a8d55255e87fad1">2026-05-20</a>, <a href="https://github.com/ivankra/javascript-zoo-data/blob/data/test262/espruino.json">json</a>)</li>
+<li>Overall: 10.2% (5410/53167)</li>
+<li>Excluding staging, annexB, Next and Intl: 12% (4974/41549)</li>
 <li>Results per edition/feature (note: figure for each feature is across tests for all editions, not just the introducing one):</li>
-<li>ES5: 38.6% (3165/8197)<pre>
+<li>ES5: 38.7% (3171/8197)<pre>
 caller: 0% (0/23)
 </pre></li>
-<li>ES6: 5.3% (588/11054)<pre>
+<li>ES6: 5.3% (587/11054)<pre>
 __proto__: 0% (0/18)
 Array.prototype.values: 0% (0/4)
 ArrayBuffer: 0% (0/268)
@@ -82,7 +82,7 @@ DataView.prototype.getInt32: 42.9% (3/7)
 DataView.prototype.getInt8: 40% (2/5)
 DataView.prototype.getUint16: 42.9% (3/7)
 DataView.prototype.getUint32: 42.9% (3/7)
-DataView.prototype.setUint8: 30.4% (17/56)
+DataView.prototype.setUint8: 28.6% (16/56)
 Float32Array: 0% (0/7)
 Float64Array: 0% (0/7)
 Int16Array: 0% (0/2)
@@ -98,7 +98,7 @@ Reflect.set: 0% (0/46)
 Reflect.setPrototypeOf: 0% (0/23)
 Set: 0% (0/38)
 String.fromCodePoint: 0% (0/22)
-String.prototype.endsWith: 40.7% (11/27)
+String.prototype.endsWith: 37% (10/27)
 String.prototype.includes: 38.5% (10/26)
 Symbol: 0.1% (2/1494)
 Symbol.hasInstance: 0% (0/17)
@@ -112,14 +112,14 @@ Symbol.split: 0% (0/58)
 Symbol.toPrimitive: 0% (0/233)
 Symbol.toStringTag: 0% (0/131)
 Symbol.unscopables: 0% (0/44)
-TypedArray: 3.1% (77/2513)
+TypedArray: 3.1% (78/2513)
 Uint16Array: 0% (0/6)
 Uint32Array: 0% (0/2)
 Uint8Array: 18.2% (2/11)
 Uint8ClampedArray: 0% (0/6)
 WeakMap: 0% (0/79)
 WeakSet: 0% (0/34)
-arrow-function: 3% (28/949)
+arrow-function: 2.8% (27/949)
 class: 1.3% (63/4768)
 computed-property-names: 0.6% (3/478)
 const: 0% (0/15)
@@ -133,7 +133,7 @@ let: 32.5% (25/77)
 new.target: 4.9% (3/61)
 proxy-missing-checks: 0% (0/3)
 rest-parameters: 0% (0/96)
-super: 52.6% (10/19)
+super: 47.4% (9/19)
 tail-call-optimization: 2.9% (1/35)
 template: 0% (0/1)
 </pre></li>
@@ -208,7 +208,7 @@ align-detached-buffer-semantics-with-web-reality: 0% (0/158)
 logical-assignment-operators: 5.6% (6/108)
 numeric-separator-literal: 47.2% (75/159)
 </pre></li>
-<li>ES2022: 1% (53/5465)<pre>
+<li>ES2022: 1% (55/5465)<pre>
 Array.prototype.at: 0% (0/11)
 Intl.DateTimeFormat-extend-timezonename: 0% (0/2)
 Intl.DisplayNames-v2: 0% (0/12)
@@ -217,9 +217,9 @@ Object.hasOwn: 0% (0/62)
 String.prototype.at: 0% (0/11)
 TypedArray.prototype.at: 0% (0/13)
 arbitrary-module-namespace-names: 0% (0/16)
-class-fields-private: 0.7% (8/1134)
+class-fields-private: 0.8% (9/1134)
 class-fields-private-in: 0% (0/19)
-class-fields-public: 1.6% (33/2058)
+class-fields-public: 1.7% (35/2058)
 class-methods-private: 0% (0/1709)
 class-static-block: 0% (0/65)
 class-static-fields-private: 0.6% (2/345)
@@ -288,6 +288,6 @@ regexp-duplicate-named-groups: 0% (0/19)
 source-phase-imports: 4.4% (10/228)
 source-phase-imports-module-source: 11.9% (10/84)
 </pre></li>
-<li>N/A: 15.8% (1374/8718)</li>
+<li>N/A: 15.8% (1376/8718)</li>
 </ul>
 </details>
