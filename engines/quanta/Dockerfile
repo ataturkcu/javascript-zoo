@@ -10,7 +10,7 @@ RUN git clone --depth=1 "$REPO" .
 
 ARG REV=main
 RUN git fetch --depth=1 origin "$REV" && git checkout FETCH_HEAD && git rev-parse HEAD
-RUN git submodule update --init
+RUN git submodule update --init --recursive
 
 RUN sed -i 's/-mtune=native//' Makefile CMakeLists.txt
 RUN sed -i 's/-march=native//' Makefile CMakeLists.txt
