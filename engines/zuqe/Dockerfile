@@ -5,7 +5,8 @@ ARG BASE=jsz-clang-rust
 FROM $BASE
 
 ARG REPO=https://github.com/nupha/zuqe.git
-ARG REV=r0.4
+# No main/master-like branch
+ARG REV=r0.6
 
 WORKDIR /src
 RUN git clone "$REPO" . && git checkout "$REV" && git rev-parse HEAD
