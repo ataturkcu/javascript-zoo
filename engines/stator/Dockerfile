@@ -10,6 +10,9 @@ ARG REV=main
 WORKDIR /src
 RUN git clone "$REPO" . && git checkout "$REV" && git rev-parse HEAD
 
+COPY engines/stator/patch_codegen.py .
+RUN python3 patch_codegen.py crates/stator_jse/src/compiler/maglev/codegen.rs
+
 RUN cargo build --release --bin st8
 
 COPY build/dist.py ./
